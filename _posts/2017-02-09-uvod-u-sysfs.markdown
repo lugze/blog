@@ -52,7 +52,7 @@ mount -t sysfs sysfs /mnt/sysfs/
 ```
 ls /mnt/sysfs/
 ```
-* Trebali bi dobiti nesto slično sadržaju ispod
+* Trebali bi dobiti nešto slično sadržaju ispod
 
 ```
 block  bus  class  dev  devices  firmware  fs  hypervisor  kernel  module  power
@@ -118,7 +118,7 @@ Dobijemo sljedeći ispis.
 
 Block direktorij sadrži poddirektorije za sve `block` uređaje koji su otkriveni od strane sistema.
 Block uređaji su svi uređaji koji mogu biti služeni za skladištenje podataka kao što su diskovi, ram memorija itd.
-Svaki uređaj sadrži svoj poddirektorij koji sadrži atribute uređaja kao sto je veličina itd.
+Svaki uređaj sadrži svoj poddirektorij koji sadrži atribute uređaja kao što je veličina itd.
 
 #### Primjer
 
@@ -175,11 +175,11 @@ cat /sys/block/sda/size
 
 ```
 
-Direktorij koji odgovara svakom pojedinacnom bus-u u sys direktoriju sadrzi dva poddirektorija i to `devices` i `drivers`.  
+Direktorij koji odgovara svakom pojedinacnom bus-u u sys direktoriju sadrži dva poddirektorija i to `devices` i `drivers`.  
 
 #### /sys/bus/*/devices/ direktorij
 
-Direktorij `devices` sadrzi sve uređaje tog tipa koji su otkriveni na citavom sistemu.
+Direktorij `devices` sadrži sve uređaje tog tipa koji su otkriveni na cijelom sistemu.
 
 Primjer tree prikaza devices poddirektorija za pci bus
 
@@ -207,49 +207,50 @@ tree -L 1 /sys/bus/pci/devices/
 
 #### drivers dir
 
-Ovaj direktorij sadrzi poddirektorije za svaki device driver koji je prijavljen za taj tip sabirnice.
-Unutar tih direktorija se nalaze atributi pomocu kojim mozemo vidjeti postavke drivera te ih modifikovati.
+Ovaj direktorij sadrži poddirektorije za svaki device driver koji je prijavljen za taj tip sabirnice.
+Unutar tih direktorija se nalaze atributi pomoću kojim možemo vidjeti postavke drivera te ih modifikovati.
 
 
 ### /sys/class direktorij
 
-Kao sto ime samo govori class direktorij sadrzi klase koje logicki opisuju hardver.
-Klase predstavljaju nivo apstrakcije koje na intuitivan nacin daju imena hardverskim komponentama.
+Kao što ime samo govori class direktorij sadrži klase koje logički opisuju hardver.
+Klase predstavljaju nivo apstrakcije koji na intuitivan način daju imena hardverskim komponentama.
+
 Primjeri:
 
-#### Svi mrezni uređaji se nalaze u podrektoriju
+#### Svi mrežni uređaji se nalaze u podrektoriju
 
-ls /sys/class/net
+```ls /sys/class/net```
 
 #### Svi input uređaji se nalaze u poddirektoriju
 
-ls /sys/class/input
+```ls /sys/class/input```
 
 #### Serijski uredajaji se nalaze
 
-ls /sys/class/tty
+```ls /sys/class/tty```
 
 #### Svi block uređaji se nalaze
 
-ls /sys/class/block/
+```ls /sys/class/block/```
 
 
-Svaki uređaji odredjene klase sadrzi fajlove i direktorije koje sadrze dodatne informacije o tome uradjaju.
+Svaki uređaji odredjene klase sadrži fajlove i direktorije koje sadrže dodatne informacije o navedenom urađaju.
 
-#### Primjeri vezani za mreznu karticu
+#### Primjeri vezani za mrežnu karticu
 
-##### Kako saznati da li je kabl ukljucen u mreznu karticu?
+##### Kako saznati da li je kabl uključen u mrežnu karticu?
 
 ```
 cat /sys/class/net/eth0/carrier
 ```
-* 0 - iskljuceno
-* 1 - ukljuceno
+* 0 - isključeno
+* 1 - uključeno
 
 
 ## /sys/firmware direktorij
 
-firmware direktorij sadrzi interfejse za pregled i manipulisanje atributa koji su specificni za firmware kao sto je BIOS.
+firmware direktorij sadrži interfejse za pregled i manipulisanje atributa koji su specificni za firmware kao što je BIOS.
 
 Tree prikaz firmwware direktorija
 
@@ -262,12 +263,13 @@ Tree prikaz firmwware direktorija
 
 ## /sys/module direktorij
 
-Ovaj direktorij sadrzi poddirektorije za svaki modul koji je ukljucen u kernel. Module mozemo izlistati pomocu komande
+Ovaj direktorij sadrži poddirektorije za svaki modul koji je ukljucen u kernel. Module možemo izlistati pomoću komande
 
 ```
 ls /sys/module/
 ```
-ili komnde
+
+ili komande
 
 ```
 lsmod
