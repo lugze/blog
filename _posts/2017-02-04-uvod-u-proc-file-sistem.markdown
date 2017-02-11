@@ -114,19 +114,19 @@ unmount /mnt/proc
 
 ## Primjeri
 
-#### Kako saznati informacije o procesoru?
+#### * Kako saznati informacije o procesoru?
 
 {% highlight shell %}
 cat /proc/cpuinfo
 {% endhighlight %}
 
-#### Kako saznati informacije o RAM memoriji?
+#### * Kako saznati informacije o RAM memoriji?
 
 {% highlight shell %}
 cat /proc/meminfo
 {% endhighlight %}
 
-#### Kako saznati koliko dugo je sistem upaljen?
+#### * Kako saznati koliko dugo je sistem upaljen?
 
 {% highlight shell %}
 cat /proc/uptime
@@ -134,26 +134,26 @@ cat /proc/uptime
 
 Prvi broj je zbroj sekundi od zadnjeg restarta, drugi broj u sekundama govori koliko dugo je sistem `idle`.
 
-#### Kako saznati koji kernel se boota i sa kojim parametrima?
+#### * Kako saznati koji kernel se boota i sa kojim parametrima?
 
 {% highlight shell %}
 cat /proc/cmdline
 {% endhighlight %}
 
-#### Kako saznati verziju kernela?
+#### * Kako saznati verziju kernela?
 
 {% highlight shell %}
 cat /proc/version
 {% endhighlight %}
 
 
-#### Kako saznati listu particija?
+#### * Kako saznati listu particija?
 
 {% highlight shell %}
 cat /proc/partitions 
 {% endhighlight %}
 
-#### Kako saznati informacije o swap particiji?
+#### * Kako saznati informacije o swap particiji?
 
 {% highlight shell %}
 cat /proc/swaps 
