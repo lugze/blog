@@ -1,0 +1,49 @@
+# Ascii video tutorial: Ruby instalacija pomocu RVM
+#
+# LugZe - Linux User Group of Zenica
+#
+
+# Instaliramo pakete potrebne za uspjesno preuzimanje te instalaciju RVM ili Ruby Version Managera 
+apt-get install curl sudo -y
+
+# Dodajemo korisnika sa korisnickim imenom ned
+adduser ned
+
+# Dodajemo korisnika ned u grupu sudo kako bi isti imao ovlasti da instalira potrebne softverske pakete
+usermod --append --groups sudo ned
+
+# Logujemo se kao korisnik ned u login shell
+su ned -l
+
+# Importujemo kljuc
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+
+# Preuzimamo RVM preko https te nakon downloada automatski se pokrece instalacija
+\curl -sSL https://get.rvm.io | bash -s stable --ruby=2.4.0
+
+# Provjeravamo da li je ruby dostupan te pod kojom verzijom 
+ruby -v
+
+# Dobili odgovor 'bash: ruby: command not found' 
+# Potrebno je da pokrenemo skriptu koja ce ucitati u trenutnu korisnicku sesiju putanju do nove verzije ruby
+source ~/.rvm/scripts/rvm
+
+# Ponovo provjeravamo da li je ruby dostupan te pod kojom verzijom
+ruby -v
+
+# Postavljamo verziju 2.4.0 za pocetnu verziju u slucaju da naknadno instaliramo dodatne verzije
+rvm --default use 2.4.0
+
+# Provjeravamo da li su potrebne environment varijable postavljene i ucitane u trenutnu korisnicku sesiju
+echo $RUBY_VERSION
+echo $GEM_HOME
+echo $MY_RUBY_HOME
+
+# ispisujemo sve environment varijable i filtiramo samo one koje sadrze kljucnu rijec ruby
+printenv | grep ruby
+
+# radimo update gemova
+gem update
+
+# video tutorial je gotov
+exit
