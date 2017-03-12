@@ -8,15 +8,15 @@ categories: linux windows bash
 
 ### Instaliranje Linux podsistema na Windows
 
-Bash na Ubunut na Windwows je ime linux podsistema koji je u beta fazi za Windows OS. 
-Dozvoljava da se pokrene Linux na WIndowsu bez programa za  Virtualne Masine (VM).
+Bash na Ubuntu na Windows je ime linux podsistema koji je u beta fazi za Windows OS. 
+Dozvoljava da se pokrene Linux na Windows-u bez programa za Virtualne Masine (VM).
 
-Trenutno je ovaj update samo dostupan za one "Fast" opcijom na Windows Insider programu. 
+Trenutno je ovaj update dostupan samo za one sa "Fast" opcijom na Windows Insider programu. 
 Potrebno se prilkljuciti Windows Insider programu i postaviti Insider level na "Fast".
 
-Ovako se mozete prikljuciit [Windows Insider programu.](http://www.pcworld.com/article/3038430/windows/how-to-join-the-windows-10-insider-preview-program.html)
+Ovako se mozete prikljuciti [Windows Insider programu.](http://www.pcworld.com/article/3038430/windows/how-to-join-the-windows-10-insider-preview-program.html)
 
-Prvi koram je omoguciti  "Developer mode" u Windowsu. Ovo se moze postici tako sto otvorimo Settings -> Update & Security -> "For Developers".  
+Prvi korak je omoguciti  "Developer mode" u Windowsu. Ovo se moze postici tako sto otvorimo Settings -> Update & Security -> "For Developers".  
 Kliknuti na "Developer mode" da bi se opcija oznacila.
 
 ![developer_mode-1.png]({{ site.url }}/assets/images/podesavanje-ubunutu-bash-na-windows-10/developer_mode-1.png)
@@ -25,9 +25,9 @@ Sada trebamo omoguciti Windows Subsystem za Linux. Otvorimo Contol Panel, zatim 
 
 ![2]({{ site.url }}/assets/images/podesavanje-ubunutu-bash-na-windows-10/2.png)
 
-U slucaju da Windows Subsystem for Linux(Beta) opcija nije dostupna provjerite da ste dio Windows Insider programa i da je update postavljen na "Fast", restartujte, ili sacekajte para dana da opcija bude dostuona. Ponekad je potrebno da prodje i dva dana da opcija bude dostupna nakon sto se ukljuci Developer mode. U svakom slucaju probajte par ovih opcija dok ne uspijete.
+U slucaju da opcija "Windows Subsystem for Linux(Beta)" nije dostupna provjerite da li ste dio Windows Insider programa i da je update postavljen na "Fast", restartujte sistem, ili sacekajte para dana da opcija bude dostuona. Ponekad je potrebno da prodje i dva dana prije nego opcija bude dostupna nakon sto se ukljuci Developer mode. U svakom slucaju probajte par ovih opcija dok ne uspijete.
 
-Nakon sto instalirate i restartujete mozemo poceti podesavati Bash za Ubuntu na Windows-u.
+Nakon sto instalirate i restartujete sistem mozemo poceti podesavati Bash za Ubuntu na Windows-u.
 
 Pocnite tako sto cete upisati "bash" u search box.
 
