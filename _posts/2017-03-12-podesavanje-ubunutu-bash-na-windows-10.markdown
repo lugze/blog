@@ -3,8 +3,7 @@ layout: post
 title:  "Setup Ubunutu Bash na Windows 10"
 author: admir
 date:   2017-03-12 09:47:10 +0100
-categories: linux sysfs 101
-tags: [linux, proc]
+categories: linux windows bash
 ---
 
 ### Instaliranje Linux podsistema na Windows
