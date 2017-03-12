@@ -20,7 +20,7 @@ Ovako se mozete prikljuciit [Windows Insider programu.](http://www.pcworld.com/a
 Prvi koram je omoguciti  "Developer mode" u Windowsu. Ovo se moze postici tako sto otvorimo Settings -> Update & Security -> "For Developers".  
 Kliknuti na "Developer mode" da bi se opcija oznacila.
 
-![developer_mode-1](/uploads/01825c48c9119e3d85dbd5698a6ca85f/developer_mode-1.png)
+![developer_mode-1.png]({{ site.url }}/assets/images/podesavanje-ubunutu-bash-na-windows-10/developer_mode-1.png)
 
 Sada trebamo omoguciti Windows Subsystem za Linux. Otvorimo Contol Panel, zatim Programs i kliknuti na "Turn Windows Features On or Off". Potraziti opciju "Windows Subsystem for Linux" i oznaciti kvadratic pored opcije.
 
