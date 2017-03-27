@@ -12,6 +12,17 @@ U nastavku je opisan nacin kako instalirati te podesiti 2.4 verziju kao trenutnu
 
 ## Pripreme
 
+Logovati se kao root.
+
+{% highlight shell %}
+su root
+{% endhighlight %}
+
+Za Ubuntu korinsike
+{% highlight shell %}
+sudo su
+{% endhighlight %}
+
 Instalirati potrebne pakete za Debian/Ubuntu distribuciju.
 
 {% highlight shell %}
