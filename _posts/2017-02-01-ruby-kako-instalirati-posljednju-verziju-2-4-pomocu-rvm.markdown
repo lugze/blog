@@ -69,7 +69,7 @@ U slucaju da key ne radi novi mozete pokupiti na ovom [linku](https://rvm.io/). 
 `source ~/.rvm/scripts/rvm`
 {% endhighlight %}
 
-Provjeriti da li je dodan zapis koji automatski loada RVM prilikom logozanja korisnika
+Provjeriti da li je dodan zapis koji automatski loada RVM prilikom logovanja korisnika
 
 {% highlight shell %}
 grep rvm ~/.bashrc
@@ -87,6 +87,20 @@ Sada je potrebno ucitati nove postavke
 source ~/.bashrc
 {% endhighlight %}
 
+#### Provjera da li je rvm uspjesno instaliran
+
+Komanda u nastavku bi trebala prikazati RVM verziju.
+
+{% highlight shell %}
+rvm -v
+{% endhighlight %}
+
+#### Potrebno je ucitati ruby koji smo upravi instalirali
+
+{% highlight shell %}
+rvm use 2.4.0
+{% endhighlight %}
+
 ## Podesavanje i testiranje
 
 Provjeriti instaliranu verziju ruby.
@@ -95,7 +109,7 @@ Provjeriti instaliranu verziju ruby.
 ruby -v
 {% endhighlight %}
 
-U slucaju da imate vec instaliran RVM komande za instaalciju 2.4 verzije te postavljanje iste kao trenutnu i default verziju su.
+U slucaju da imate vec instaliran RVM komande za instalciju 2.4 verzije te postavljanje iste kao trenutnu i default verziju su.
 
 {% highlight shell %}
 rvm install ruby-2.4.0
