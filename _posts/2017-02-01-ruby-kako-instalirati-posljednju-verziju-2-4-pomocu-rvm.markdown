@@ -95,7 +95,7 @@ Komanda u nastavku bi trebala prikazati RVM verziju.
 rvm -v
 {% endhighlight %}
 
-#### Potrebno je ucitati ruby koji smo upravi instalirali
+#### Potrebno je ucitati ruby koji smo upravo instalirali
 
 {% highlight shell %}
 rvm use 2.4.0
