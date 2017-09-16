@@ -17,6 +17,8 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-asciinema (0.2.0)
+      jekyll (>= 2.0)
     jekyll-feed (0.8.0)
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.0)
@@ -31,6 +33,7 @@ GEM
     mercenary (0.3.6)
     minima (2.1.0)
       jekyll (~> 3.3)
+    openssl (2.0.5)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
@@ -46,12 +49,11 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (= 3.4.0)
+  jekyll-asciinema
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
+  openssl (>= 2.0.3)
   tzinfo-data
 
-RUBY VERSION
-   ruby 2.3.3p222
-
 BUNDLED WITH
-   1.14.3
+   1.15.4
