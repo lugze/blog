@@ -6,18 +6,14 @@ permalink: /mala-skola-linuxa/
 
 ## Rad sa fajlovima i direktorijima
 
-File ili direktorij sa space Moj File se pise kao Moj\ file
+File ili direktorij sa space Moj File se pise kao ```Moj\ file```
 
 #### Ispis sadrzaja direktorija
 
-```
-ls
-```
- -> listanje
-```
-ls —a -l -h
-```
- -> Listaj a-detalje, l-long format, h-jasnije covjeku
+```ls```  -> listanje
+
+```ls —a -l -h``` -> Listaj a-detalje, l-long format, h-jasnije covjeku
+
 ili ovako:
 
 ```
@@ -241,25 +237,14 @@ echo $PWD
 ```
 
 
-```
-mkdir
-```
- -> pravljenej foldera
+```mkdir``` -> pravljenej foldera
 
-```
-mkdir folder/subfolder/subsubfolder
-``
+```mkdir folder/subfolder/subsubfolder```
 
-```
-mkdir -p
-```
-
- -> pravljenej parent directorija, koristi se u slucaju da parent folder ne postoji te zelimo u isto vrijeme napraviti parent folder te u njemu subfoldere
+```mkdir -p``` -> pravljenej parent directorija, koristi se u slucaju da parent folder ne postoji te zelimo u isto vrijeme napraviti parent folder te u njemu subfoldere
 
 
-```
-touch mojFile.txt
-```
+```touch mojFile.txt```
  -> pravljenje filea
 
 ```
