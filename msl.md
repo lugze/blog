@@ -4,13 +4,11 @@ title: Mala Škola Linuxa
 permalink: /mala-skola-linuxa/
 ---
 
-# Mala Škola Linuxa
-
 ## Rad sa fajlovima i direktorijima
 
 File ili direktorij sa space Moj File se pise kao Moj\ file
 
-## Ispis sadrzaja direktorija
+#### Ispis sadrzaja direktorija
 
 ```
 ls
@@ -26,41 +24,40 @@ ili ovako:
 ls -alh
 ```
 
-## Ispisi listu fajlova i direktorija unutar trenutnog direktorija
+##### Ispisi listu fajlova i direktorija unutar trenutnog direktorija
 
 ```
 ls .
 ```
 
-## Ispisi listu fajlova i direktorija unutar trenutnog direktorija ukljucujuci i sakrivene fajlove
-## skriveni fajlvi su fajlovi cije ime pocinje sa tackom odnosno znakom .
+Ispisi listu fajlova i direktorija unutar trenutnog direktorija ukljucujuci i sakrivene fajlove skriveni fajlvi su fajlovi cije ime pocinje sa tackom odnosno znakom .
 
 ```
 ls -al .
 ```
 
-## Ispisi listu fajlova i direktorija unutar trenutnog direktorija, te sadrzaj direktorija koji se nalaze u tekucem direktoriju
+Ispisi listu fajlova i direktorija unutar trenutnog direktorija, te sadrzaj direktorija koji se nalaze u tekucem direktoriju
 
 ```
 ls -al *
 ```
 
 
-## Ispisi listu fajlova i direktorija unutar trenutnog direktorija na nacin da i direktorije tretiramo kao obicne fajlove te ne ispisujemo njihov sadrzaja
+Ispisi listu fajlova i direktorija unutar trenutnog direktorija na nacin da i direktorije tretiramo kao obicne fajlove te ne ispisujemo njihov sadrzaja
 
 ```
 ls -ald *
 ```
 
 
-## Ispisi listu fajlova i direktorija koji pocinju sa znakom . odnosno ispisi samo skrivene fajlove i direktorije
+Ispisi listu fajlova i direktorija koji pocinju sa znakom . odnosno ispisi samo skrivene fajlove i direktorije
 
 ```
 ls -ald .*
 ```
 
 
-# Ispisi inode broj fajla
+#### Ispisi inode broj fajla
 
 ```
 ls -i ime_fajla
@@ -70,75 +67,72 @@ ls -i ime_fajla
 *****************
 *****************
 
-## Kreiranje simboličkih linkova
+### Kreiranje simboličkih linkova
 
-# prvo napravimo fajl
+prvo napravimo fajl
 
 ```
 touch fajl_jedan
 ```
 
 
-# zapisemo nesto u fajl pomocu redirekcije
+zapisemo nesto u fajl pomocu redirekcije
 
 ```
 echo "NEKI TESTNI SADRZAJ">fajl_jedan
 ```
 
 
-# provjerimo da li je zapisano u fajl
+provjerimo da li je zapisano u fajl
 
 ```
 cat fajl_jedan
 ```
 
-# napravimo simbolicki link na novi fajl
+napravimo simbolicki link na novi fajl
 
 ```
 ln -s fajl_jedan fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
 ```
 
-# ispisemo sadrzaj drugog fajla koji je simbolicki link
+ispisemo sadrzaj drugog fajla koji je simbolicki link
 
 ```
 cat fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
 ```
 
-# mozemo primjetiti da je sadrzaj oba fajla isti
+mozemo primjetiti da je sadrzaj oba fajla isti
 
-# provjerimo inodove oba fajla
+provjerimo inodove oba fajla
 
 ```
 ls -i fajl_jedan
 ls -i fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
 ```
 
-# mozemo promjetiti da su inode brojevi razliciti sto znaci da su razliciti fajlove te ako jedan izbrisemo to znaci da drugi fajl nece biti izbrisan
+mozemo promjetiti da su inode brojevi razliciti sto znaci da su razliciti fajlove te ako jedan izbrisemo to znaci da drugi fajl nece biti izbrisan
 
 
-*****************
 Vjezba: izbrisati prvi fajl. Da li je drugi fajl koji je simbolicki link izbrisan? Da li mozemo pomocu cat komande izlistati sadrzaj drugog fajla?
-*****************
 
 
 
-*****************
-Hard linkovi
-*****************
-# Kreirati fajl i dodati neki sadrzaj
+## Hard linkovi
+
+Kreirati fajl i dodati neki sadrzaj
 
 ```
 touch fajl_prvi
 echo "NEKI TESTNI SADRZAJ">fajl_prvi
 ```
 
-# napraviti hard link
+napraviti hard link
 
 ```
 ln fajl_prvi fajl_drugi
 ```
 
-# provjeriti inode brojeve za oba fajla
+provjeriti inode brojeve za oba fajla
 
 ```
 ls -i fajl_prvi
@@ -151,18 +145,17 @@ ls -i fajl_drugi
 ```
 
 
-# inode brojevi su isti sto znaci da su oba fajla linkaju na istu lokaciju na disku
+inode brojevi su isti sto znaci da su oba fajla linkaju na istu lokaciju na disku
 
-*****************
-Vjezba: Sta se desi ako izbrisemo drugi fajl, da li ce prvi fajl biti izbrisan?
-*****************
+
+##### Vjezba: Sta se desi ako izbrisemo drugi fajl, da li ce prvi fajl biti izbrisan?
+
 
 ```
 rm fajl_drugi
 ```
 
 
-*****************
 ```
 ls -R IME FOLDERA/
 ```
@@ -201,11 +194,11 @@ cd ../../NEKI FOLDER
 ```
  -> ulazak na udaljeni folder, dva levela iznad
 
-*****************
-Putanje do programa
-*****************
 
-### koristimo komandu whereis i which da saznamo putanju gdje je instaliran program, odnosno gdje se nalazi binary trazenog programa
+### Putanje do programa
+
+
+koristimo komandu whereis i which da saznamo putanju gdje je instaliran program, odnosno gdje se nalazi binary trazenog programa
 
 ```
 whereis nano
@@ -223,7 +216,7 @@ whereis bash
 which rvm
 ```
 
-**********************
+
 Nekoliko nacina kako pristupiti home folderu
 
 ```
@@ -232,8 +225,8 @@ cd ~
 cd $HOME
 ```
 
-**********************
-Vjezba: pratiti kako se mijenja pwd vrijednost nakon svake izmjene current directorija
+
+#### Vjezba: pratiti kako se mijenja pwd vrijednost nakon svake izmjene current directorija
 
 ```
 cd ~
@@ -246,7 +239,7 @@ cd $HOME
 pwd
 echo $PWD
 ```
-**********************
+
 
 ```
 mkdir
@@ -285,15 +278,13 @@ mv novi_file.txt najbolji_folder
 ```
 
 ```
-#mv novi_file.txt najbolji_folder/novi_file2
+mv novi_file.txt najbolji_folder/novi_file2
 ```
 
-```
-#mv najbolji_folder/*.txt .
-```
- -> pomjeri sve fileove koji zavrsavaju sa .txt iz najbolji_folder u trenutni folder
+```mv najbolji_folder/*.txt .``` -> pomjeri sve fileove koji zavrsavaju sa .txt iz najbolji_folder u trenutni folder
 
 Wildcards:
+
 ```
 * -> any number of characters
 ? -> one of the character
@@ -301,6 +292,7 @@ Wildcards:
 
 
 delete files:
+
 ```
 rm novi_file.txt
 ```
@@ -322,25 +314,25 @@ find . -name “naziv”
 find . -name “naziv*”
 ```
 
-## Rekurzivno pretrazi sve fajlove u odredisnom direktoriju (u sljedecom primjeru to je direktorij /home)
+Rekurzivno pretrazi sve fajlove u odredisnom direktoriju (u sljedecom primjeru to je direktorij /home)
 
 ```
 find /home
 ```
 
-## Pretraga za fajlovima, u tekucem direktoriju, samo tipa file (ne izlistavamo direktorije)
+Pretraga za fajlovima, u tekucem direktoriju, samo tipa file (ne izlistavamo direktorije)
 
 ```
 find . -type f
 ```
 
-## Pretraga za direktorijima, ne ispisuju se fajlovima
+Pretraga za direktorijima, ne ispisuju se fajlovima
 
 ```
 find . -type d
 ```
 
-*******************************
+
 ```
 $ - nalazim se u useru
 # - sada sam root
@@ -391,7 +383,6 @@ sudo chown emin test.sh
 ```
  -> prebacujem prava filea na usera emin
 
-********
 
 Using pipes:
 ```
@@ -399,7 +390,6 @@ echo “hello” | wc
 ```
  -> 1  1  16  one line, one word and 6 characters
 
-********
 
 Cat - Concatenate(stick two or more things together) and print files
 
@@ -435,11 +425,10 @@ less dugiText
 ```
  -> izlistavanje
 
-*****************************
-Grep - Search files for text that matches a given pattern
+### Grep - Search files for text that matches a given pattern
 
 
-*****************************
+
 ```.``` -> Current folder
 
 
@@ -451,13 +440,13 @@ Grep - Search files for text that matches a given pattern
 
 ```pwd``` -> print working directory i provjera putanje na kojoj se nalazimo
 
-*Generisanje set key-a
+#### Generisanje set key-a
 
 ```ssh-keygen -t rsa```
 
-**************************
 
-Adding users to sudo or admin group
+
+#### Adding users to sudo or admin group
 
 ```adduser username sudo```
 
@@ -471,9 +460,8 @@ Archive komande
 ```tar -cvf (c-create, v-verbot, f-output to file) myfile.tar Vjezba\ Files/```
 
 
-=======
-Procesi
-=======
+
+## Procesi
 
 # Izlistaj sve procese svih korisnika
 
@@ -508,19 +496,19 @@ ps aux --sort pcpu
 ### Slanje procesa i background
 
 
-# nakon komande dodamo znak &
+nakon komande dodamo znak &
 
 ```
 nano &
 ```
 
-# izlistamo procese u backgroundu
+izlistamo procese u backgroundu
 
 ```
 jobs
 ```
 
-# vratimo komandu u foreground
+vratimo komandu u foreground
 
 ```
 fg
