@@ -3,7 +3,7 @@ title: LugZe blog
 email: info@lugze.org
 description: > # this means to ignore newlines until "baseurl:"
   Linux User Group of Zenica
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://lugze.github.io"
 github_username:  lugze
 
