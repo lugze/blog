@@ -365,55 +365,33 @@ Read = 4, Write = 2, Execute =1
 = adds permission but removes others
 ```
 
+```chmod u-r test.sh``` -> uzimamo useru pravo citanja filea test.sh
 
-```
-chmod u-r test.sh
-```
- -> uzimamo useru pravo citanja filea test.sh
-```
-chmod 244 test.sh
-``` -> isto ali oktalno
+```chmod 244 test.sh``` -> isto ali oktalno
 
-```
-sudo chown root test.sh
-```
- -> prebacujem prava filea na root
-```
-sudo chown emin test.sh
-```
- -> prebacujem prava filea na usera emin
+```sudo chown root test.sh``` -> prebacujem prava filea na root
+
+```sudo chown emin test.sh``` -> prebacujem prava filea na usera emin
 
 
 Using pipes:
-```
-echo “hello” | wc
-```
- -> 1  1  16  one line, one word and 6 characters
+
+```echo “hello” | wc``` -> 1  1  16  one line, one word and 6 characters
 
 
 Cat - Concatenate(stick two or more things together) and print files
 
-```
-cat dugiTekst.txt
-```
- -> izlistavamo cijeli tekst
+```cat dugiTekst.txt``` -> izlistavamo cijeli tekst
 
-```
-head dugiTekst.txt
-```
- -> prvih 10 linija
+```head dugiTekst.txt``` -> prvih 10 linija
 
-```
-tail dugiTekst.txt
-```
- -> zadnjih 10 linija
+```tail dugiTekst.txt``` -> zadnjih 10 linija
 
 # Ispisi zadnjih 5 linija pomocu tail komande
 
 ```
 tail -n 5 dugiTekst.txt
 ```
-
 
 ```
 cat dugiText | cat -n | tail -n 5
