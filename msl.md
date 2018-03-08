@@ -329,7 +329,7 @@ su root
  -> prelazak u root (potrebna sifra)
 
 ```
-su emin -l
+su korisnik -l
 ```
  (novi login shell) - logovanje kao korisnik
 
@@ -356,7 +356,7 @@ Read = 4, Write = 2, Execute =1
 
 ```sudo chown root test.sh``` -> prebacujem prava filea na root
 
-```sudo chown emin test.sh``` -> prebacujem prava filea na usera emin
+```sudo chown korinik test.sh``` -> prebacujem prava filea na usera emin
 
 
 Using pipes:
