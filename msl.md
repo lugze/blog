@@ -4,6 +4,18 @@ title: Mala Škola Linuxa
 permalink: /mala-skola-linuxa/
 ---
 
+##Uobicajena organizacija foldera u Linuxu
+
+/bin - programi koje koriste i administratori i korisnici
+/dev - datoteke koje predstavljaju hardverske uredjaje (mrezna, graficka)  
+/etc - konfiguracijske datoteke
+/home - direktoriji korisnika
+/sbin - sistemski programi
+/tmp - privremene datoteke
+/usr - korisnicki programi, dokumentacija i biblioteke
+/var - sistemski zapisi i druge datoteke.
+
+
 ## Rad sa fajlovima i direktorijima
 
 File ili direktorij sa space Moj File se pise kao ```Moj\ file```
