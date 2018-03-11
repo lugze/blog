@@ -15,6 +15,8 @@ permalink: /mala-skola-linuxa/
 * `/usr` - korisnicki programi, dokumentacija i biblioteke
 * `/var` - sistemski zapisi i druge datoteke.
 
+* Više na linku https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
+
 ## Upravljanje korisnicima i grupama
 
 Koricni imaju sopstveni `home` direktorij koji se nalazi u folderu `/home`. Izuzetak je `root` korisnik, ciji home direktorij se nalazi na lokaciji `/root`.
