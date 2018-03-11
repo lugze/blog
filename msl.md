@@ -167,9 +167,6 @@ ls -i ime_fajla
 ```
 
 
-*****************
-*****************
-
 ### Kreiranje simboličkih linkova
 
 prvo napravimo fajl
