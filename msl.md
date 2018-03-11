@@ -19,7 +19,7 @@ permalink: /mala-skola-linuxa/
 
 ## Upravljanje korisnicima i grupama
 
-Koricni imaju sopstveni `home` direktorij koji se nalazi u folderu `/home`. Izuzetak je `root` korisnik, ciji home direktorij se nalazi na lokaciji `/root`.
+Korsnici imaju sopstveni `home` direktorij koji se nalazi u folderu `/home`. Izuzetak je `root` korisnik, ciji home direktorij se nalazi na lokaciji `/root`.
 
 #### Vjezba: nekoliko nacina kako pristupiti home folderu
 
