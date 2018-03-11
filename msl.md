@@ -21,7 +21,7 @@ permalink: /mala-skola-linuxa/
 
 Korsnici imaju sopstveni `home` direktorij koji se nalazi u folderu `/home`. Izuzetak je `root` korisnik, čiji home direktorij se nalazi na lokaciji `/root`.
 
-#### Vježba: nekoliko nacina kako pristupiti home folderu
+#### Vježba: nekoliko načina kako pristupiti home folderu
 
 * koristiti `cd` komanu bez argumenata.
 
