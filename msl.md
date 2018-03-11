@@ -38,7 +38,7 @@ cd ~
 ```
 cd $HOME
 ```
-### `finger` komanda
+### Komanda `finger`
 
 Komanda `finger` ispisuje informacije o korisniku. Kao argument komandi proslijedimo korisničko ime tj. `username` korisnika. U sljedećem primjeru `finger` će prikazati informacije o korisniku `root`.
 
