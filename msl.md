@@ -4,6 +4,8 @@ title: Mala Škola Linux-a
 permalink: /mala-skola-linuxa/
 ---
 
+Verzija dokumenta 0.0.1
+
 ## Uobičajena organizacija foldera u Linuxu
 
 * `/bin`  - programi koje koriste i administratori i korisnici
