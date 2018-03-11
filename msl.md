@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mala Škola Linuxa
+title: Mala Škola Linux-a
 permalink: /mala-skola-linuxa/
 ---
 
@@ -28,7 +28,7 @@ Korsnici imaju sopstveni `home` direktorij koji se nalazi u folderu `/home`. Izu
 ```
 cd
 ```
-* kao argument `cd` komandi proslijediti znak tildu tj. `~`
+* kao argument `cd` komandi proslijediti znak tildu tj. `~`.
 
 ```
 cd ~
@@ -470,7 +470,7 @@ Cat - Concatenate(stick two or more things together) and print files
 
 ```tail dugiTekst.txt``` -> zadnjih 10 linija
 
-# Ispisi zadnjih 5 linija pomocu tail komande
+# Ispiši zadnjih 5 linija pomoću tail komande
 
 ```
 tail -n 5 dugiTekst.txt
@@ -481,10 +481,7 @@ cat dugiText | cat -n | tail -n 5
 ```
  -> kombinacija
 
-```
-less dugiText
-```
- -> izlistavanje
+```less dugiText``` -> izlistavanje
 
 ### Grep - Search files for text that matches a given pattern
 
@@ -514,7 +511,7 @@ less dugiText
 ```adduser username admin```
 
 
-*******************
+
 <<<<<<< HEAD
 Archive komande
 
@@ -542,13 +539,13 @@ ps -aux
 ps -f -u sshd
 ```
 
-# sortirajprocese po potrosnji memorije
+# sortiraj procese po potrošnji memorije
 
 ```
 ps aux --sort pmem
 ```
 
-# sortoranje  procesa po CPU potrosnji
+# sortoranje procesa po CPU potrošnji
 
 ```
 ps aux --sort pcpu
