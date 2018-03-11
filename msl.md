@@ -74,6 +74,42 @@ Ova komanda nam daje informacije o korisniku kao sto su
 * `gid` ili group id tj. broj primarne grupe kojoj korinsik pripada
 * `groups` kompletna lista grupa kojoj korisnik pripada, tj gid i naziv grupe.
 
+Kada komandi `id` argument ostavimo prazan, podrzaumijeva se da zelimo saznati informacije o trenutno logovanom korisniku, odnosno korisniki koji izvrsava komandu. Primjer:
+
+```
+id
+uid=0(root) gid=0(root) groups=0(root)
+```
+
+Kada kao argument komandi `id` proslijedimo `username` dobijemo info o tom korinsiku.
+
+```
+id emin
+uid=1001(emin) gid=1001(emin) groups=1001(emin),27(sudo)
+```
+
+Ako zelimo saznati samo `id` broj korinsiko koristimo parametar `-u`.
+
+```
+id -u root
+0
+```
+
+Ako zelimo saznati broj primarne grupe nekog korisnika, koristimo parametar `-g`.
+
+```
+id -g emin
+1001
+```
+
+Ako zelimo saznati brojeve svih grupa kojoj priapada korisnik, korisitmo parametar `-G`.
+
+```
+id -G emin
+1001 27
+```
+
+
 
 ## Rad sa fajlovima i direktorijima
 
