@@ -4,16 +4,75 @@ title: Mala Škola Linuxa
 permalink: /mala-skola-linuxa/
 ---
 
-##Uobicajena organizacija foldera u Linuxu
+## Uobicajena organizacija foldera u Linuxu
 
-/bin - programi koje koriste i administratori i korisnici
-/dev - datoteke koje predstavljaju hardverske uredjaje (mrezna, graficka)  
-/etc - konfiguracijske datoteke
-/home - direktoriji korisnika
-/sbin - sistemski programi
-/tmp - privremene datoteke
-/usr - korisnicki programi, dokumentacija i biblioteke
-/var - sistemski zapisi i druge datoteke.
+* `/bin` - programi koje koriste i administratori i korisnici
+* `/dev` - datoteke koje predstavljaju hardverske uredjaje (mrezna, graficka)  
+* `/etc` - konfiguracijske datoteke
+* `/home` - direktoriji korisnika
+* `/sbin` - sistemski programi
+* `/tmp` - privremene datoteke
+* `/usr` - korisnicki programi, dokumentacija i biblioteke
+* `/var` - sistemski zapisi i druge datoteke.
+
+## Upravljanje korisnicima i grupama
+
+Koricni imaju sopstveni `home` direktorij koji se nalazi u folderu `/home`. Izuzetak je `root` korisnik, ciji home direktorij se nalazi na lokaciji `/root`.
+
+#### Vjezba: nekoliko nacina kako pristupiti home folderu
+
+* koristiti `cd` komanu bez argumenata.
+
+```
+cd
+```
+* kao argument `cd` komandi proslijediti znak tildu tj. `~`
+
+```
+cd ~
+```
+* kao argument `cd` komandi proslijediti build in shell varijablu `$HOME`
+
+```
+cd $HOME
+```
+### `finger` komanda
+
+Komanda `finger` ispisuje informacije o korisniku. Kao argument komandi proslijedimo korisnicko ime tj `username` korisnika. U sljedecem primjeru `finger` ce prikazati informacije o korisniku `root`.
+
+```
+finger root
+```
+
+kao odgovor dobijamo sljedece informacije
+
+```
+finger root
+Login: root           			Name: root
+Directory: /root                    	Shell: /bin/bash
+On since Sun Mar 11 19:22 (UTC) on pts/2 from 77.77.218.xx
+   18 minutes 24 seconds idle
+     (messages off)
+On since Sun Mar 11 19:31 (UTC) on pts/3 from 77.77.218.xx (messages off)
+New mail received Mon Mar  5 15:40 2018 (UTC)
+     Unread since Tue Feb 27 19:15 2018 (UTC)
+No Plan.
+```
+
+Ukoliko dobijete gresku `-bash: finger: command not found` potrebno je da instalirate komandu sa na sljedeci nacin
+
+```
+apt-get update
+apt-get install finger
+```
+
+### Komanda `id`
+
+Ova komanda nam daje informacije o korisniku kao sto su
+
+* `id` broj korisnika
+* `gid` ili group id tj. broj primarne grupe kojoj korinsik pripada
+* `groups` kompletna lista grupa kojoj korisnik pripada, tj gid i naziv grupe.
 
 
 ## Rad sa fajlovima i direktorijima
@@ -222,15 +281,6 @@ whereis bash
 
 ```
 which rvm
-```
-
-
-Nekoliko nacina kako pristupiti home folderu
-
-```
-cd
-cd ~
-cd $HOME
 ```
 
 
