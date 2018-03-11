@@ -4,24 +4,24 @@ title: Mala Škola Linuxa
 permalink: /mala-skola-linuxa/
 ---
 
-## Uobicajena organizacija foldera u Linuxu
+## Uobičajena organizacija foldera u Linuxu
 
-* `/bin` - programi koje koriste i administratori i korisnici
-* `/dev` - datoteke koje predstavljaju hardverske uredjaje (mrezna, graficka)  
-* `/etc` - konfiguracijske datoteke
+* `/bin`  - programi koje koriste i administratori i korisnici
+* `/dev`  - datoteke koje predstavljaju hardverske uredjaje (mrezna, graficka)  
+* `/etc`  - konfiguracijske datoteke
 * `/home` - direktoriji korisnika
 * `/sbin` - sistemski programi
-* `/tmp` - privremene datoteke
-* `/usr` - korisnicki programi, dokumentacija i biblioteke
-* `/var` - sistemski zapisi i druge datoteke.
+* `/tmp`  - privremene datoteke
+* `/usr`  - korisnicki programi, dokumentacija i biblioteke
+* `/var`  - sistemski zapisi i druge datoteke.
 
-* Više na linku https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
+* Više na [linku](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard).
 
 ## Upravljanje korisnicima i grupama
 
-Korsnici imaju sopstveni `home` direktorij koji se nalazi u folderu `/home`. Izuzetak je `root` korisnik, ciji home direktorij se nalazi na lokaciji `/root`.
+Korsnici imaju sopstveni `home` direktorij koji se nalazi u folderu `/home`. Izuzetak je `root` korisnik, čiji home direktorij se nalazi na lokaciji `/root`.
 
-#### Vjezba: nekoliko nacina kako pristupiti home folderu
+#### Vježba: nekoliko nacina kako pristupiti home folderu
 
 * koristiti `cd` komanu bez argumenata.
 
@@ -40,13 +40,13 @@ cd $HOME
 ```
 ### `finger` komanda
 
-Komanda `finger` ispisuje informacije o korisniku. Kao argument komandi proslijedimo korisnicko ime tj `username` korisnika. U sljedecem primjeru `finger` ce prikazati informacije o korisniku `root`.
+Komanda `finger` ispisuje informacije o korisniku. Kao argument komandi proslijedimo korisničko ime tj. `username` korisnika. U sljedećem primjeru `finger` će prikazati informacije o korisniku `root`.
 
 ```
 finger root
 ```
 
-kao odgovor dobijamo sljedece informacije
+kao odgovor dobijamo sljedeće informacije
 
 ```
 finger root
@@ -61,7 +61,7 @@ New mail received Mon Mar  5 15:40 2018 (UTC)
 No Plan.
 ```
 
-Ukoliko dobijete gresku `-bash: finger: command not found` potrebno je da instalirate komandu sa na sljedeci nacin
+Ukoliko dobijete grešku `-bash: finger: command not found` potrebno je da instalirate komandu sa na sljedeći način:
 
 ```
 apt-get update
@@ -70,11 +70,11 @@ apt-get install finger
 
 ### Komanda `id`
 
-Ova komanda nam daje informacije o korisniku kao sto su
+Ova komanda nam daje informacije o korisniku kao što su
 
-* `id` broj korisnika
-* `gid` ili group id tj. broj primarne grupe kojoj korinsik pripada
-* `groups` kompletna lista grupa kojoj korisnik pripada, tj gid i naziv grupe.
+* `id`     - broj korisnika
+* `gid`    - group id tj. broj primarne grupe kojoj korinsik pripada
+* `groups` - kompletna lista grupa kojoj korisnik pripada, tj gid i naziv grupe.
 
 Kada komandi `id` argument ostavimo prazan, podrzaumijeva se da zelimo saznati informacije o trenutno logovanom korisniku, odnosno korisniki koji izvrsava komandu. Primjer:
 
@@ -90,34 +90,32 @@ id emin
 uid=1001(emin) gid=1001(emin) groups=1001(emin),27(sudo)
 ```
 
-Ako zelimo saznati samo `id` broj korinsiko koristimo parametar `-u`.
+Ako želimo saznati samo `id` broj korinsiko koristimo parametar `-u`.
 
 ```
 id -u root
 0
 ```
 
-Ako zelimo saznati broj primarne grupe nekog korisnika, koristimo parametar `-g`.
+Ako želimo saznati broj primarne grupe nekog korisnika, koristimo parametar `-g`.
 
 ```
 id -g emin
 1001
 ```
 
-Ako zelimo saznati brojeve svih grupa kojoj priapada korisnik, korisitmo parametar `-G`.
+Ako želimo saznati brojeve svih grupa kojoj priapada korisnik, korisitmo parametar `-G`.
 
 ```
 id -G emin
 1001 27
 ```
 
-
-
 ## Rad sa fajlovima i direktorijima
 
 File ili direktorij sa space Moj File se pise kao ```Moj\ file```
 
-#### Ispis sadrzaja direktorija
+#### Ispis sadržaja direktorija
 
 ```ls```  -> listanje
 
@@ -141,14 +139,14 @@ Ispisi listu fajlova i direktorija unutar trenutnog direktorija ukljucujuci i sa
 ls -al .
 ```
 
-Ispisi listu fajlova i direktorija unutar trenutnog direktorija, te sadrzaj direktorija koji se nalaze u tekucem direktoriju
+Ispisi listu fajlova i direktorija unutar trenutnog direktorija, te sadrzaj direktorija koji se nalaze u tekućem direktoriju
 
 ```
 ls -al *
 ```
 
 
-Ispisi listu fajlova i direktorija unutar trenutnog direktorija na nacin da i direktorije tretiramo kao obicne fajlove te ne ispisujemo njihov sadrzaja
+Ispisi listu fajlova i direktorija unutar trenutnog direktorija na nacin da i direktorije tretiramo kao obične fajlove te ne ispisujemo njihov sadržaja
 
 ```
 ls -ald *
@@ -181,7 +179,7 @@ touch fajl_jedan
 ```
 
 
-zapisemo nesto u fajl pomocu redirekcije
+zapišemo nesto u fajl pomocu redirekcije
 
 ```
 echo "NEKI TESTNI SADRZAJ">fajl_jedan
