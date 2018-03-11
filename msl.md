@@ -176,7 +176,7 @@ touch fajl_jedan
 ```
 
 
-zapišemo nesto u fajl pomocu redirekcije
+zapišemo nesto u fajl pomoću redirekcije
 
 ```
 echo "NEKI TESTNI SADRZAJ">fajl_jedan
@@ -189,19 +189,19 @@ provjerimo da li je zapisano u fajl
 cat fajl_jedan
 ```
 
-napravimo simbolicki link na novi fajl
+napravimo simbolički link na novi fajl
 
 ```
 ln -s fajl_jedan fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
 ```
 
-ispisemo sadrzaj drugog fajla koji je simbolicki link
+ispišemo sadrzaj drugog fajla koji je simbolički link
 
 ```
 cat fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
 ```
 
-mozemo primjetiti da je sadrzaj oba fajla isti
+možemo primjetiti da je sadržaj oba fajla isti
 
 provjerimo inodove oba fajla
 
@@ -210,10 +210,10 @@ ls -i fajl_jedan
 ls -i fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
 ```
 
-mozemo promjetiti da su inode brojevi razliciti sto znaci da su razliciti fajlove te ako jedan izbrisemo to znaci da drugi fajl nece biti izbrisan
+možemo promjetiti da su inode brojevi razliciti sto znaci da su razliciti fajlove te ako jedan izbrisemo to znaci da drugi fajl nece biti izbrisan
 
 
-Vjezba: izbrisati prvi fajl. Da li je drugi fajl koji je simbolicki link izbrisan? Da li mozemo pomocu cat komande izlistati sadrzaj drugog fajla?
+#### Vjezba: izbrisati prvi fajl. Da li je drugi fajl koji je simbolicki link izbrisan? Da li mozemo pomocu cat komande izlistati sadrzaj drugog fajla?
 
 
 
@@ -239,10 +239,13 @@ ls -i fajl_prvi
 6257560 fajl_prvi
 ```
 
+inode broj fajla je broj `6257560`
 ```
 ls -i fajl_drugi
 6257560 fajl_drugi
 ```
+
+inode broj drugog fajla je takodjer `6257560`
 
 
 inode brojevi su isti sto znaci da su oba fajla linkaju na istu lokaciju na disku
