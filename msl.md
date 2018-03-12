@@ -470,6 +470,14 @@ ps aux --sort pcpu
 
 ### Slanje procesa i background
 
+Ispisivanje svih procesa:
+
+```
+ps
+```
+-e --> ispis svih procesa u sistemu
+-f-->  ispis dodatnih podataka o procesima
+
 
 nakon komande dodamo znak &
 
