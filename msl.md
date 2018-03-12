@@ -1,26 +1,123 @@
 ---
 layout: page
-title: Mala Škola Linuxa
+title: Mala Škola Linux-a
 permalink: /mala-skola-linuxa/
 ---
 
-##Uobicajena organizacija foldera u Linuxu
+Verzija dokumenta 0.0.1
 
-/bin - programi koje koriste i administratori i korisnici
-/dev - datoteke koje predstavljaju hardverske uredjaje (mrezna, graficka)  
-/etc - konfiguracijske datoteke
-/home - direktoriji korisnika
-/sbin - sistemski programi
-/tmp - privremene datoteke
-/usr - korisnicki programi, dokumentacija i biblioteke
-/var - sistemski zapisi i druge datoteke.
+## Uobičajena organizacija foldera u Linuxu
 
+* `/bin`  - programi koje koriste i administratori i korisnici
+* `/dev`  - datoteke koje predstavljaju hardverske uredjaje (mrezna, graficka)  
+* `/etc`  - konfiguracijske datoteke
+* `/home` - direktoriji korisnika
+* `/sbin` - sistemski programi
+* `/tmp`  - privremene datoteke
+* `/usr`  - korisnicki programi, dokumentacija i biblioteke
+* `/var`  - sistemski zapisi i druge datoteke.
+
+* Više na [linku](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard).
+
+## Upravljanje korisnicima i grupama
+
+Korsnici imaju sopstveni `home` direktorij koji se nalazi u folderu `/home`. Izuzetak je `root` korisnik, čiji home direktorij se nalazi na lokaciji `/root`.
+
+#### Vježba: nekoliko načina kako pristupiti home folderu
+
+* koristiti `cd` komanu bez argumenata.
+
+```
+cd
+```
+* kao argument `cd` komandi proslijediti znak tildu tj. `~`.
+
+```
+cd ~
+```
+* kao argument `cd` komandi proslijediti build in shell varijablu `$HOME`
+
+```
+cd $HOME
+```
+### Komanda `finger`
+
+Komanda `finger` ispisuje informacije o korisniku. Kao argument komandi proslijedimo korisničko ime tj. `username` korisnika. U sljedećem primjeru `finger` će prikazati informacije o korisniku `root`.
+
+```
+finger root
+```
+
+kao odgovor dobijamo sljedeće informacije
+
+```
+finger root
+Login: root           			Name: root
+Directory: /root                    	Shell: /bin/bash
+On since Sun Mar 11 19:22 (UTC) on pts/2 from 77.77.218.xx
+   18 minutes 24 seconds idle
+     (messages off)
+On since Sun Mar 11 19:31 (UTC) on pts/3 from 77.77.218.xx (messages off)
+New mail received Mon Mar  5 15:40 2018 (UTC)
+     Unread since Tue Feb 27 19:15 2018 (UTC)
+No Plan.
+```
+
+Ukoliko dobijete grešku `-bash: finger: command not found` potrebno je da instalirate komandu sa na sljedeći način:
+
+```
+apt-get update
+apt-get install finger
+```
+
+### Komanda `id`
+
+Ova komanda nam daje informacije o korisniku kao što su
+
+* `id`     - broj korisnika
+* `gid`    - group id tj. broj primarne grupe kojoj korinsik pripada
+* `groups` - kompletna lista grupa kojoj korisnik pripada, tj gid i naziv grupe.
+
+Kada komandi `id` argument ostavimo prazan, podrzaumijeva se da zelimo saznati informacije o trenutno logovanom korisniku, odnosno korisniki koji izvrsava komandu. Primjer:
+
+```
+id
+uid=0(root) gid=0(root) groups=0(root)
+```
+
+Kada kao argument komandi `id` proslijedimo `username` dobijemo info o tom korinsiku.
+
+```
+id emin
+uid=1001(emin) gid=1001(emin) groups=1001(emin),27(sudo)
+```
+
+Ako želimo saznati samo `id` broj korinsiko koristimo parametar `-u`.
+
+```
+id -u root
+0
+```
+
+Ako želimo saznati broj primarne grupe nekog korisnika, koristimo parametar `-g`.
+
+```
+id -g emin
+1001
+```
+
+Ako želimo saznati brojeve svih grupa kojoj priapada korisnik, korisitmo parametar `-G`.
+
+```
+id -G emin
+1001 27
+```
 
 ## Rad sa fajlovima i direktorijima
 
 File ili direktorij sa space Moj File se pise kao ```Moj\ file```
 
-#### Ispis sadrzaja direktorija
+#### Ispis sadržaja direktorija
 
 ```ls```  -> listanje
 
@@ -44,14 +141,14 @@ Ispisi listu fajlova i direktorija unutar trenutnog direktorija ukljucujuci i sa
 ls -al .
 ```
 
-Ispisi listu fajlova i direktorija unutar trenutnog direktorija, te sadrzaj direktorija koji se nalaze u tekucem direktoriju
+Ispisi listu fajlova i direktorija unutar trenutnog direktorija, te sadrzaj direktorija koji se nalaze u tekućem direktoriju
 
 ```
 ls -al *
 ```
 
 
-Ispisi listu fajlova i direktorija unutar trenutnog direktorija na nacin da i direktorije tretiramo kao obicne fajlove te ne ispisujemo njihov sadrzaja
+Ispisi listu fajlova i direktorija unutar trenutnog direktorija na nacin da i direktorije tretiramo kao obične fajlove te ne ispisujemo njihov sadržaja
 
 ```
 ls -ald *
@@ -72,9 +169,6 @@ ls -i ime_fajla
 ```
 
 
-*****************
-*****************
-
 ### Kreiranje simboličkih linkova
 
 prvo napravimo fajl
@@ -84,7 +178,7 @@ touch fajl_jedan
 ```
 
 
-zapisemo nesto u fajl pomocu redirekcije
+zapišemo nesto u fajl pomoću redirekcije
 
 ```
 echo "NEKI TESTNI SADRZAJ">fajl_jedan
@@ -97,19 +191,19 @@ provjerimo da li je zapisano u fajl
 cat fajl_jedan
 ```
 
-napravimo simbolicki link na novi fajl
+napravimo simbolički link na novi fajl
 
 ```
 ln -s fajl_jedan fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
 ```
 
-ispisemo sadrzaj drugog fajla koji je simbolicki link
+ispišemo sadrzaj drugog fajla koji je simbolički link
 
 ```
 cat fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
 ```
 
-mozemo primjetiti da je sadrzaj oba fajla isti
+možemo primjetiti da je sadržaj oba fajla isti
 
 provjerimo inodove oba fajla
 
@@ -118,10 +212,10 @@ ls -i fajl_jedan
 ls -i fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
 ```
 
-mozemo promjetiti da su inode brojevi razliciti sto znaci da su razliciti fajlove te ako jedan izbrisemo to znaci da drugi fajl nece biti izbrisan
+možemo promjetiti da su inode brojevi razliciti sto znaci da su razliciti fajlove te ako jedan izbrisemo to znaci da drugi fajl nece biti izbrisan
 
 
-Vjezba: izbrisati prvi fajl. Da li je drugi fajl koji je simbolicki link izbrisan? Da li mozemo pomocu cat komande izlistati sadrzaj drugog fajla?
+#### Vjezba: izbrisati prvi fajl. Da li je drugi fajl koji je simbolicki link izbrisan? Da li mozemo pomocu cat komande izlistati sadrzaj drugog fajla?
 
 
 
@@ -147,10 +241,13 @@ ls -i fajl_prvi
 6257560 fajl_prvi
 ```
 
+inode broj fajla je broj `6257560`
 ```
 ls -i fajl_drugi
 6257560 fajl_drugi
 ```
+
+inode broj drugog fajla je takodjer `6257560`
 
 
 inode brojevi su isti sto znaci da su oba fajla linkaju na istu lokaciju na disku
@@ -222,15 +319,6 @@ whereis bash
 
 ```
 which rvm
-```
-
-
-Nekoliko nacina kako pristupiti home folderu
-
-```
-cd
-cd ~
-cd $HOME
 ```
 
 
@@ -384,7 +472,7 @@ Cat - Concatenate(stick two or more things together) and print files
 
 ```tail dugiTekst.txt``` -> zadnjih 10 linija
 
-# Ispisi zadnjih 5 linija pomocu tail komande
+# Ispiši zadnjih 5 linija pomoću tail komande
 
 ```
 tail -n 5 dugiTekst.txt
@@ -395,10 +483,7 @@ cat dugiText | cat -n | tail -n 5
 ```
  -> kombinacija
 
-```
-less dugiText
-```
- -> izlistavanje
+```less dugiText``` -> izlistavanje
 
 ### Grep - Search files for text that matches a given pattern
 
@@ -428,7 +513,7 @@ less dugiText
 ```adduser username admin```
 
 
-*******************
+
 <<<<<<< HEAD
 Archive komande
 
@@ -456,13 +541,13 @@ ps -aux
 ps -f -u sshd
 ```
 
-# sortirajprocese po potrosnji memorije
+# sortiraj procese po potrošnji memorije
 
 ```
 ps aux --sort pmem
 ```
 
-# sortoranje  procesa po CPU potrosnji
+# sortoranje procesa po CPU potrošnji
 
 ```
 ps aux --sort pcpu
