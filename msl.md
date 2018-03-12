@@ -88,8 +88,8 @@ uid=0(root) gid=0(root) groups=0(root)
 Kada kao argument komandi `id` proslijedimo `username` dobijemo info o tom korinsiku.
 
 ```
-id emin
-uid=1001(emin) gid=1001(emin) groups=1001(emin),27(sudo)
+id korisnik
+uid=1001(korisnik) gid=1001(korisnik) groups=1001(korisnik),27(sudo)
 ```
 
 Ako želimo saznati samo `id` broj korinsiko koristimo parametar `-u`.
@@ -102,14 +102,14 @@ id -u root
 Ako želimo saznati broj primarne grupe nekog korisnika, koristimo parametar `-g`.
 
 ```
-id -g emin
+id -g korisnik
 1001
 ```
 
 Ako želimo saznati brojeve svih grupa kojoj priapada korisnik, korisitmo parametar `-G`.
 
 ```
-id -G emin
+id -G korisnik
 1001 27
 ```
 
@@ -456,7 +456,7 @@ Read = 4, Write = 2, Execute =1
 
 ```sudo chown root test.sh``` -> prebacujem prava filea na root
 
-```sudo chown korinik test.sh``` -> prebacujem prava filea na usera emin
+```sudo chown korinik test.sh``` -> prebacujem prava filea na usera korinik
 
 
 Using pipes:
