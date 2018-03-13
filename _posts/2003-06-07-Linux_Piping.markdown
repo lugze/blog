@@ -5,8 +5,6 @@ date:   2003-06-07 17:55:20 +0100
 categories: blog
 ---
 
-# Linux Piping
-
 * Nedim Hadzimahmutovic - grungy@linux.org.ba
 * 07.06.2003.- 19.02.2006 v0.8
 
@@ -16,7 +14,7 @@ Mogucnost korištenja pipinga je jedna od moci Unixoidnih sistema. Korištenje o
 ## Rad sa pipingom
 ### I/O redirekcija
 
-Napravite tekst datoteku koja ce sadrzati mnogo linija teksta sacinjenih od rijeci TUX, a zatim jednu recenicu koja ce sadrzati rijec TUX i rijec Linux. Zatim ukucajte sljedece " grep TUX moja_datoteka.txt ". Rezultat ovog zadataka ce kao i obicno biti izlistan na ekranu, a sacinjavat ce pretragu za recenicama koje sadrze rijec TUX. Medutim, ako ukucamo " grep TUX moja_datoteka.txt > tux_recenice.txt ". Rezultat mozete vidjeti u datoteci tux_recenice.txt . Vidimo da je rezultat komande grep redirektiran i zapisan u datoteku tux_recenice.txt . Dio komande " > tux_recenice.txt " kaze shellu da napravi novu datoteku pod nazivom tux_recenice.txt i u nju zapise rezultat komande grep , umjesto da sve izlista na ekran. Ako vec postoji datoteka sa istim imenom onda ce rezultat komande grep biti zapisan preko sadrzaja te datoteke. Kao sto smo primjetili redirekciju izvrsavamo pomocu znaka > , koji se jos i zove Output redirektor .
+Napravite tekst datoteku koja ce sadrzati mnogo linija teksta sacinjenih od rijeci TUX, a zatim jednu recenicu koja ce sadrzati rijec TUX i rijec Linux. Zatim ukucajte sljedece " grep TUX moja_datoteka.txt ". Rezultat ovog zadataka ce kao i obicno biti izlistan na ekranu, a sacinjavat ce pretragu za recenicama koje sadrze rijec TUX. Medutim, ako ukucamo `grep TUX moja_datoteka.txt > tux_recenice.txt`. Rezultat mozete vidjeti u datoteci tux_recenice.txt . Vidimo da je rezultat komande grep redirektiran i zapisan u datoteku tux_recenice.txt . Dio komande " > tux_recenice.txt " kaze shellu da napravi novu datoteku pod nazivom tux_recenice.txt i u nju zapise rezultat komande grep , umjesto da sve izlista na ekran. Ako vec postoji datoteka sa istim imenom onda ce rezultat komande grep biti zapisan preko sadrzaja te datoteke. Kao sto smo primjetili redirekciju izvrsavamo pomocu znaka > , koji se jos i zove Output redirektor .
 
 Medutim, ako umjesto znaka > stavimo znak >>, sadrzaj vec postojece datoteke ce ostati isti, a rezultat ce biti dodan na zadnju liniju teksta. Pomocu ' echo' komande, koja ce neki tekst jednostavno izlistati na ekran, mozemo dodavati tekst u neku datoteku, npr.
 echo "pingvin" >> tux_recenice.txt
