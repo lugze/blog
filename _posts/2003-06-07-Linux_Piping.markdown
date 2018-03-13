@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Linux Piping"
+date:   2003-06-07 17:55:20 +0100
+categories: blog
+---
+
 # Linux Piping
 
 * Nedim Hadzimahmutovic - grungy@linux.org.ba
