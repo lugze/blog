@@ -487,6 +487,10 @@ cat dugiText | cat -n | tail -n 5
 
 ### Grep - Search files for text that matches a given pattern
 
+```
+grep "text" file.txt
+```
+
 
 
 ```.``` -> Current folder
@@ -576,4 +580,16 @@ vratimo komandu u foreground
 
 ```
 fg
+```
+
+Stopiranje background procesa:
+Nakon izlistavanja procesa
+```
+jobs
+[1]+  Running    Komanda koju smo poslali u background
+```
+Ukucavamo
+
+```
+kill 1 --> broj procesa
 ```
