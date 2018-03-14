@@ -586,7 +586,7 @@ Stopiranje background procesa:
 Nakon izlistavanja procesa
 ```
 jobs
-[1]+  Running    Komanda koju smo poslali u background
+[1]+  Running   "Komanda koju smo poslali u background"
 ```
 Ukucavamo
 
