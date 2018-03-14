@@ -593,3 +593,54 @@ Ukucavamo
 ```
 kill 1 --> broj procesa
 ```
+
+
+###Koristenje jerkyll-a (Transform your plain text into static websites)
+
+1. Logovanje na server
+2. Dodavanje novog korisnika
+```
+adduser korisnik
+```
+
+3. Logovanje kao korisnik
+```
+su korisnik -l
+```
+
+
+4. Instalacija programskog jezika (u ovom slucaju rvm i ruby 2.5)
+5. 
+```
+gem update
+i
+gem update —system
+```
+
+
+6. Kao korisnik generisati novi kljuc
+```
+ssh-keygen -t rsa
+```
+
+7. generisani kljuc za korisnika dodati na github repo gdje je forkovan lugze blog
+8. Instaliranje bundle-a
+```
+apt-get install bundle
+```
+
+9. Ponoviti postupak kloniranja datog repo-a i instalacije jekyll-a
+
+```
+git clone naziv git repoa
+```
+instalacije jekyll-a
+```
+gem install jekyll bundler
+```
+
+10. Pokretanje jekyll serve u backgroundu
+
+```
+bundle exec jekyll serve &
+```
