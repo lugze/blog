@@ -644,3 +644,28 @@ gem install jekyll bundler
 ```
 bundle exec jekyll serve &
 ```
+
+###Pronalazenje public ip adrese i komande ping/traceroute
+
+`ping ime servera` - mjerenje odaziva nekog servera. Ovom komandom, pored drugih podataka, saznajemo public ip servera
+
+`traceroute ime servera` - izlistavanje svih routea, servera koji se nalaze u hijerarhiji nekog servera
+
+IP adresa - adresa servera
+
+`0.0.0.0` - Ukoliko server ima 10 ip adresa, ovakvim navodom server ce slusati svih 10 tj. sve adrese
+`127.0.0.1` - IP adresa lokalnog racunara (nije routabilna)
+
+Pronalazenje public ip adrese nekog servera:
+
+1. Ukoliko zelimo saznati ip adresu remote servera na kojem se nalazimo
+```
+ifconfig - ukoliko smo root
+```
+ili
+```
+/sbin/ifconfig - ukoliko smo korisnik
+```
+
+Nakon ukucanie komande trazimo adresu a `inet` prefiksom sto je ujedno i public ip adresa servera
+
