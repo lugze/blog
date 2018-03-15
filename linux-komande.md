@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Mala Škola Linux-a
-permalink: /mala-skola-linuxa/
+title: Linux komande
+permalink: /linux-komande/
 ---
 
 
