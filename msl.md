@@ -688,7 +688,7 @@ root
 
  ````
  echo $PATH
- ```
+ ````
 
  ili filtriramo samo za `/sbin` gdje se nalazi ifconfig
 
