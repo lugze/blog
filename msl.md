@@ -669,3 +669,12 @@ ili
 
 Nakon ukucanie komande trazimo adresu a `inet` prefiksom sto je ujedno i public ip adresa servera
 
+### Kako prepoznavati privatne ip adrese
+
+Private IPv4 address spaces
+
+RFC1918 name | IP address range | number of addresses
+-------------  ----------------   --------------------
+24-bit block | 10.0.0.0-10.255.255.255 | 16,777,216
+20-bit block | 172.16.0.0-172.31.255.255	|	1,048,576
+16-bit block | 192.168.0.0 – 192.168.255.255	| 65,536
