@@ -5,7 +5,7 @@ permalink: /mala-skola-linuxa/
 ---
 
 
-A
+#### A
 
 ```adduser``` - Kreiranje korisnickih naloga.
 
@@ -38,7 +38,7 @@ superuser, prikazuju se svi zakazani poslovi.
 ```atrm``` - Brisanje zakazanih at poslova
 
 
-B
+#### B
 
 ```badblocks``` - Administrativna komanda za analizu površine diskova
 
@@ -66,7 +66,7 @@ dekompresiju (bzip2, bunzip2), pregledanje sadržaja (bzcat, bzless,
 bzmore) i oporavak (bzip2recover).
 
 
-C
+#### C
 
 ```cal``` - Prikazuje kalendar za tekuci mjesec. Takodje može prikazati godišnji ili
 mesecni kalendar za godinu i mjesec koji se navode kao parametri.
@@ -125,7 +125,7 @@ specificiranim intervalima. Zavisno od konkretnog UNIX sistema
 izvrsenje mogu zakazati svi ili samo privilegovani korisnici.
 
 
-D
+#### D
 
 
 ```date``` - Prikazuje trenutni datum i vreme.
@@ -158,7 +158,7 @@ poddirektorijumima tekueg direktorijuma.
 ```dumpe2fs``` - Administrativna komanda koja na standardnom izlazu prikazuje
 infomacije iz superbloka sistema datoteka
 
-E
+#### E
 
 ```e2fsck``` - Administrativna komanda za proveru integriteta ext2 i ext3 sistema
 datoteka.
@@ -182,7 +182,7 @@ datoteka.
 
 ```expr``` - Obavlja jednostavne aritmetike operacije.
 
-F
+#### F
 
 ```fdformat``` - Formatiranje disketa niskog nivoa.
 
@@ -209,7 +209,7 @@ prostora.
 
 ```ftpd``` - FTP server.
 
-G
+#### G
 
 ```gpm``` - Server za miša koji obezbeuje cut-and-paste funkcionalnost na Linux
 konzoli.
@@ -240,7 +240,7 @@ vremenu potrebnom za izvršavanje datoteke.
 ```gzip``` - Kompesija datoteka u .gz format.
 
 
-H
+#### H
 
 ```halt``` - Administrativna komanda za zaustavljanje sistema. Ukoliko se sistem
 nalazi u nivoima izvršenja 0 ili 6 halt zaustavlja sve procese, a inace
@@ -262,7 +262,7 @@ novo ime racunaru.
 hardverski sat sistema.
 
 
-I
+#### I
 
 ```id``` - Prikazivanje informacija o korisnicima, ukljucujuci i clanstvo u grupama.
 
@@ -285,7 +285,7 @@ nivoa izvršenja.
 
 ```iptables``` - Administrativna komanda za konfigurisanje firewalla u Linux kernelu 2.4
 
-K
+#### K
 
 ```kernelversion``` - Prikazuje verziju tekueg kernela.
 
@@ -294,7 +294,7 @@ K
 ```killall``` - Ubija procese nastale pokretanjem odreenog programa (kao argument se
 navodi ime programa).
 
-L
+#### L
 
 ```last``` - Prikazuje nekoliko poslednjih login procedura, odnosno imena korisnika,
 terminal, ime udaljenog raunara i vreme prijavljivanja na sistem.
@@ -349,7 +349,7 @@ sisteme datoteka.
 
 
 
-M
+#### M
 
 ```mail``` - Prikazivanje, itanje i slanje pošte drugim korisnicima sistema.
 
@@ -412,7 +412,7 @@ montiranje NFS sistema datoteka.
 ```mv``` - Pomeranje datoteke, grupe datoteka ili direktorijuma sa jedne lokacije na
 drugu. Promjena imena datoteka.
 
-N
+#### N
 
 ```named``` - Server imena (DNS).
 
@@ -442,7 +442,7 @@ nastavlja nakon odjavljivanja korisnika sa sistema.
 ```nsupdate``` - Administrativna komanda za podnošenje zahteva za dinamicko ažuriranje
 servera imena.
 
-P
+#### P
 
 ```passwd``` - Promjena lozinke korisnika.
 
@@ -465,7 +465,7 @@ u datoteci /etc/passwd zamenjuju se znakom x.
 
 ```pwd``` Štampa na standardnom izlazu putanju tekuceg direktorijuma.
 
-Q
+#### Q
 
 ```quota``` - Prikazuje zauzee diska od strane odredjenog korisnika ili grupe i
 ogranicenja u sistemu datoteka.
@@ -481,7 +481,7 @@ kreira odgovarajue datoteke quota.user i quota.group.
 
 ```quotaoff``` - Deaktiviranje kvote.
 
-R
+#### R
 
 ```rcp``` - Kopiranje datoteka izmedju udaljenih racunara.
 
@@ -521,7 +521,7 @@ održava routed).
 
 ```run-parts``` - Pokrece skriptove u direktorijumu po abecednom redu.
 
-S
+#### S
 
 ```sed``` - Stream editor modifikacija sadržaja datoteka bez interakcije korisnika.
 
@@ -565,7 +565,7 @@ verifikaciju transfera datoteka.
 ```sysklogd``` - Daemon koji poruke operativnog sistema upisuje u odgovarajue log
 datoteke.
 
-T
+#### T
 
 ```tac``` - Štampa sadržaj datoteke na standardnom izlazu pocev od posljednje linije
 ka prvoj.
@@ -603,7 +603,7 @@ datoteka.
 
 ```tunelp``` - Administrativna komanda za podešavanje parametara štampaca.
 
-U
+#### U
 
 ```umount``` - Administrativna komanda za deaktiviranje sistema datoteka.
 
@@ -623,7 +623,7 @@ prijavljenih korisnika i prosjecno opterecenje sistema.
 
 ```usermod``` - Modifikacija parametara korisnikog naloga.
 
-V
+#### V
 
 ```vdir``` Ekvivalentna komandi ls -lb.
 
@@ -634,7 +634,7 @@ V
 ```vmstat``` - Prikazuje statisticki izveštaj o memoriji, swap prostoru, iskorišenosti
 procesora i procesima.
 
-W
+#### W
 
 ```w``` - Prikazuje koji su korisnici prijavljeni na sistem i "šta trenutno rade".
 
@@ -658,12 +658,12 @@ dokumentacije programa.
 
 ```write``` - Slanje poruka odredjenom korisniku.
 
-X
+#### X
 
 ```xinetd``` TCP/IP wrapper (extended Internet services daemon). Na nekim sistemima
 se koristi umjesto inetd wrappera.
 
-Y
+#### Y
 
 ```ypbind``` - NFS/NIS komanda. Proces kojim se klijentu dodeljuje NIS server.
 
@@ -698,7 +698,7 @@ master servera.
 
 ```ypset``` - Zahtev da sistem bude server procesu ypbin na klijent racunaru.
 
-Z
+#### Z
 
 ```zcat``` - Komanda cat za .Z i .gz datoteke.
 
