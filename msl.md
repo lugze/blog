@@ -653,7 +653,7 @@ bundle exec jekyll serve &
 
 IP adresa - adresa servera
 
-`0.0.0.0` - Ukoliko server ima 10 ip adresa, ovakvim navodom server ce slusati svih 10 tj. sve adrese
+`0.0.0.0` - Obicno oznacava da host nije konfigurisan sa IP adrwsom (Ukoliko server ima 10 ip adresa, ovakvim navodom server ce slusati svih 10 tj. sve adrese)
 `127.0.0.1` - IP adresa lokalnog racunara (nije routabilna)
 
 Pronalazenje public ip adrese nekog servera:
@@ -676,8 +676,8 @@ Private IPv4 address spaces
 RFC1918 name | IP address range | number of addresses
 -------------  ----------------   --------------------
 24-bit block | 10.0.0.0-10.255.255.255 | 16,777,216
-20-bit block | 172.16.0.0-172.31.255.255	|	1,048,576
-16-bit block | 192.168.0.0 – 192.168.255.255	| 65,536
+20-bit block | 172.16.0.0-172.31.255.255 | 1,048,576
+16-bit block | 192.168.0.0 – 192.168.255.255 | 65,536
 
 Izlistavanje server interfejska komandom:
 
@@ -688,3 +688,23 @@ ifconfig
 inet denotes IPv4 traffic
 
 inet6 denotes IPv6 traffic
+
+
+###Predictable network interface device nameS
+
+
+U zavisnost od tipa interfejsa imena imaju prefikse:
+
+1. en for Ethernet,
+2. wl for wireless LAN (WLAN),
+3. for wireless wide area network (WWAN)
+
+
+Imena imaju tipove:
+
+o<index>
+
+s<slot>[f<function>][d<dev_id>]
+x<MAC>
+[P<domain>]p<bus>s<slot>[f<function>][d<dev_id>]
+[P<domain>]p<bus>s<slot>[f<function>][u<port>][..][c<config>][i<interface>]
