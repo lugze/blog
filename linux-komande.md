@@ -117,3 +117,117 @@ koje tada treba izvršiti.
 specificiranim intervalima. Zavisno od konkretnog UNIX sistema
 izvrsenje mogu zakazati svi ili samo privilegovani korisnici.
 
+
+D
+
+
+```date``` - Prikazuje trenutni datum i vreme.
+
+```dd``` - Konvertuje i kopira datoteku ili odreeni deo medijuma. Prilikom pristupa
+medijumu može zaobii sistem datoteka, ime je omogueno kopiranje
+medijuma koji nisu ni u jednom od formata koje UNIX prepoznaje.
+
+```debugfs``` - Administrativna komanda kojom se ostvaruje pristup zaglavlju i meta-data
+strukturama ext2 sistema datoteka.
+
+```depmod``` - Kreira datoteku u kojoj je opisana meusobna zavisnost programskih
+modula.
+
+```df``` - Prikazuje iskorišenost aktiviranih sistema datoteka.
+
+```diff``` - Uporeuje datoteke i prikazuje sve razlike na standardnom izlazu.
+
+```dig``` - Komanda za slanje upita DNS serverima, fleksibilnija od nslookup
+komande.
+
+```dpkg``` - Debian Package Management System - rad sa paketima iz komandne
+linije.
+
+```dselect``` - Debian Package Management System - okruženje sa menijima.
+
+```du``` - Prikazuje koliinu prostora na sistemu datoteka koju zauzimaju datoteke u
+poddirektorijumima tekueg direktorijuma.
+
+```dumpe2fs``` - Administrativna komanda koja na standardnom izlazu prikazuje
+infomacije iz superbloka sistema datoteka
+
+E
+
+```e2fsck``` - Administrativna komanda za proveru integriteta ext2 i ext3 sistema
+datoteka.
+
+```e2image``` - Administrativna komanda za kreiranje slike (image) znaajnijih delova
+sistema datoteka (kao što je superblok) na izmenljivom medijumu
+(disketi).
+
+```e2label``` - Administrativna komanda za prikazivanje i promenu imena sistema
+datoteka.
+
+```echo``` - Prikazuje niz karaktera ili vrednost promenljive na standardnom izlazu.
+
+```edquota``` - Editor kvota.
+
+```egrep``` - Traži regularne izraze u datoteci.
+
+```emacs``` - Emacs tekst editor.
+
+```env``` - Prikazuje vrednosti promenljivih koje ine okruženje.
+
+```expr``` - Obavlja jednostavne aritmetike operacije.
+
+F
+
+```fdformat``` - Formatiranje disketa niskog nivoa.
+
+```fdisk``` - Administrativni program za particionisanje hard diskova.
+
+```fgconsole``` - Prikazuje broj trenutno aktivne virtuelne konzole (na primer 2, ukoliko
+korisnik radi na /dev/tty2).
+
+```fgrep``` - Traži niz karaktera u datoteci.
+
+```find``` - Traži datoteku na osnovu zadatih kriterijuma u aktivnom UNIX stablu.
+
+```finger``` - Prikazuje informacije o korisnicima, ukljuujui i informacije iz datoteka
+.plan i .project u home direktorijumu korisnika.
+
+```fingerd``` - Server za informacije o korisnicima.
+
+```free``` - Prikazuje informacije o iskorišenosti operativne memorije i swap
+prostora.
+
+```fsck``` - Administrativna komanda za proveru integriteta sistema datoteka.
+
+```ftp``` - Interaktivni program za transfer datoteka izmeu dva udaljena sistema.
+
+```ftpd``` - FTP server.
+
+G
+
+```gpm``` - Server za miša koji obezbeuje cut-and-paste funkcionalnost na Linux
+konzoli.
+
+```grep``` - Traži osnovne regularne izraze u datoteci.
+
+```groupadd``` - Administrativna komanda za kreiranje nove korisnike grupe.
+
+```groupdel``` - Administrativna komanda za brisanje postojee korisnike grupe
+
+```groupmod``` - Administrativna komanda za modifikovanje parametara grupe.
+
+```groups``` - Prikazuje grupe kojima navedeni korisnik pripada.
+
+```grpck``` - Administrativna komanda koja uklanja duplikate iz datoteke /etc/group.
+
+```grpconv``` - Administrativna komanda za kreiranje /etc/gshadow datoteke, u koju se
+smeštaju sve grupne lozinke.
+
+```grpunconv``` - Administrativna komanda kojom se uklanja /etc/gshadow datoteka.
+
+```gunzip``` - Dekompresija .gz datoteka.
+
+```gzexe``` - Kreiranje samoraspakujue izvršne gzip datoteke. Nakon pokretanja takva
+datoteka e se sama dekompresovati. Ovde se štedi na prostoru, ali gubi na
+vremenu potrebnom za izvršavanje datoteke.
+
+```gzip``` - Kompesija datoteka u .gz format.
