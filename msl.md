@@ -610,7 +610,7 @@ su korisnik -l
 
 
 4. Instalacija programskog jezika (u ovom slucaju rvm i ruby 2.5)
-5. 
+5.
 ```
 gem update
 i
@@ -656,18 +656,104 @@ IP adresa - adresa servera
 `0.0.0.0` - Obicno oznacava da host nije konfigurisan sa IP adrwsom (Ukoliko server ima 10 ip adresa, ovakvim navodom server ce slusati svih 10 tj. sve adrese)
 `127.0.0.1` - IP adresa lokalnog racunara (nije routabilna)
 
-Pronalazenje public ip adrese nekog servera:
+#### Pronalazenje javne ili privatne IP adrese nekog servera:
 
-1. Ukoliko zelimo saznati ip adresu remote servera na kojem se nalazimo
+* 1. Ukoliko zelimo saznati ip adresu remote servera na kojem se nalazimo
+
 ```
 ifconfig - ukoliko smo root
 ```
+
 ili
+
 ```
 /sbin/ifconfig - ukoliko smo korisnik
 ```
 
 Nakon ukucanie komande trazimo adresu a `inet` prefiksom sto je ujedno i public ip adresa servera
+
+##### Zasto kao obicni korisnik moramo kucati punu putanju do `ifconfig` komande?
+
+Komanda ifconfig se nalazi u direktoriju `/sbin` stoga moramo provjeriti da li se taj direktorij nalazi u `$PATH` shell varijabli. Korisniku su dostupni programi tj. komande koji se nalaze u pitanjama foldera koji su izlistani u `$PATH` shell varijabli.
+
+
+ Kada smo logovani kao root korisnik to mozemo testirati na sljedeci nacin.
+
+ ````
+ whoami
+root
+ ````
+
+ Izlistamo foldere iz `$PATH` varijable
+
+ ````
+ echo $PATH
+ ```
+
+ ili filtriramo samo za `/sbin` gdje se nalazi ifconfig
+
+ ````
+ echo $PATH | grep '/sbin'
+ /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ ````
+
+ kao sto vidimo dobili smo trazeni `/sbin` sto znaci da root moze direktno pozivati programe koji se nalaze u `/sbin` direktoriju.
+
+ Sada je potrebno isto da uradimo za obicnog/neprivilegovanog korisnika kako bi provjerili zasto taj isti korisnik nema po defaultu pristup komandama iz `/sbin` direktorija.
+
+ * logujemo se kao neprivilegovano korisnik
+
+ ````
+ eu emin -l
+ ````
+
+ * provjerimo da li je login bio uspjesan
+
+ ````
+ whoami
+emin
+````
+
+* zatim provjerimo sadrzaj `$PATH` varijable
+
+````
+echo $PATH
+````
+
+* ili filtriramo za `/sbin` direkotorijem sto je cilj ove vjezbe
+
+````
+echo $PATH | grep '/sbin'
+````
+
+dobijamo prazan odgovor sto znaci da se `/sbin` ne nalazi u `$PATH` varijabli. To je razlog zasto po defaultu ne mozemo koristiti komandu `ifconfig` i dobijamo gresku `ifconfig: command not found`.
+
+* Ovo mozemo rijesiti tako sto za trenutnog korisnika dodamo `/sbin` putanju u `$PATH` varijablu. Potrenno je uraditi sljedece
+
+````
+PATH=$PATH:/sbin
+````
+
+Sada mozemo koristiti `ifconfig` komandu a da ne unosimo punu putanju do komande.
+
+````
+whoami
+emin
+````
+
+````
+fconfig lo
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 2563  bytes 299115 (292.1 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2563  bytes 299115 (292.1 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+````
+
+* Napomena: na ovaj nacin smo samo trenutno izmijenili vrijednost `$PATH` varijable, nakon sto se korisnik odjavi tj. uradi logout vrijednost `$PATH` varijable ce biti vracena na prvobitno postavke tj. bice resetovana.
 
 ### Kako prepoznavati privatne ip adrese
 
