@@ -1,71 +1,119 @@
-###A
+A
 
 ```adduser``` - Kreiranje korisnikih naloga.
 
-anacron - Administrativna komanda koja se normalno pokree pri podizanju sistema
+```anacron``` - Administrativna komanda koja se normalno pokree pri podizanju sistema
 i periodino izvršava komande. Lista poslova se podrazumevano ita iz
 datoteke /etc/anacrontab.
 
-apropos - Na standardnom izlazu prikazuje ime i opis svih komandi koje u opisu
+```apropos``` - Na standardnom izlazu prikazuje ime i opis svih komandi koje u opisu
 imaju zadati string.
 
-apt-get Debian Package Management System - alat za rad sa paketima iz
+```apt-get``` - Debian Package Management System - alat za rad sa paketima iz
 komandne linije. Front-end za APT.
 
-aptitude - Debian Package Management System - alat za interaktivni rad sa
+```aptitude``` - Debian Package Management System - alat za interaktivni rad sa
 paketima. Front-end sa sistemom tekstualnih menija za APT.
 
-arch - Prikazuje arhitekturu raunara na standardnom izlazu (kao uname -m).
+```arch``` - Prikazuje arhitekturu raunara na standardnom izlazu (kao uname -m).
 
-arp TCP/IP administrativna komanda za rad sa ARP kešom kernela. ARP se
+```arp``` - TCP/IP administrativna komanda za rad sa ARP kešom kernela. ARP se
 koristi za prevoenje IP adresa u MAC adrese mrežnih adaptera.
 
-at - Komanda kojom se zakazuje izvršenje drugih komandi u odreeno vreme.
+```at``` - Komanda kojom se zakazuje izvršenje drugih komandi u odreeno vreme.
 
-atd - Daemon koji izvršava komande zakazane komandom at. Normalno se
+```atd``` - Daemon koji izvršava komande zakazane komandom at. Normalno se
 pokree prilikom podizanja sistema.
 
-atq - Prikazuje zakazane at poslove korisnika. U sluaju da komandu zada
+```atq``` - Prikazuje zakazane at poslove korisnika. U sluaju da komandu zada
 superuser, prikazuju se svi zakazani poslovi.
 
-atrm - Brisanje zakazanih at poslova
+```atrm``` - Brisanje zakazanih at poslova
 
 
-###B
+B
 
-badblocks - Administrativna komanda za analizu površine diskova
+```badblocks``` - Administrativna komanda za analizu površine diskova
 
-banner - Na standardnom izlazu prikazuje string kao "poster".
+```banner``` - Na standardnom izlazu prikazuje string kao "poster".
 
-basename - Prikazuje ime direktorijuma bez vodee apsolutne putanje (na primer:
+```basename``` - Prikazuje ime direktorijuma bez vodee apsolutne putanje (na primer:
 basename $PWD). Komanda je korisna za shell programiranje.
 
-bash - Bash komandni interpreter (Bourne-Again Shell).
+```bash``` - Bash komandni interpreter (Bourne-Again Shell).
 
-bashburn - Front-end za cdrecord (snimanje CD-ROM medijuma).
+```bashburn``` - Front-end za cdrecord (snimanje CD-ROM medijuma).
 
-batch - Slino komandi at, izvršava komande date na standardnom ulazu. Ukoliko
+```batch``` - Slino komandi at, izvršava komande date na standardnom ulazu. Ukoliko
 se vreme izvršenja ne navede, komande se izvršavaju kada optereenje
 sistema dostigne dovoljno nizak nivo (80%).
 
-bc - Interaktivni kalkulator koji ulazne podatke prima sa standardnog ulaza ili
+```bc``` - Interaktivni kalkulator koji ulazne podatke prima sa standardnog ulaza ili
 iz datoteke.
 
-biod - NFS server.
+```biod``` - NFS server.
 
-bzip2 - Paket za kompresiju slian programu gzip koji koristi drugaije algoritme i
+```bzip2``` - Paket za kompresiju slian programu gzip koji koristi drugaije algoritme i
 postiže vei stepen kompresije. Paket ukljuuje programe za kompresiju i
 dekompresiju (bzip2, bunzip2), pregledanje sadržaja (bzcat, bzless,
 bzmore) i oporavak (bzip2recover).
 
 
-###C
+C
 
-cal - Prikazuje kalendar za tekui mesec. Takoe može prikazati godišnji ili
+```cal``` - Prikazuje kalendar za tekui mesec. Takoe može prikazati godišnji ili
 meseni kalendar za godinu i mesec koji se navode kao parametri.
 
-cancel - Uklanjanje poslova iz reda za štampu (System V).
+```cancel``` - Uklanjanje poslova iz reda za štampu (System V).
 
-cat - Konkatenacija datoteka i prikazivanje na standardnom izlazu.
+```cat``` - Konkatenacija datoteka i prikazivanje na standardnom izlazu.
 
-cdrecord - Program za snimanje kompakt diskova sa velikim brojem opcija.
+```cdrecord``` - Program za snimanje kompakt diskova sa velikim brojem opcija.
+
+```cfdisk``` - Administrativni program sa sistemom menija za particionisanja diska
+
+```chgrp``` - Promena grupe kojoj objekat sistema datoteka pripada. U opštem sluaju
+ovu komandu može da izvrši root, a na nekim sistemima može i vlasnik
+objekta.
+
+```chmod``` - Promena pristupnih prava objekta sistema datoteka. Ovu komandu mogu
+da izvrše root i vlasnik objekta.
+
+```chown``` - Promena vlasnika objekta sistema datoteka. U opštem sluaju ovu
+komandu može da izvrši root, a na nekim sistemima može i vlasnik
+objekta.
+
+```chpasswd``` - Administrativna komanda za promenu lozinke.
+
+```chsh``` - Promena komandnog interpretera koji se pokree nakon login procesa. Ime
+komandnog interpretera se navodi sa apsolutnom putanjom.
+
+```chvt``` - Prelazak na virtuelni terminal N. Ukoliko terminal ne postoji bie
+napravljen. Ekvivalentno kombinaciji tastera <Ctrl-Alt-N>, gde je N broj
+terminala.
+
+```cksum``` -  Run-anje CRC ek-sume za datoteku.
+
+```clear``` - Brisanje ekrana.
+
+```cmp``` - Uporedjivanje datoteka i prikazivanje prve razlike na standardnom izlazu.
+
+```compress``` - Program za kompresiju datoteka. Gzip i bzip2 se danas koriste umesto
+ovog programa.
+
+```cp``` - Kopiranje datoteke, grupe datoteka ili delova direktorijumskog stabla.
+Takodje se može koristiti za kreiranje linkova.
+
+```cpio``` -  Arhiviranje i dearhiviranje datoteka (copy-out i copy-in). Takoe se može
+koristiti za kopiranje datoteka u aktivnom UNIX stablu (copy-pass).
+
+```cron``` - Administrativna komanda koja se normalno pokree pri podizanju sistema
+i periodino izvršava komande. Cron proverava korisnike crontab
+datoteke (nalaze se u direktorijumu /var/spool/cron/crontabs a imenovane
+su na osnovu korisnikih naloga) svaki minuta i po i pokree programe
+koje tada treba izvršiti.
+
+```crontab``` -  Zakazivanje periodinog izvršenja komandi, odnosno izvršenja u
+specificiranim intervalima. Zavisno od konkretnog UNIX sistema
+izvrsenje mogu zakazati svi ili samo privilegovani korisnici.
+
