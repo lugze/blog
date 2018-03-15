@@ -1,3 +1,10 @@
+---
+layout: page
+title: Mala Škola Linux-a
+permalink: /mala-skola-linuxa/
+---
+
+
 A
 
 ```adduser``` - Kreiranje korisnickih naloga.
