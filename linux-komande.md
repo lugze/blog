@@ -79,14 +79,14 @@ mesecni kalendar za godinu i mjesec koji se navode kao parametri.
 
 ```cfdisk``` - Administrativni program sa sistemom menija za particionisanja diska
 
-```chgrp``` - Promena grupe kojoj objekat sistema datoteka pripada. U opštem sluaju
+```chgrp``` - Promena grupe kojoj objekat sistema datoteka pripada. U opštem slucaju
 ovu komandu može da izvrši root, a na nekim sistemima može i vlasnik
 objekta.
 
-```chmod``` - Promena pristupnih prava objekta sistema datoteka. Ovu komandu mogu
+```chmod``` - Promjena pristupnih prava objekta sistema datoteka. Ovu komandu mogu
 da izvrše root i vlasnik objekta.
 
-```chown``` - Promena vlasnika objekta sistema datoteka. U opštem sluaju ovu
+```chown``` - Promjena vlasnika objekta sistema datoteka. U opštem sluaju ovu
 komandu može da izvrši root, a na nekim sistemima može i vlasnik
 objekta.
 
@@ -131,18 +131,18 @@ izvrsenje mogu zakazati svi ili samo privilegovani korisnici.
 ```date``` - Prikazuje trenutni datum i vreme.
 
 ```dd``` - Konvertuje i kopira datoteku ili odreeni deo medijuma. Prilikom pristupa
-medijumu može zaobii sistem datoteka, ime je omogueno kopiranje
+medijumu može zaobici sistem datoteka, ime je omoguceno kopiranje
 medijuma koji nisu ni u jednom od formata koje UNIX prepoznaje.
 
 ```debugfs``` - Administrativna komanda kojom se ostvaruje pristup zaglavlju i meta-data
 strukturama ext2 sistema datoteka.
 
-```depmod``` - Kreira datoteku u kojoj je opisana meusobna zavisnost programskih
+```depmod``` - Kreira datoteku u kojoj je opisana medjusobna zavisnost programskih
 modula.
 
 ```df``` - Prikazuje iskorišenost aktiviranih sistema datoteka.
 
-```diff``` - Uporeuje datoteke i prikazuje sve razlike na standardnom izlazu.
+```diff``` - Uporedjuje datoteke i prikazuje sve razlike na standardnom izlazu.
 
 ```dig``` - Komanda za slanje upita DNS serverima, fleksibilnija od nslookup
 komande.
@@ -152,15 +152,15 @@ linije.
 
 ```dselect``` - Debian Package Management System - okruženje sa menijima.
 
-```du``` - Prikazuje koliinu prostora na sistemu datoteka koju zauzimaju datoteke u
-poddirektorijumima tekueg direktorijuma.
+```du``` - Prikazuje kolicinu prostora na sistemu datoteka koju zauzimaju datoteke u
+poddirektorijumima tekuceg direktorijuma.
 
 ```dumpe2fs``` - Administrativna komanda koja na standardnom izlazu prikazuje
 infomacije iz superbloka sistema datoteka
 
 #### E
 
-```e2fsck``` - Administrativna komanda za proveru integriteta ext2 i ext3 sistema
+```e2fsck``` - Administrativna komanda za provjeru integriteta ext2 i ext3 sistema
 datoteka.
 
 ```e2image``` - Administrativna komanda za kreiranje slike (image) znaajnijih delova
