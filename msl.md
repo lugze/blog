@@ -112,11 +112,15 @@ File ili direktorij sa space Moj File se pise kao ```Moj\ file```
 
 Listanje
 
-```ls```
+```
+ls
+```
 
 Listaj a-detalje, l-long format, h-jasnije covjeku
 
-```ls —a -l -h```
+```
+ls —a -l -h
+```
 
 ili ovako:
 
