@@ -264,10 +264,10 @@ Description: Create, move and delete files and directories under the home direct
 
 
 
-### Putanje do programa
+### Pronalazenje putanje do programa pomocu komandi `whereis` i `which`
 
 
-koristimo komandu whereis i which da saznamo putanju gdje je instaliran program, odnosno gdje se nalazi binary trazenog programa
+Koristimo komandu whereis i which da saznamo putanju gdje je instaliran program, odnosno gdje se nalazi binary trazenog programa
 
 ```
 whereis nano
@@ -304,27 +304,36 @@ echo $PWD
 
 pravljenje foldera
 
-```mkdir```
+```
+mkdir
+```
 
-```mkdir folder/subfolder/subsubfolder```
+```
+mkdir folder/subfolder/subsubfolder
+```
 
 pravljenej parent directorija, koristi se u slucaju da parent folder ne postoji te zelimo u isto vrijeme napraviti parent folder te u njemu subfoldere
 
-```mkdir -p```
+```
+mkdir -p
+```
 
 ### Komanda `touch`
 
 pravljenje filea
 
-```touch mojFile.txt```
+```
+touch mojFile.txt
+```
 
 
 ### Komanda `cp`
 
+kopiranje filea
+
 ````
 cp mojFile.txt mojNoviFile.txt
 ```
- -> kopiranje filea
 
 ### Komanda `mv`
 
@@ -346,7 +355,9 @@ mv novi_file.txt najbolji_folder/novi_file2
 
 pomjeri sve fileove koji zavrsavaju sa .txt iz najbolji_folder u trenutni folder
 
-```mv najbolji_folder/*.txt .```
+```
+mv najbolji_folder/*.txt .
+```
 
 Wildcards:
 
