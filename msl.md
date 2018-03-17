@@ -333,7 +333,7 @@ kopiranje filea
 
 ````
 cp mojFile.txt mojNoviFile.txt
-```
+````
 
 ### Komanda `mv`
 
