@@ -4,7 +4,7 @@ title: Mala Škola Linux-a
 permalink: /mala-skola-linuxa/
 ---
 
-Verzija dokumenta 0.0.1
+Verzija dokumenta 0.0.2
 
 ## Uobičajena organizacija foldera u Linuxu
 
@@ -135,20 +135,20 @@ ls -alh
 ls .
 ```
 
-Ispisi listu fajlova i direktorija unutar trenutnog direktorija ukljucujuci i sakrivene fajlove skriveni fajlvi su fajlovi cije ime pocinje sa tackom odnosno znakom .
+* Ispisi listu fajlova i direktorija unutar trenutnog direktorija ukljucujuci i sakrivene fajlove skriveni fajlvi su fajlovi cije ime pocinje sa tackom odnosno znakom .
 
 ```
 ls -al .
 ```
 
-Ispisi listu fajlova i direktorija unutar trenutnog direktorija, te sadrzaj direktorija koji se nalaze u tekućem direktoriju
+* Ispisi listu fajlova i direktorija unutar trenutnog direktorija, te sadrzaj direktorija koji se nalaze u tekućem direktoriju
 
 ```
 ls -al *
 ```
 
 
-Ispisi listu fajlova i direktorija unutar trenutnog direktorija na nacin da i direktorije tretiramo kao obične fajlove te ne ispisujemo njihov sadržaja
+* Ispisi listu fajlova i direktorija unutar trenutnog direktorija na nacin da i direktorije tretiramo kao obične fajlove te ne ispisujemo njihov sadržaja
 
 ```
 ls -ald *
@@ -280,7 +280,6 @@ man ls
 ```
  -> man-om objasnjvamo komande i lista se sa f i b
 
-**********************
 
 ```
 cd IME FOLDERA
