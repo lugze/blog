@@ -87,7 +87,7 @@ Description: Navigation of home and system directories and listing files in vari
 * pretraga pomocu komande `find`
 
 
-## Uobičajena organizacija foldera u Linuxu
+### Uobičajena organizacija foldera u Linuxu
 
 * `/bin`  - programi koje koriste i administratori i korisnici
 * `/dev`  - datoteke koje predstavljaju hardverske uredjaje (mrezna, graficka)  
@@ -104,13 +104,19 @@ Description: Navigation of home and system directories and listing files in vari
 
 ###  Rad sa fajlovima i direktorijima
 
+#### Fajlovi i direktoriji koji imaju razmak u imenu
+
 File ili direktorij sa space Moj File se pise kao ```Moj\ file```
 
-#### Ispis sadržaja direktorija
+### Ispis sadržaja direktorija sa komandom `ls`
 
-```ls```  -> listanje
+Listanje
 
-```ls —a -l -h``` -> Listaj a-detalje, l-long format, h-jasnije covjeku
+```ls```
+
+Listaj a-detalje, l-long format, h-jasnije covjeku
+
+```ls —a -l -h```
 
 ili ovako:
 
@@ -119,6 +125,8 @@ ls -alh
 ```
 
 ##### Ispisi listu fajlova i direktorija unutar trenutnog direktorija
+
+Ako zelimo izlistati sadrzaj tekuceg foldera korisimo komandu ispod.
 
 ```
 ls .
@@ -136,15 +144,13 @@ ls -al .
 ls -al *
 ```
 
-
 * Ispisi listu fajlova i direktorija unutar trenutnog direktorija na nacin da i direktorije tretiramo kao obične fajlove te ne ispisujemo njihov sadržaja
 
 ```
 ls -ald *
 ```
 
-
-Ispisi listu fajlova i direktorija koji pocinju sa znakom . odnosno ispisi samo skrivene fajlove i direktorije
+Ispisi listu fajlova i direktorija koji pocinju sa znakom `.` odnosno ispisi samo skrivene fajlove i direktorije
 
 ```
 ls -ald .*
@@ -157,38 +163,34 @@ ls -ald .*
 ls -i ime_fajla
 ```
 
-
-
-
+Gledanje u sadrzinu i oko foldera rekurzivno tj. pregled cijele strukture foldera
 
 ```
 ls -R IME FOLDERA/
 ```
 
--> gledanje u sadrzinu i oko foldera rekurzivno tj. pregled cijele strukture foldera
+#### Komanda `cd`
 
+ulazak u folder
 
 ```
 cd IME FOLDERA
 ```
- -> ulazak u folder
 
-SAMO cd vraca na pocetni folder
+SAMO `cd` vraca na pocetni folder odnosno home folder.
+
+
+izlazak iz trenutnog foldera u jedan nivo vise.
 
 ```
 cd ..
 ```
- -> izlazak iz foldera
+
+ulazak na udaljeni folder, dva levela iznad
 
 ```
 cd ../../NEKI FOLDER
 ```
- -> ulazak na udaljeni folder, dva levela iznad
-
-
-
-
-
 
 
 ### Home folder
@@ -202,6 +204,7 @@ Korsnici imaju sopstveni `home` direktorij koji se nalazi u folderu `/home`. Izu
 ```
 cd
 ```
+
 * kao argument `cd` komandi proslijediti znak tildu tj. `~`.
 
 ```
@@ -212,8 +215,6 @@ cd ~
 ```
 cd $HOME
 ```
-
-
 
 
 ## Pretraga fileova:
