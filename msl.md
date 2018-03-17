@@ -829,16 +829,18 @@ ifconfig
 
 U zavisnost od tipa interfejsa imena imaju prefikse:
 
-1. en for Ethernet,
-2. wl for wireless LAN (WLAN),
-3. for wireless wide area network (WWAN)
+* 1. en for Ethernet,
+* 2. wl for wireless LAN (WLAN),
+* 3. for wireless wide area network (WWAN)
 
 
 Imena imaju tipove:
 
+````
 o<index>
 
 s<slot>[f<function>][d<dev_id>]
 x<MAC>
 [P<domain>]p<bus>s<slot>[f<function>][d<dev_id>]
 [P<domain>]p<bus>s<slot>[f<function>][u<port>][..][c<config>][i<interface>]
+````
