@@ -194,87 +194,32 @@ cd $HOME
 
 
 
-
-
-
-
-
-
-## Upravljanje korisnicima i grupama
-
-
-### Komanda `finger`
-
-Komanda `finger` ispisuje informacije o korisniku. Kao argument komandi proslijedimo korisničko ime tj. `username` korisnika. U sljedećem primjeru `finger` će prikazati informacije o korisniku `root`.
+## Pretraga fileova:
 
 ```
-finger root
+find . -name “naziv”
+find . -name “naziv*”
 ```
 
-kao odgovor dobijamo sljedeće informacije
+Rekurzivno pretrazi sve fajlove u odredisnom direktoriju (u sljedecom primjeru to je direktorij /home)
 
 ```
-finger root
-Login: root           			Name: root
-Directory: /root                    	Shell: /bin/bash
-On since Sun Mar 11 19:22 (UTC) on pts/2 from 77.77.218.xx
-   18 minutes 24 seconds idle
-     (messages off)
-On since Sun Mar 11 19:31 (UTC) on pts/3 from 77.77.218.xx (messages off)
-New mail received Mon Mar  5 15:40 2018 (UTC)
-     Unread since Tue Feb 27 19:15 2018 (UTC)
-No Plan.
+find /home
 ```
 
-Ukoliko dobijete grešku `-bash: finger: command not found` potrebno je da instalirate komandu sa na sljedeći način:
+Pretraga za fajlovima, u tekucem direktoriju, samo tipa file (ne izlistavamo direktorije)
 
 ```
-apt-get update
-apt-get install finger
+find . -type f
 ```
 
-### Komanda `id`
-
-Ova komanda nam daje informacije o korisniku kao što su
-
-* `id`     - broj korisnika
-* `gid`    - group id tj. broj primarne grupe kojoj korinsik pripada
-* `groups` - kompletna lista grupa kojoj korisnik pripada, tj gid i naziv grupe.
-
-Kada komandi `id` argument ostavimo prazan, podrzaumijeva se da zelimo saznati informacije o trenutno logovanom korisniku, odnosno korisniki koji izvrsava komandu. Primjer:
+Pretraga za direktorijima, ne ispisuju se fajlovima
 
 ```
-id
-uid=0(root) gid=0(root) groups=0(root)
+find . -type d
 ```
 
-Kada kao argument komandi `id` proslijedimo `username` dobijemo info o tom korinsiku.
 
-```
-id korisnik
-uid=1001(korisnik) gid=1001(korisnik) groups=1001(korisnik),27(sudo)
-```
-
-Ako želimo saznati samo `id` broj korinsiko koristimo parametar `-u`.
-
-```
-id -u root
-0
-```
-
-Ako želimo saznati broj primarne grupe nekog korisnika, koristimo parametar `-g`.
-
-```
-id -g korisnik
-1001
-```
-
-Ako želimo saznati brojeve svih grupa kojoj priapada korisnik, korisitmo parametar `-G`.
-
-```
-id -G korisnik
-1001 27
-```
 
 ## 2.4 Creating, Moving and Deleting Files
 
@@ -385,30 +330,7 @@ rm -r
 ```
  -> rekurzivno brisanje fileova (ukoliko folder ima sadrzaja)
 
-Pretraga fileova:
 
-```
-find . -name “naziv”
-find . -name “naziv*”
-```
-
-Rekurzivno pretrazi sve fajlove u odredisnom direktoriju (u sljedecom primjeru to je direktorij /home)
-
-```
-find /home
-```
-
-Pretraga za fajlovima, u tekucem direktoriju, samo tipa file (ne izlistavamo direktorije)
-
-```
-find . -type f
-```
-
-Pretraga za direktorijima, ne ispisuju se fajlovima
-
-```
-find . -type d
-```
 
 
 ```
@@ -429,6 +351,101 @@ su korisnik -l
 
 
 # Topic 5: Security and File Permissions
+
+
+## 5.1 Basic Security and Identifying User Types
+
+
+Description: Various types of users on a Linux system.
+
+**Key Knowledge Areas:**
+
+*    Root and Standard Users
+*    System users
+
+**Terms and Utilities:**
+
+*    /etc/passwd, /etc/group
+*    id, who, w
+*    sudo, su
+
+
+
+### Upravljanje korisnicima i grupama
+
+
+#### Komanda `finger`
+
+Komanda `finger` ispisuje informacije o korisniku. Kao argument komandi proslijedimo korisničko ime tj. `username` korisnika. U sljedećem primjeru `finger` će prikazati informacije o korisniku `root`.
+
+```
+finger root
+```
+
+kao odgovor dobijamo sljedeće informacije
+
+```
+finger root
+Login: root           			Name: root
+Directory: /root                    	Shell: /bin/bash
+On since Sun Mar 11 19:22 (UTC) on pts/2 from 77.77.218.xx
+   18 minutes 24 seconds idle
+     (messages off)
+On since Sun Mar 11 19:31 (UTC) on pts/3 from 77.77.218.xx (messages off)
+New mail received Mon Mar  5 15:40 2018 (UTC)
+     Unread since Tue Feb 27 19:15 2018 (UTC)
+No Plan.
+```
+
+Ukoliko dobijete grešku `-bash: finger: command not found` potrebno je da instalirate komandu sa na sljedeći način:
+
+```
+apt-get update
+apt-get install finger
+```
+
+### Komanda `id`
+
+Ova komanda nam daje informacije o korisniku kao što su
+
+* `id`     - broj korisnika
+* `gid`    - group id tj. broj primarne grupe kojoj korinsik pripada
+* `groups` - kompletna lista grupa kojoj korisnik pripada, tj gid i naziv grupe.
+
+Kada komandi `id` argument ostavimo prazan, podrzaumijeva se da zelimo saznati informacije o trenutno logovanom korisniku, odnosno korisniki koji izvrsava komandu. Primjer:
+
+```
+id
+uid=0(root) gid=0(root) groups=0(root)
+```
+
+Kada kao argument komandi `id` proslijedimo `username` dobijemo info o tom korinsiku.
+
+```
+id korisnik
+uid=1001(korisnik) gid=1001(korisnik) groups=1001(korisnik),27(sudo)
+```
+
+Ako želimo saznati samo `id` broj korinsiko koristimo parametar `-u`.
+
+```
+id -u root
+0
+```
+
+Ako želimo saznati broj primarne grupe nekog korisnika, koristimo parametar `-g`.
+
+```
+id -g korisnik
+1001
+```
+
+Ako želimo saznati brojeve svih grupa kojoj priapada korisnik, korisitmo parametar `-G`.
+
+```
+id -G korisnik
+1001 27
+```
 
 
 ```
