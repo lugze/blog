@@ -243,7 +243,6 @@ find . -type d
 ```
 
 
-
 ## 2.4 Creating, Moving and Deleting Files
 
 Description: Create, move and delete files and directories under the home directory.
@@ -297,28 +296,42 @@ pwd
 echo $PWD
 ```
 
+### Komanda `mkdir`
 
-```mkdir``` -> pravljenej foldera
+pravljenje foldera
+
+```mkdir```
 
 ```mkdir folder/subfolder/subsubfolder```
 
-```mkdir -p``` -> pravljenej parent directorija, koristi se u slucaju da parent folder ne postoji te zelimo u isto vrijeme napraviti parent folder te u njemu subfoldere
+pravljenej parent directorija, koristi se u slucaju da parent folder ne postoji te zelimo u isto vrijeme napraviti parent folder te u njemu subfoldere
 
+```mkdir -p```
+
+### Komanda `touch`
+
+pravljenje filea
 
 ```touch mojFile.txt```
- -> pravljenje filea
 
-```
+
+### Komanda `cp`
+
+````
 cp mojFile.txt mojNoviFile.txt
 ```
  -> kopiranje filea
+
+### Komanda `mv`
 
 move files:
 
 ```
 mv
 ```
- -> pomijeranje fileova koje se moze koristiti i za rename
+
+pomijeranje fileova koje se moze koristiti i za rename
+
 ```
 mv novi_file.txt najbolji_folder
 ```
@@ -327,7 +340,9 @@ mv novi_file.txt najbolji_folder
 mv novi_file.txt najbolji_folder/novi_file2
 ```
 
-```mv najbolji_folder/*.txt .``` -> pomjeri sve fileove koji zavrsavaju sa .txt iz najbolji_folder u trenutni folder
+pomjeri sve fileove koji zavrsavaju sa .txt iz najbolji_folder u trenutni folder
+
+```mv najbolji_folder/*.txt .```
 
 Wildcards:
 
@@ -336,6 +351,7 @@ Wildcards:
 ? -> one of the character
 ```
 
+### Komanda `rm`
 
 delete files:
 
@@ -347,19 +363,22 @@ rm novi_file.txt
 rm noviji_file?.txt
 ```
 
+rekurzivno brisanje fileova (ukoliko folder ima sadrzaja)
 
 ```
 rm -r
 ```
- -> rekurzivno brisanje fileova (ukoliko folder ima sadrzaja)
 
 
-
+### Shell prefix
 
 ```
 $ - nalazim se u useru
 # - sada sam root
 ```
+
+
+### logovanje korsnika
 
 ```
 su root
