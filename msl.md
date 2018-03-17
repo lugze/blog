@@ -596,7 +596,7 @@ Ukucavamo
 ```
 kill 1 --> broj procesa
 ```
-##### Zapisivanje poruka u log datoteku
+#### Zapisivanje poruka u log datoteku
 
 U proslom primjeru samo koristi komandu koja pinga `google.com` svakih 5 sekundi te nam ispisuje rezultate na `STDOUT` odnosno ekran. To je u odredjenim situacijama korisno jer korisnika informise u statusu izvrsavanja komande u pozadini, ali cesto samo ometa korisnika u radu.
 
