@@ -569,9 +569,12 @@ U sljedecem primjeru zelimo da pingamo google svakih 5 sekundi sa komandom `ping
 ```
 ping -i 5 google.com &
 ```
+
 Na ovaj nacin komanda ce biti izvrsavana u pozadini i svakih 5 sekundi ce nam ispisati rezultat na ekran, dok se rad u terminalu moze nastaviti.
 
-izlistamo procese u backgroundu
+
+
+* izlistamo procese u backgroundu
 
 ```
 jobs
@@ -594,6 +597,32 @@ Ukucavamo
 ```
 kill 1 --> broj procesa
 ```
+##### Zapisivanje poruka u log datoteku
+
+U proslom primjeru samo koristi komandu koja pinga `google.com` svakih 5 sekundi te nam ispisuje rezultate na `STDOUT` odnosno ekran. To je u odredjenim situacijama korisno jer korisnika informise u statusu izvrsavanja komande u pozadini, ali cesto samo ometa korisnika u radu.
+
+U situacijama gdje ne zelimo da komanda ispisuje nepotrebne informacije na ekran koristimo redirekciju u fajl pomocu znaka `>`. To mozemo uraditi na sljedeci nacin.
+
+* U ovom primjeru pingamo `google.com` svakih `5` sekundi te poruka koje salje komanda redirektujemo sa ekrana u fajl `/tmp/ping_google.log`, te na samom kraju stavljamo znak `&` cime zeljenu komandu saljemo u background.
+
+````
+ping -i 5 google.com > /tmp/ping_google.log &
+````
+
+Sada mozemo nastaviti sa radom a ako zelimo periodicno provjeriti stanje komande koristimo `tail` da bi procitali zapis u fajl `/tmp/ping_google.log`.
+
+````
+tail /tmp/ping_google.log
+````
+
+ili citanja u `real time` modu
+
+````
+tail -f /tmp/ping_google.log
+````
+
+Ako zelimo prekinuti `real time` citanje koristimo kombinaciju tipki `CTRL+C`.
+
 #### SIGHUP i bacground procesi
 
 Proces koji je poslan u background direktno je vezan za sessiju terminala prek kojeg je korisnik pokrenuo taj isti proces. Kada se korisnik odjavi tj. uradi logout svim background procesima ce biti poslan `SIGHUP` signal. Signal `SIGHUP` je skracenica za `signal hang up` i sluzi za terminiranje procesa.
