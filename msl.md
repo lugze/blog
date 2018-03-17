@@ -6,6 +6,9 @@ permalink: /mala-skola-linuxa/
 
 Verzija dokumenta 0.0.2
 
+* TOC
+{:toc}
+
 ## Uobičajena organizacija foldera u Linuxu
 
 * `/bin`  - programi koje koriste i administratori i korisnici
