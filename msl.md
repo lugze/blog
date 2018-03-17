@@ -31,6 +31,40 @@ Verzija dokumenta 0.0.2
 
 # 2: Snalaženje na Linux Sistemu
 
+## 2.2 Using the Command Line to Get Help
+
+Description: Running help commands and navigation of the various help systems.
+
+**Key Knowledge Areas:**
+
+*    Man
+*    Info
+
+**Terms and Utilities:**
+
+*    man
+*    info
+*    Man pages
+*    /usr/share/doc/
+*    locate
+
+
+
+
+```
+ls —help
+```
+
+ -> pomoc o komandi
+
+
+```
+man ls
+```
+ -> man-om objasnjvamo komande i lista se sa f i b
+
+
+
 
 ## 2.3 Using Directories and Listing Files
 
@@ -131,19 +165,6 @@ ls -R IME FOLDERA/
 ```
 
 -> gledanje u sadrzinu i oko foldera rekurzivno tj. pregled cijele strukture foldera
-
-
-```
-ls —help
-```
-
- -> pomoc o komandi
-
-
-```
-man ls
-```
- -> man-om objasnjvamo komande i lista se sa f i b
 
 
 ```
