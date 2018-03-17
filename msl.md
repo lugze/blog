@@ -644,23 +644,30 @@ nohup ping -i 5 google.com &
 ### Koristenje jerkyll-a (Transform your plain text into static websites)
 >>>>>>> ac6e9df (dodajem nohup za background procese)
 
-1. Logovanje na server
-2. Dodavanje novog korisnika
+* 1. Logovanje na server
+
+* 2. Dodavanje novog korisnika
+
 ```
 adduser korisnik
 ```
 
 3. Logovanje kao korisnik
+
 ```
 su korisnik -l
 ```
 
-
 4. Instalacija programskog jezika (u ovom slucaju rvm i ruby 2.5)
+
 5.
+
 ```
 gem update
+````
 i
+
+```
 gem update —system
 ```
 
@@ -721,7 +728,7 @@ ili
 
 Nakon ukucanie komande trazimo adresu a `inet` prefiksom sto je ujedno i public ip adresa servera
 
-##### Zasto kao obicni korisnik moramo kucati punu putanju do `ifconfig` komande?
+* Zasto kao obicni korisnik moramo kucati punu putanju do `ifconfig` komande?
 
 Komanda ifconfig se nalazi u direktoriju `/sbin` stoga moramo provjeriti da li se taj direktorij nalazi u `$PATH` shell varijabli. Korisniku su dostupni programi tj. komande koji se nalaze u pitanjama foldera koji su izlistani u `$PATH` shell varijabli.
 
@@ -756,7 +763,7 @@ root
  eu emin -l
  ````
 
- * provjerimo da li je login bio uspjesan
+* provjerimo da li je login bio uspjesan
 
  ````
  whoami
