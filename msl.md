@@ -84,6 +84,7 @@ Description: Navigation of home and system directories and listing files in vari
 * cd
 * . and ..
 * home and ~
+* pretraga pomocu komande `find`
 
 
 ## Uobičajena organizacija foldera u Linuxu
