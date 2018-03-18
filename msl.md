@@ -453,7 +453,9 @@ man whereis
 whereis --help
 ````
 
-#### Vjezba: pratiti kako se mijenja pwd vrijednost nakon svake izmjene current directorija
+#### ***Vjezba***
+
+Pratiti kako se mijenja pwd vrijednost nakon svake izmjene current directorija
 
 ```
 cd ~
@@ -1442,7 +1444,9 @@ ls -i fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
 možemo promjetiti da su inode brojevi razliciti sto znaci da su razliciti fajlove te ako jedan izbrisemo to znaci da drugi fajl nece biti izbrisan
 
 
-#### Vjezba: izbrisati prvi fajl. Da li je drugi fajl koji je simbolicki link izbrisan? Da li mozemo pomocu cat komande izlistati sadrzaj drugog fajla?
+#### ***Vjezba***
+
+Izbrisati prvi fajl. Da li je drugi fajl koji je simbolicki link izbrisan? Da li mozemo pomocu cat komande izlistati sadrzaj drugog fajla?
 
 
 
@@ -1480,7 +1484,9 @@ inode broj drugog fajla je takodjer `6257560`
 inode brojevi su isti sto znaci da su oba fajla linkaju na istu lokaciju na disku
 
 
-##### Vjezba: Sta se desi ako izbrisemo drugi fajl, da li ce prvi fajl biti izbrisan?
+##### ***Vjezba***
+
+Sta se desi ako izbrisemo drugi fajl, da li ce prvi fajl biti izbrisan?
 
 
 ```
