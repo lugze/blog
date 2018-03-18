@@ -427,10 +427,6 @@ Description: Various types of users on a Linux system.
 *    sudo, su
 
 
-
-### Upravljanje korisnicima i grupama
-
-
 #### Komanda `finger`
 
 Komanda `finger` ispisuje informacije o korisniku. Kao argument komandi proslijedimo korisničko ime tj. `username` korisnika. U sljedećem primjeru `finger` će prikazati informacije o korisniku `root`.
@@ -625,6 +621,68 @@ Vise o komandi
 man userdel
 userdel --help
 ````
+
+### Upravljanje korisnicima i grupama
+
+### Managing Linux Group Accounts
+
+#### Datoteka `/etc/group`
+
+Vise o datoteci
+
+````
+man /etc/group
+````
+
+#### Komanda `groupadd`
+
+Sluzi za dodavanje nove grupe
+
+* Ako zelimo dodati novu grupu `moja_grupa` sa brojem grupe **9000**
+
+````
+groupadd -g 9000 moja_grupa
+````
+Nakon dodavanja provjerimo da li je dodana grupa na sljedeci nacine
+
+````
+grep -i --color moja_grupa /etc/group
+````
+
+#### Komanda **groupmod***
+
+#### Komanda **groupdel**
+
+#### Komanda **su**
+
+#### Komanda **sudo**
+
+#### Log datoteke **/var/log/wtmp** i **/var/log/faillog**
+
+Log fajlovi koji sluze za biljeske pokusaja autenticiranja korisnika
+
+
+
+* /var/log/wtmp - binary, succesfully authentication attempts, command to view last
+* /var/log/faillog - binary, failed authentication attempts, command to view faillog
+
+##### Komanda **faillog**
+
+Ako zelimo procitati zapise log datoteke `/var/log/faillog` korisitmo komandu faillog.
+
+* Primjer kako koristiti komandu
+
+````
+faillog -u username
+````
+
+* Vise o komandi
+
+````
+man faillog
+````
+
+
 
 
 
