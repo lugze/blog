@@ -467,6 +467,60 @@ su korisnik -l
 
 
 
+# Topic 3: The Power of the Command Line (weight: 9)
+## 3.1 Archiving Files on the Command Line
+
+Description: Archiving files in the user home directory.
+
+** Key Knowledge Areas:**
+
+*     Files, directories
+*     Archives, compression
+
+**Terms and Utilities:**
+
+*     tar
+*     Common tar options
+*     gzip, bzip2
+*     zip, unzip
+
+
+
+Archive komande
+
+### Komanda **tar**
+
+```tar -cvf (c-create, v-verbot, f-output to file) myfile.tar Vjezba\ Files/```
+
+### Komanda **bzip2**
+
+* Kompresovanje fajla
+
+````
+bzip2 moj_file.txt
+````
+
+Sta se desava nakon kompresije? Da li izvorni fajl koji smo kompresovali id alje postoji?
+
+````
+ls moj_file.txt.*
+````
+
+* Dekompresovanje fajla
+
+````
+bzip2 -d moj_file.txt.gz
+````
+
+ili
+
+````
+bunzip2 moj_file.txt.bz2
+````
+
+
+
+
 # Topic 5: Security and File Permissions
 
 
@@ -873,7 +927,9 @@ grep "text" file.txt
 
 #### Generisanje set key-a
 
-```ssh-keygen -t rsa```
+```
+ssh-keygen -t rsa
+```
 
 
 
@@ -884,11 +940,6 @@ grep "text" file.txt
 ```adduser username admin```
 
 
-
-<<<<<<< HEAD
-Archive komande
-
-```tar -cvf (c-create, v-verbot, f-output to file) myfile.tar Vjezba\ Files/```
 
 
 
