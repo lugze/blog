@@ -742,9 +742,48 @@ faillog -u username
 man faillog
 ````
 
+#### Komanda **who**
 
+Komanda prikazuje ko je logovan
 
+Primjeri
 
+````
+who
+````
+````
+who -a
+````
+
+ili
+
+````
+who --all
+````
+
+Vise o komandi
+
+````
+man who
+who --help
+````
+
+#### Komanda **w**
+
+Komanda prikazuje trenutno logovane korisnike, njihove IP adrese, i sta trenutno rade korisnici.
+
+Primjeri
+
+````
+w
+````
+
+Vise o komandi
+
+````
+man w
+w --help
+````
 
 
 ## 5.3 Managing File Permissions and Ownership
