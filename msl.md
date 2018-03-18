@@ -66,6 +66,9 @@ Sta su argumenti, options, parametri?
 * Eksterne komande - komande koje ne pokrece sam shell, nego pokrece binarne fajlove koji se nalaze u sistemskih direktorijima kao sto su `/bin` ili `/usr/bin`.
 
 
+#### Komanda **type**
+
+
 Mozemo koristiti `type` komandu da saznamo tip komande.
 
 * Primjer interne tj. **shell builtin** komande je komanda `echo`.
