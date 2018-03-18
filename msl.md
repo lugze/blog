@@ -504,6 +504,144 @@ id -G korisnik
 1001 27
 ```
 
+## 5.2 Creating Users and Groups
+
+Description: Creating users and groups on a Linux system.
+
+**Key Knowledge Areas:**
+
+*    User and group commands
+*    User IDs
+
+**Terms and Utilities:**
+
+*    /etc/passwd, /etc/shadow, /etc/group, /etc/skel/
+*    id, last
+*    useradd, groupadd
+*    passwd
+
+
+### Komanda `useradd`
+
+Sluzi za dodavanje korisnika.
+
+Default psotavke se nalaze u sljedecim fajlovima
+
+* 1. `/etc/default/useradd`
+
+````
+GROUP=100
+HOME=/home
+INACTIVE=-1
+EXPIRE=
+SHELL=/bin/bash
+SKEL=/etc/skel
+CREATE_MAIL_SPOOL=yes
+````
+
+* 2. default login postavke se nalaze u fajlu `/etc/login.defs`
+
+Navedeni fajl kontrolise kada ce password da istekne, UID, GUID, HOME postavke itd.
+
+* 3. Folder `/etc/skel` sadrzi fajlove koji ce biti kopirani u `home` difektorij korinsika prilikom dodavanja korisnika.
+
+Sintaksa komande
+
+`useradd ime_korisnika`
+
+### Komanda `passwd`
+
+Komanda sluzi za reporting i izmjenu passworda nekog korisnika.
+
+Primjer upotrebe
+
+* Ako zelimo report o statusu passworda korisnika
+
+```
+passwd -S username
+````
+
+* Ako zelimo status passworda svih korinsika
+
+```
+passwd -a -S
+````
+* Ako zelimo izmijeniti password korinsika
+
+````
+passwd ime_korisnika
+````
+
+### Komanda `usermod`
+
+Ako zelimo izmijeniti odnosno modifikovati korinsika na sistemu koristimo ovu komandu.
+
+Primjer
+
+* Ako zelimo izmijeniti polje za komentar, kao sto je ime i prezimo
+
+````
+usermod -c "Ime Prezime" ime_korisnika
+````
+ili duza varijanta
+
+````
+usermod --comment "Ime Prezime" ime_korisnika
+````
+
+Vise o komandu `usermod` mozemo saznati na sljedece nacine:
+
+````
+man usermod
+usermod --help
+````
+
+### Komanda `userdel`
+
+Koristimo komandu kada zelimo korisnika izbrisati sa sistema.
+
+
+* Brisanje korisnika bez brisanja home direktorija
+
+````
+userdel username
+````
+
+* Brisanje korisnika i home direktorija
+
+````
+userdel -r username
+````
+
+ili
+
+````
+userdel --remove username
+````
+
+Vise o komandi
+
+````
+man userdel
+userdel --help
+````
+
+
+
+
+## 5.3 Managing File Permissions and Ownership
+
+Description: Understanding and manipulating file permissions and ownership settings.
+
+Key Knowledge Areas:
+
+*    File/directory permissions and owners
+*    Terms and Utilities:
+*    ls -l, ls -a
+*    chmod, chown
+
+
+#### Komanda `chmod`
 
 ```
 chmod -> change the permission on a file
