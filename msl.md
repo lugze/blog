@@ -31,6 +31,76 @@ Verzija dokumenta 0.0.2
 
 # 2: Snalaženje na Linux Sistemu
 
+## 2.1 Command Line Basics
+
+
+Description: Basics of using the Linux command line.
+
+**Key Knowledge Areas:**
+
+*    Basic shell
+*    Command line syntax
+*    Variables
+*    Globbing
+*    Quoting
+
+**Terms and Utilities:**
+
+*    Bash
+*    echo
+*    history
+*    PATH env variable
+*    export
+*    type
+
+
+
+### Command Structure
+
+Sta su argumenti, options, parametri?
+
+### Tipovi komandi
+
+* Interne komande - komande koje omogucava sam shell. Bash ili Bourne-again shell omogucava oko 30 internih komandi.
+
+* Eksterne komande - komande koje ne pokrece sam shell, nego pokrece binarne fajlove koji se nalaze u sistemskih direktorijima kao sto su `/bin` ili `/usr/bin`.
+
+
+Mozemo koristiti `type` komandu da saznamo tip komande.
+
+* Primjer interne tj. **shell builtin** komande je komanda `echo`.
+
+````
+type echo
+````
+
+* Primjer eksterne komande je komanda `date`.
+
+````
+type date
+````
+
+Kao odgovor za eksterne komande dobijamo putanju do binarnog programa. U slucaju komande `date` dobijamo putanju `/bin/date`.
+
+
+
+Vise o `type` komandi
+
+````
+type --help
+userdel --help
+````
+
+
+***Vjezba***
+
+Koje od sljedecih komandi su interne a koje eksterne?
+
+````
+alias, echo, rm, test
+````
+
+
 ## 2.2 Using the Command Line to Get Help
 
 Description: Running help commands and navigation of the various help systems.
