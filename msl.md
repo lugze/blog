@@ -266,7 +266,7 @@ ulazak na udaljeni folder, dva levela iznad
 cd ../../NEKI FOLDER
 ```
 
-* Vise o komandi
+* Vise o komandi `cd`
 
 ````
 man cd
@@ -323,7 +323,7 @@ Pretraga za direktorijima, ne ispisuju se fajlovima
 find . -type d
 ```
 
-* Vise o komandi
+* Vise o komandi `find`
 
 ````
 man find
@@ -375,7 +375,7 @@ which ifconfig
 
 Dobijamo prazan odgovor.
 
-* Vise o komandi
+* Vise o komandi `which`
 
 ````
 man which
@@ -409,7 +409,7 @@ whereis -b bash
 whereis -m bash
 ````
 
-* Vise o komandi
+* Vise o komandi `whereis`
 
 ````
 man whereis
@@ -800,7 +800,7 @@ ili
 userdel --remove username
 ````
 
-Vise o komandi
+Vise o komandi `userdel`
 
 ````
 man userdel
@@ -861,7 +861,7 @@ Ako zelimo procitati zapise log datoteke `/var/log/faillog` korisitmo komandu fa
 faillog -u username
 ````
 
-* Vise o komandi
+* Vise o komandi `faillog`
 
 ````
 man faillog
@@ -886,7 +886,7 @@ ili
 who --all
 ````
 
-Vise o komandi
+Vise o komandi `who`
 
 ````
 man who
@@ -903,7 +903,7 @@ Primjeri
 w
 ````
 
-Vise o komandi
+Vise o komandi `w`
 
 ````
 man w
