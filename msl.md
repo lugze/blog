@@ -173,7 +173,7 @@ Gledanje u sadrzinu i oko foldera rekurzivno tj. pregled cijele strukture folder
 ls -R IME FOLDERA/
 ```
 
-#### Komanda `cd`
+#### Komanda **cd**
 
 ulazak u folder
 
@@ -360,7 +360,7 @@ pwd
 echo $PWD
 ```
 
-### Komanda `mkdir`
+### Komanda **mkdir**
 
 pravljenje foldera
 
@@ -378,7 +378,7 @@ pravljenej parent directorija, koristi se u slucaju da parent folder ne postoji 
 mkdir -p
 ```
 
-### Komanda `touch`
+### Komanda **touch**
 
 pravljenje filea
 
@@ -387,7 +387,7 @@ touch mojFile.txt
 ```
 
 
-### Komanda `cp`
+### Komanda **cp**
 
 kopiranje filea
 
@@ -395,7 +395,7 @@ kopiranje filea
 cp mojFile.txt mojNoviFile.txt
 ````
 
-### Komanda `mv`
+### Komanda **mv**
 
 move files:
 
@@ -426,7 +426,7 @@ Wildcards:
 ? -> one of the character
 ```
 
-### Komanda `rm`
+### Komanda **rm**
 
 delete files:
 
@@ -487,7 +487,7 @@ Description: Various types of users on a Linux system.
 *    sudo, su
 
 
-#### Komanda `finger`
+#### Komanda **finger**
 
 Komanda `finger` ispisuje informacije o korisniku. Kao argument komandi proslijedimo korisničko ime tj. `username` korisnika. U sljedećem primjeru `finger` će prikazati informacije o korisniku `root`.
 
@@ -517,7 +517,7 @@ apt-get update
 apt-get install finger
 ```
 
-### Komanda `id`
+### Komanda **id**
 
 Ova komanda nam daje informacije o korisniku kao što su
 
@@ -577,7 +577,7 @@ Description: Creating users and groups on a Linux system.
 *    passwd
 
 
-### Komanda `useradd`
+### Komanda **useradd**
 
 Sluzi za dodavanje korisnika.
 
@@ -605,7 +605,7 @@ Sintaksa komande
 
 `useradd ime_korisnika`
 
-### Komanda `passwd`
+### Komanda **passwd**
 
 Komanda sluzi za reporting i izmjenu passworda nekog korisnika.
 
@@ -628,7 +628,7 @@ passwd -a -S
 passwd ime_korisnika
 ````
 
-### Komanda `usermod`
+### Komanda **usermod**
 
 Ako zelimo izmijeniti odnosno modifikovati korinsika na sistemu koristimo ovu komandu.
 
@@ -652,7 +652,7 @@ man usermod
 usermod --help
 ````
 
-### Komanda `userdel`
+### Komanda **userdel**
 
 Koristimo komandu kada zelimo korisnika izbrisati sa sistema.
 
@@ -694,7 +694,7 @@ Vise o datoteci
 man /etc/group
 ````
 
-#### Komanda `groupadd`
+#### Komanda **groupadd**
 
 Sluzi za dodavanje nove grupe
 
@@ -759,7 +759,7 @@ Key Knowledge Areas:
 *    chmod, chown
 
 
-#### Komanda `chmod`
+#### Komanda **chmod**
 
 ```
 chmod -> change the permission on a file
