@@ -45,7 +45,7 @@ Description: Running help commands and navigation of the various help systems.
 *    man
 *    info
 *    Man pages
-*    /usr/share/doc/
+*    `/usr/share/doc/`
 *    locate
 
 
@@ -82,8 +82,8 @@ Description: Navigation of home and system directories and listing files in vari
 * Common options for ls
 * Recursive listings
 * cd
-* . and ..
-* home and ~
+* `.` and `..`
+* home and `~`
 * pretraga pomocu komande `find`
 
 
