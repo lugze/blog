@@ -100,6 +100,40 @@ Koje od sljedecih komandi su interne a koje eksterne?
 alias, echo, rm, test
 ````
 
+### Dodatna shell pravila
+
+Shell ne samo da razlikuje mala i velika slova kada se unose imena komandi, nego isto pravilo vazi i za parametre i opcije te i imena fajlova.
+
+
+#### “Escaping” characters
+
+Ako zelimo napraviti fajl sa razmakom u imenu, moramo koristiti navodnike. Koristenje navodnika je jedan vid tzv. “Escaping” karaktera.  “Escaping” je potrebno raditi sa svim specijalnom karakterima.
+
+Pored razmaka u specijalne karaktere ubrajamo
+
+````
+$&;(){}[]*?!<>"'
+````
+
+* Za “Escaping” samo jednog karaktera koristimo znak `\` ili backslash.
+* Za “Escaping” vise rijeci od jednom koristimo jednostruke `''` i dvostruke `"…"` navodnike.
+
+##### Pravljenje fajla sa razmakom u imenu
+
+````
+touch 'Novi Fajl'
+````
+
+Kada ne bi koristili navodnike
+
+````
+touch Novi Fajl
+````
+
+napravili bi smo dva fajla i to `Novi` i `Fajl`.
+
+
+
 
 ## 2.2 Using the Command Line to Get Help
 
