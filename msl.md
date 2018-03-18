@@ -196,6 +196,11 @@ ulazak na udaljeni folder, dva levela iznad
 cd ../../NEKI FOLDER
 ```
 
+* Vise o komandi
+
+````
+man cd
+````
 
 ### Home folder
 
@@ -221,7 +226,9 @@ cd $HOME
 ```
 
 
-## Pretraga fileova:
+## Komanda **find**
+
+Sluzi za retraga fileova.
 
 ```
 find . -name “naziv”
@@ -246,6 +253,11 @@ Pretraga za direktorijima, ne ispisuju se fajlovima
 find . -type d
 ```
 
+* Vise o komandi
+
+````
+man find
+````
 
 ## 2.4 Creating, Moving and Deleting Files
 
@@ -269,22 +281,70 @@ Description: Create, move and delete files and directories under the home direct
 
 Koristimo komandu whereis i which da saznamo putanju gdje je instaliran program, odnosno gdje se nalazi binary trazenog programa
 
-```
-whereis nano
-```
+#### Komanda **which**
+
+Komanda sluzi za pronalazenje datoteka u korisnickim putanja. Komanda provjerava da li fajl postoji u korisnickoj `$PATH` varijabli.
 
 ```
 which nano
+```
+
+Ako se komanda ne nalazi u putanjama unutar `$PATH` varijable, komanda vraca prazan rezultat.
+
+* Primjer
+
+Logujemo se kao neprivilegovani korisnik
+
+````
+su -l korinsnik
+````
+
+````
+which ifconfig
+````
+
+Dobijamo prazan odgovor.
+
+* Vise o komandi
+
+````
+man which
+````
+
+
+#### Komanda **whereis**
+
+komanda sluzi za pretragu za `binary` datotekama odnosno ostalim komandama, source i manual stranica.
+
+* Primjeri upotrebe
+
+```
+whereis nano
 ```
 
 ```
 whereis bash
 ```
 
-```
-which rvm
-```
 
+* Pretraga gdje se nalazi **binarna** datoteka
+
+````
+whereis -b bash
+````
+
+* Pretraga za **manual** stranicama nekog programa
+
+````
+whereis -m bash
+````
+
+* Vise o komandi
+
+````
+man whereis
+whereis --help
+````
 
 #### Vjezba: pratiti kako se mijenja pwd vrijednost nakon svake izmjene current directorija
 
