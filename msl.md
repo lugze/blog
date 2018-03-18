@@ -649,7 +649,7 @@ Nakon dodavanja provjerimo da li je dodana grupa na sljedeci nacine
 grep -i --color moja_grupa /etc/group
 ````
 
-#### Komanda **groupmod***
+#### Komanda **groupmod**
 
 #### Komanda **groupdel**
 
