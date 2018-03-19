@@ -595,7 +595,7 @@ kill 1 --> broj procesa
 ```
 
 
-###Koristenje jerkyll-a (Transform your plain text into static websites)
+## Koristenje jerkyll-a (Transform your plain text into static websites)
 
 1. Logovanje na server
 2. Dodavanje novog korisnika
@@ -645,7 +645,7 @@ gem install jekyll bundler
 bundle exec jekyll serve &
 ```
 
-###Pronalazenje public ip adrese i komande ping/traceroute
+### Pronalazenje public ip adrese i komande ping/traceroute
 
 `ping ime servera` - mjerenje odaziva nekog servera. Ovom komandom, pored drugih podataka, saznajemo public ip servera
 
