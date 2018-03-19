@@ -1114,13 +1114,32 @@ vratimo komandu u foreground
 fg
 ```
 
-Stopiranje background procesa:
-Nakon izlistavanja procesa
 ```
 jobs
 [1]+  Running   "Komanda koju smo poslali u background"
 ```
-Ukucavamo
+Procesi su programi koji se izvršavaju. Programi su izvršene datoteke.
+Prilikom pokretanja sistem svakom procesu dodjeljuje njegov broj (PID). Taj je broj jedinstven.
+
+
+##### Procesima se mogu slati različiti signali, različitih značenja. Neki od signala su:
+
+SIGHUP (1) - zahtjev za re-inicijalizacijom procesa
+SIGKILL (9) - zahtjev za grubim prekidom izvršavanja
+SIGTERM (15) - zahtjev za prekidom izvršavanja (softverski završetak rada)
+
+Sintaksa:
+
+```kill [-s SIGNAL] PROCES```
+
+
+Naredbi ```kill``` se kao argument treba zadati PID procesa čije izvođenje želimo prekinuti ili redni broj koji je procesu dodijelila ljuska. Ako se navodi redni broj koji je procesu dodijelila ljuska tada ispred njega treba upisati znak % .
+
+Ako se ne navede signal koji šaljemo, podrazumijeva se da se radi o signalu SIGTERM. Signale možemo zadati njihovim rednim brojem ili simboličkim imenom.
+
+```$ kill -9 12345``` —>program prekidamo navodeći njegov PID
+
+```$ kill-9 %2``` —> Program prekidamo dodjeljivanjem rednog broja bash-a
 
 ```
 kill 1 --> broj procesa
