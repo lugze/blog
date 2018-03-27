@@ -223,7 +223,7 @@ Listanje
 ls
 ```
 
-Listaj a-detalje, l-long format, h-jasnije covjeku
+Listaj a-detalje, l-long format, h-velicina fileova izrazena razumljivije
 
 ```
 ls —a -l -h
@@ -335,7 +335,7 @@ cd $HOME
 
 ## Komanda **find**
 
-Sluzi za retraga fileova.
+Sluzi za pretragu file-ova
 
 ```
 find . -name “naziv”
@@ -481,7 +481,7 @@ mkdir
 mkdir folder/subfolder/subsubfolder
 ```
 
-pravljenej parent directorija, koristi se u slucaju da parent folder ne postoji te zelimo u isto vrijeme napraviti parent folder te u njemu subfoldere
+pravljenje parent directorija, koristi se u slucaju da parent folder ne postoji te zelimo u isto vrijeme napraviti parent folder te u njemu subfoldere
 
 ```
 mkdir -p
@@ -554,7 +554,7 @@ rm -r
 ```
 
 
-### Shell prefix
+### Shell prefixes
 
 ```
 $ - nalazim se u useru
