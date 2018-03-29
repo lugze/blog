@@ -249,9 +249,40 @@ Komanda **ls** ima opcije **-a** i **-A**.
 
 Opcija **-A** ne izlistava trenutni direktorij cija je oznaka sama **tacka** odnosno znak **.** te ne izlistava direktorij roditelj cija je oznaka **dvije tacke** odnosno **..**.
 
+### 2.3.3 Home folder
 
+Korsnici imaju sopstveni `home` direktorij koji se nalazi u folderu `/home`. Izuzetak je `root` korisnik, čiji home direktorij se nalazi na lokaciji `/root`. U home direktoriji korisnici cuvaju svoje fajlove i personalne **login skripte** i **bash history** odnosno listu komandi koje su prethodno kucali.
 
-### 2.3.3 Uobičajena organizacija foldera u Linuxu
+* `~/.bashrc`
+* `~/.bash_history`
+
+Korisnik prilikom logovanja ce biti odveden u home direktorij. Putanja do home direktorija je definisana u varijabli `$HOME`. Mozemo ispisati trenutnu vrijednost **$HOME** varijable pomocu **echo** komande na sljedeci nacin.
+
+````
+echo $HOME
+````
+Korisnici mogu pristupiti home folderu tako sto koriste **cd** komandu bez argumenata te ako koriste znak tildu odnosno **~**.
+
+#### Vježba: nekoliko načina kako pristupiti home folderu
+
+* koristiti `cd` komanu bez argumenata.
+
+```
+cd
+```
+
+* kao argument `cd` komandi proslijediti znak tildu tj. `~`.
+
+```
+cd ~
+```
+* kao argument `cd` komandi proslijediti build in shell varijablu `$HOME`
+
+```
+cd $HOME
+```
+
+### 2.3.5 Uobičajena organizacija foldera u Linuxu
 
 * `/bin`  - programi koje koriste i administratori i korisnici
 * `/dev`  - datoteke koje predstavljaju hardverske uredjaje (mrezna, graficka)  
@@ -365,29 +396,6 @@ cd ../../NEKI FOLDER
 ````
 man cd
 ````
-
-### Home folder
-
-Korsnici imaju sopstveni `home` direktorij koji se nalazi u folderu `/home`. Izuzetak je `root` korisnik, čiji home direktorij se nalazi na lokaciji `/root`.
-
-#### Vježba: nekoliko načina kako pristupiti home folderu
-
-* koristiti `cd` komanu bez argumenata.
-
-```
-cd
-```
-
-* kao argument `cd` komandi proslijediti znak tildu tj. `~`.
-
-```
-cd ~
-```
-* kao argument `cd` komandi proslijediti build in shell varijablu `$HOME`
-
-```
-cd $HOME
-```
 
 
 ## Komanda **find**
