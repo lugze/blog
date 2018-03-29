@@ -196,7 +196,7 @@ Description: Navigation of home and system directories and listing files in vari
 
 Prvo sto moramo razumijeti jeste da u **Linuxu sve je fajl**, direktoriji su posebna vrsta fajla.
 
-### Identifikacija Tipova Fajlova pomocu komande **file**
+### 2.3.1 Identifikacija Tipova Fajlova pomocu komande **file**
 
 Pored klasinih fajlova i direktorija imamo i fajlove koji pokazuju na uredjaje kao sto su USB portovi i hard diskovi. Ovi fajlovi su locirani u `/dev` direktoriju, gdje je **dev** skracenica od **devices**.
 
@@ -232,7 +232,26 @@ file /dev/sda1 /etc /etc/passwd
 /etc/passwd: ASCII text
 ````
 
-### Uobičajena organizacija foldera u Linuxu
+### 2.3.2 Skriveni fajlovi
+
+U Linuxu skriveni fajlovi su fajlovi cije ime pocinje sa **tackom** odnosno zakom **.**. Da bi izlistali skrivene fajlove koristimo opciju **-a** sa komanom **ls** da nam izlista sve vrste fajlova ukljucujuci i skrivene fajove.
+
+Pomocu pipinga i grep komande mozemo izlistati sve fajlove koji pocinju sa znakom **.**.
+
+````
+ls -a | grep '^.'
+````
+
+Komanda **ls** ima opcije **-a** i **-A**.
+
+* opcija **-a** izlistava sve fajlove
+* opcija **-A** islistava skoro sve
+
+Opcija **-A** ne izlistava trenutni direktorij cija je oznaka sama **tacka** odnosno znak **.** te ne izlistava direktorij roditelj cija je oznaka **dvije tacke** odnosno **..**.
+
+
+
+### 2.3.3 Uobičajena organizacija foldera u Linuxu
 
 * `/bin`  - programi koje koriste i administratori i korisnici
 * `/dev`  - datoteke koje predstavljaju hardverske uredjaje (mrezna, graficka)  
@@ -261,7 +280,7 @@ Listanje
 ls
 ```
 
-Listaj a-detalje, l-long format, h-velicina fileova izrazena razumljivije
+Listaj **a**-detalje, **l**-long format, **h**-velicina fileova izrazena razumljivije
 
 ```
 ls —a -l -h
