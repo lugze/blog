@@ -55,18 +55,18 @@ Description: Basics of using the Linux command line.
 
 
 
-### Command Structure
+### 2.1.1 Command Structure
 
 Sta su argumenti, options, parametri?
 
-### Tipovi komandi
+### 2.1.2 Tipovi komandi
 
 * Interne komande - komande koje omogucava sam shell. Bash ili Bourne-again shell omogucava oko 30 internih komandi.
 
 * Eksterne komande - komande koje ne pokrece sam shell, nego pokrece binarne fajlove koji se nalaze u sistemskih direktorijima kao sto su `/bin` ili `/usr/bin`.
 
 
-#### Komanda **type**
+#### 2.2.2.1 Komanda **type**
 
 
 Mozemo koristiti `type` komandu da saznamo tip komande.
@@ -95,7 +95,7 @@ userdel --help
 ````
 
 
-***Vjezba***
+##### ***Vjezba*** sa komandom `type`
 
 Koje od sljedecih komandi su interne a koje eksterne?
 
@@ -103,12 +103,12 @@ Koje od sljedecih komandi su interne a koje eksterne?
 alias, echo, rm, test
 ````
 
-### Dodatna shell pravila
+### 2.1.3 Dodatna shell pravila
 
 Shell ne samo da razlikuje mala i velika slova kada se unose imena komandi, nego isto pravilo vazi i za parametre i opcije te i imena fajlova.
 
 
-#### “Escaping” characters
+#### 2.1.4 “Escaping” characters
 
 Ako zelimo napraviti fajl sa razmakom u imenu, moramo koristiti navodnike. Koristenje navodnika je jedan vid tzv. “Escaping” karaktera.  “Escaping” je potrebno raditi sa svim specijalnom karakterima.
 
@@ -121,7 +121,7 @@ $&;(){}[]*?!<>"'
 * Za “Escaping” samo jednog karaktera koristimo znak `\` ili backslash.
 * Za “Escaping” vise rijeci od jednom koristimo jednostruke `''` i dvostruke `"…"` navodnike.
 
-##### Pravljenje fajla sa razmakom u imenu
+##### 2.1.4.1 Pravljenje fajla sa razmakom u imenu
 
 ````
 touch 'Novi Fajl'
@@ -156,7 +156,7 @@ Description: Running help commands and navigation of the various help systems.
 *    locate
 
 
-
+### Opcija **-help**
 
 ```
 ls —help
@@ -165,11 +165,12 @@ ls —help
  -> pomoc o komandi
 
 
+### Komanda **man**
+
 ```
 man ls
 ```
  -> man-om objasnjvamo komande i lista se sa f i b
-
 
 
 
