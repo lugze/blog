@@ -301,7 +301,7 @@ cd $HOME
 
 Korisna opcija komandi **cd** je **-** opcija. Njihova kombinacija izgleda ovako `cd -`. Ova komanda korisnika vraca u prethodni diretorij. Ovo funkcionise pomocu varijable **$OLDPWD**.
 
-#### 2.3.4.1 Vjeza sa vracanjem u prethodni direktorij
+#### 2.3.4.1 Vjezba: vracanje u prethodni direktorij
 
 ````
 cd ~
