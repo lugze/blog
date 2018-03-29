@@ -283,6 +283,21 @@ cd ~
 cd $HOME
 ```
 
+### 2.3.4 Prethodni direktorij
+
+Korisna opcija komandi **cd** je **-** opcija. Njihova kombinacija izgleda ovako `cd -`. Ova komanda korisnika vraca u prethodni diretorij. Ovo funkcionise pomocu varijable **$OLDPWD**.
+
+#### 2.3.4.1 Vjeza sa vracanjem u prethodni direktorij
+
+````
+cd
+cd /tmp
+echo $OLDPWD
+cd -
+````
+
+
+
 ### 2.3.5 Uobičajena organizacija foldera u Linuxu
 
 * `/bin`  - programi koje koriste i administratori i korisnici
