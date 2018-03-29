@@ -66,7 +66,7 @@ Sta su argumenti, options, parametri?
 * Eksterne komande - komande koje ne pokrece sam shell, nego pokrece binarne fajlove koji se nalaze u sistemskih direktorijima kao sto su `/bin` ili `/usr/bin`.
 
 
-#### 2.2.2.1 Komanda **type**
+#### 2.1.2.1 Komanda **type**
 
 
 Mozemo koristiti `type` komandu da saznamo tip komande.
@@ -108,7 +108,7 @@ alias, echo, rm, test
 Shell ne samo da razlikuje mala i velika slova kada se unose imena komandi, nego isto pravilo vazi i za parametre i opcije te i imena fajlova.
 
 
-#### 2.1.4 “Escaping” characters
+### 2.1.4 “Escaping” characters
 
 Ako zelimo napraviti fajl sa razmakom u imenu, moramo koristiti navodnike. Koristenje navodnika je jedan vid tzv. “Escaping” karaktera.  “Escaping” je potrebno raditi sa svim specijalnom karakterima.
 
@@ -121,7 +121,7 @@ $&;(){}[]*?!<>"'
 * Za “Escaping” samo jednog karaktera koristimo znak `\` ili backslash.
 * Za “Escaping” vise rijeci od jednom koristimo jednostruke `''` i dvostruke `"…"` navodnike.
 
-##### 2.1.4.1 Pravljenje fajla sa razmakom u imenu
+#### 2.1.4.1 Pravljenje fajla sa razmakom u imenu
 
 ````
 touch 'Novi Fajl'
@@ -195,9 +195,23 @@ Description: Navigation of home and system directories and listing files in vari
 * pretraga pomocu komande `find`
 
 
-Prvo sto moramo razumijeti jeste da u **Linuxu sve je fajl**, direktoriji su posebna vrsta fajla.
+### 2.3.0 Uobičajena organizacija foldera u Linuxu
+
+* `/bin`  - programi koje koriste i administratori i korisnici
+* `/dev`  - datoteke koje predstavljaju hardverske uredjaje (mrezna, graficka)  
+* `/etc`  - konfiguracijske datoteke
+* `/home` - direktoriji korisnika
+* `/sbin` - sistemski programi
+* `/tmp`  - privremene datoteke
+* `/usr`  - korisnicki programi, dokumentacija i biblioteke
+* `/var`  - sistemski zapisi i druge datoteke.
+
+* Više na [linku](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard).
+
 
 ### 2.3.1 Identifikacija Tipova Fajlova pomocu komande **file**
+
+Prvo sto moramo razumijeti jeste da u **Linuxu sve je fajl**, direktoriji su posebna vrsta fajla.
 
 Pored klasinih fajlova i direktorija imamo i fajlove koji pokazuju na uredjaje kao sto su USB portovi i hard diskovi. Ovi fajlovi su locirani u `/dev` direktoriju, gdje je **dev** skracenica od **devices**.
 
@@ -290,36 +304,36 @@ Korisna opcija komandi **cd** je **-** opcija. Njihova kombinacija izgleda ovako
 #### 2.3.4.1 Vjeza sa vracanjem u prethodni direktorij
 
 ````
-cd
+cd ~
 cd /tmp
 echo $OLDPWD
+cd $OLDPWD
+cd /home
 cd -
+echo $OLDPWD
 ````
 
+### 2.3.6 Putanje do Fajlova
 
+Kada pristupamo fajlovimo koristimo putanje. Putanje mogu biti
 
-### 2.3.5 Uobičajena organizacija foldera u Linuxu
+* `apsolutne` putanje
+* `relativne` putannje
 
-* `/bin`  - programi koje koriste i administratori i korisnici
-* `/dev`  - datoteke koje predstavljaju hardverske uredjaje (mrezna, graficka)  
-* `/etc`  - konfiguracijske datoteke
-* `/home` - direktoriji korisnika
-* `/sbin` - sistemski programi
-* `/tmp`  - privremene datoteke
-* `/usr`  - korisnicki programi, dokumentacija i biblioteke
-* `/var`  - sistemski zapisi i druge datoteke.
+Primjeri putanja
 
-* Više na [linku](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard).
+* **.** - Trenutni tj. tekući direktoriju.
+* **..** - Direktorij iznad ili roditelj trenutnog direktorija.
+* **../..** - Direktorij dva direktorija iznad trenutnog direktorija.
+* **/etc/passwd** - Apsulutna ili puna putanja do fajla `passwd` koji se nalazu u sistemom `etc` direktoriju.
+* **../etc/passwd** - Ukuloko je trenutni direktorij `/home` ovo bi bila relativna putanja na `passwd` fajla.
 
-
-
-###  Rad sa fajlovima i direktorijima
 
 #### Fajlovi i direktoriji koji imaju razmak u imenu
 
 File ili direktorij sa space Moj File se pise kao ```Moj\ file```
 
-### Ispis sadržaja direktorija sa komandom `ls`
+### 2.3.7 Ispis sadržaja direktorija sa komandom `ls`
 
 Listanje
 
