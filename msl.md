@@ -55,9 +55,23 @@ Description: Basics of using the Linux command line.
 
 
 
-### 2.1.1 Command Structure
+### 2.1.1 Struktura SHELL Komandi
 
-Sta su argumenti, options, parametri?
+Komandna u shellu imaju sljedecu formu.
+
+````
+komanda  [opcije]  [argumenti]
+````
+
+* Komanda - "Sta zelimo uraditi"
+* Opcije - "Kako nesto uraditi"
+* Argumenti - "Sa čime to raditi"
+
+Komandni parametri ugrubo se dijele u **opcije** i **argumente**.
+
+* Parametri koji pocinju sa znakom **dash** odnosno **-** se nazivaju `opcije`. Ovaj tip parametara je ***opcionalan*** iz cega i nosi naziv.
+
+* Parametri koji ne pozinju sa znakom **-** se nazivaju **argumenti**.
 
 ### 2.1.2 Tipovi komandi
 
