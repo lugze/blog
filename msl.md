@@ -194,6 +194,44 @@ Description: Navigation of home and system directories and listing files in vari
 * pretraga pomocu komande `find`
 
 
+Prvo sto moramo razumijeti jeste da u **Linuxu sve je fajl**, direktoriji su posebna vrsta fajla.
+
+### Identifikacija Tipova Fajlova pomocu komande **file**
+
+Pored klasinih fajlova i direktorija imamo i fajlove koji pokazuju na uredjaje kao sto su USB portovi i hard diskovi. Ovi fajlovi su locirani u `/dev` direktoriju, gdje je **dev** skracenica od **devices**.
+
+Pomocu komande **file** mozemo odrediti tip jednog ili vise fajlova. Pomocu sljedece komande cemo pitati **file** komandu da nam izlista vrstu fajla za sljedece fajlove sa sljedece liste.
+
+* /dev/sda1
+* /etc
+* /etc/passwd
+
+
+Mozemo pojedinacno piatti za tip fajla na sljedeci nacin
+
+````
+file /dev/sda1
+/dev/sda1: block special (8/1)
+````
+
+````
+file /etc/
+/etc/: directory
+````
+
+````
+file /etc/passwd
+/etc/passwd: ASCII text
+````
+ili grupno na sljedeci nacine
+
+````
+file /dev/sda1 /etc /etc/passwd
+/dev/sda1:   block special (8/1)
+/etc:        directory
+/etc/passwd: ASCII text
+````
+
 ### Uobičajena organizacija foldera u Linuxu
 
 * `/bin`  - programi koje koriste i administratori i korisnici
