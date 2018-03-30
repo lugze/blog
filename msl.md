@@ -208,7 +208,7 @@ Koristenje komande ```whatis``` omogucava pronalazenje man stranica za datu koma
 Iz dokumentacije izlazimo sa ```q```
 
 
-### Komanda **info**
+### Komanda *info*
 
 Naredba info omogućava pristup do dokumenata koji čine drugi sistem pomoći, takozvane info-stranice. okumentaciju u ovom formatu imaju samo neki, većinom noviji programi posebno pisani upravo za Linux. Ukoliko ne postoji dokumentacija za traženi pojam među info-stranicama, naredba info će ispisati odgovarajuću man-stranicu (ako ona postoji).
 
@@ -216,7 +216,7 @@ Naredba info omogućava pristup do dokumenata koji čine drugi sistem pomoći
 ```info komanda```
 
 
-### Komanda ```Which```
+### Komanda *which*
  
 Komanda which, je jako korisna komanda u Linuxu, i ispisuje putanju do naredbi koje su izvršne datoteke.
 Da bi naredba which mogla pronaći zadanu naredbu na disku, potrebno je da se ona nalazi u direktoriju koji je naveden u varijabli PATH.
