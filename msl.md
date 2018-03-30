@@ -179,7 +179,7 @@ ls —help
  -> pomoc o komandi
 
 
-<<<<<<< HEAD
+### Komanda *man*
 
 Komanda ```man``` (manual) podrazumjeva nesto opsirniju dokumentaciju.
 Riječ je o dokumentaciji koja opisuje naredbe, a koja je podijeljena na sekcije i stranice.
@@ -201,8 +201,14 @@ Koristenje komande ```whatis``` omogucava pronalazenje man stranica za datu koma
 ```whatis crontab```
 
 
+```man ls```
+-> man-om objasnjvamo komande i lista se sa f i b
+
+
 Iz dokumentacije izlazimo sa ```q```
 
+
+### Komanda **info**
 
 Naredba info omogućava pristup do dokumenata koji čine drugi sistem pomoći, takozvane info-stranice. okumentaciju u ovom formatu imaju samo neki, većinom noviji programi posebno pisani upravo za Linux. Ukoliko ne postoji dokumentacija za traženi pojam među info-stranicama, naredba info će ispisati odgovarajuću man-stranicu (ako ona postoji).
 
@@ -210,19 +216,22 @@ Naredba info omogućava pristup do dokumenata koji čine drugi sistem pomoći
 ```info komanda```
 
 
+### Komanda ```Which```
+ 
+Komanda which, je jako korisna komanda u Linuxu, i ispisuje putanju do naredbi koje su izvršne datoteke.
+Da bi naredba which mogla pronaći zadanu naredbu na disku, potrebno je da se ona nalazi u direktoriju koji je naveden u varijabli PATH.
+ 
+Sintaksa:
 
-Which
-Jako korisna komanda u Linuxu.
+```which komanda```
+
+Primjer:
+
+$ which info
+/usr/bin/info
 
 ```which ls```
-=======
-### Komanda **man**
->>>>>>> b9febc2e7de1e8955800a2079a003bc112e013da
 
-```
-man ls
-```
- -> man-om objasnjvamo komande i lista se sa f i b
 
 
 
