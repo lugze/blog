@@ -55,18 +55,32 @@ Description: Basics of using the Linux command line.
 
 
 
-### Command Structure
+### 2.1.1 Struktura SHELL Komandi
 
-Sta su argumenti, options, parametri?
+Komandna u shellu imaju sljedecu formu.
 
-### Tipovi komandi
+````
+komanda  [opcije]  [argumenti]
+````
+
+* Komanda - "Sta zelimo uraditi"
+* Opcije - "Kako nesto uraditi"
+* Argumenti - "Sa čime to raditi"
+
+Komandni parametri ugrubo se dijele u **opcije** i **argumente**.
+
+* Parametri koji pocinju sa znakom **dash** odnosno **-** se nazivaju `opcije`. Ovaj tip parametara je ***opcionalan*** iz cega i nosi naziv.
+
+* Parametri koji ne pozinju sa znakom **-** se nazivaju **argumenti**.
+
+### 2.1.2 Tipovi komandi
 
 * Interne komande - komande koje omogucava sam shell. Bash ili Bourne-again shell omogucava oko 30 internih komandi.
 
 * Eksterne komande - komande koje ne pokrece sam shell, nego pokrece binarne fajlove koji se nalaze u sistemskih direktorijima kao sto su `/bin` ili `/usr/bin`.
 
 
-#### Komanda **type**
+#### 2.1.2.1 Komanda **type**
 
 
 Mozemo koristiti `type` komandu da saznamo tip komande.
@@ -95,7 +109,7 @@ userdel --help
 ````
 
 
-***Vjezba***
+##### ***Vjezba*** sa komandom `type`
 
 Koje od sljedecih komandi su interne a koje eksterne?
 
@@ -103,12 +117,12 @@ Koje od sljedecih komandi su interne a koje eksterne?
 alias, echo, rm, test
 ````
 
-### Dodatna shell pravila
+### 2.1.3 Dodatna shell pravila
 
 Shell ne samo da razlikuje mala i velika slova kada se unose imena komandi, nego isto pravilo vazi i za parametre i opcije te i imena fajlova.
 
 
-#### “Escaping” characters
+### 2.1.4 “Escaping” characters
 
 Ako zelimo napraviti fajl sa razmakom u imenu, moramo koristiti navodnike. Koristenje navodnika je jedan vid tzv. “Escaping” karaktera.  “Escaping” je potrebno raditi sa svim specijalnom karakterima.
 
@@ -121,7 +135,7 @@ $&;(){}[]*?!<>"'
 * Za “Escaping” samo jednog karaktera koristimo znak `\` ili backslash.
 * Za “Escaping” vise rijeci od jednom koristimo jednostruke `''` i dvostruke `"…"` navodnike.
 
-##### Pravljenje fajla sa razmakom u imenu
+#### 2.1.4.1 Pravljenje fajla sa razmakom u imenu
 
 ````
 touch 'Novi Fajl'
@@ -156,7 +170,7 @@ Description: Running help commands and navigation of the various help systems.
 *    locate
 
 
-
+### Opcija **-help**
 
 ```
 ls —help
@@ -165,6 +179,7 @@ ls —help
  -> pomoc o komandi
 
 
+<<<<<<< HEAD
 
 Komanda ```man``` (manual) podrazumjeva nesto opsirniju dokumentaciju.
 Riječ je o dokumentaciji koja opisuje naredbe, a koja je podijeljena na sekcije i stranice.
@@ -200,12 +215,14 @@ Which
 Jako korisna komanda u Linuxu.
 
 ```which ls```
+=======
+### Komanda **man**
+>>>>>>> b9febc2e7de1e8955800a2079a003bc112e013da
 
 ```
 man ls
 ```
  -> man-om objasnjvamo komande i lista se sa f i b
-
 
 
 
@@ -230,7 +247,7 @@ Description: Navigation of home and system directories and listing files in vari
 * pretraga pomocu komande `find`
 
 
-### Uobičajena organizacija foldera u Linuxu
+### 2.3.0 Uobičajena organizacija foldera u Linuxu
 
 * `/bin`  - programi koje koriste i administratori i korisnici
 * `/dev`  - datoteke koje predstavljaju hardverske uredjaje (mrezna, graficka)  
@@ -244,14 +261,131 @@ Description: Navigation of home and system directories and listing files in vari
 * Više na [linku](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard).
 
 
+### 2.3.1 Identifikacija Tipova Fajlova pomocu komande **file**
 
-###  Rad sa fajlovima i direktorijima
+Prvo sto moramo razumijeti jeste da u **Linuxu sve je fajl**, direktoriji su posebna vrsta fajla.
+
+Pored klasinih fajlova i direktorija imamo i fajlove koji pokazuju na uredjaje kao sto su USB portovi i hard diskovi. Ovi fajlovi su locirani u `/dev` direktoriju, gdje je **dev** skracenica od **devices**.
+
+Pomocu komande **file** mozemo odrediti tip jednog ili vise fajlova. Pomocu sljedece komande cemo pitati **file** komandu da nam izlista vrstu fajla za sljedece fajlove sa sljedece liste.
+
+* /dev/sda1
+* /etc
+* /etc/passwd
+
+
+Mozemo pojedinacno piatti za tip fajla na sljedeci nacin
+
+````
+file /dev/sda1
+/dev/sda1: block special (8/1)
+````
+
+````
+file /etc/
+/etc/: directory
+````
+
+````
+file /etc/passwd
+/etc/passwd: ASCII text
+````
+ili grupno na sljedeci nacine
+
+````
+file /dev/sda1 /etc /etc/passwd
+/dev/sda1:   block special (8/1)
+/etc:        directory
+/etc/passwd: ASCII text
+````
+
+### 2.3.2 Skriveni fajlovi
+
+U Linuxu skriveni fajlovi su fajlovi cije ime pocinje sa **tackom** odnosno zakom **.**. Da bi izlistali skrivene fajlove koristimo opciju **-a** sa komanom **ls** da nam izlista sve vrste fajlova ukljucujuci i skrivene fajove.
+
+Pomocu pipinga i grep komande mozemo izlistati sve fajlove koji pocinju sa znakom **.**.
+
+````
+ls -a | grep '^.'
+````
+
+Komanda **ls** ima opcije **-a** i **-A**.
+
+* opcija **-a** izlistava sve fajlove
+* opcija **-A** islistava skoro sve
+
+Opcija **-A** ne izlistava trenutni direktorij cija je oznaka sama **tacka** odnosno znak **.** te ne izlistava direktorij roditelj cija je oznaka **dvije tacke** odnosno **..**.
+
+### 2.3.3 Home folder
+
+Korsnici imaju sopstveni `home` direktorij koji se nalazi u folderu `/home`. Izuzetak je `root` korisnik, čiji home direktorij se nalazi na lokaciji `/root`. U home direktoriji korisnici cuvaju svoje fajlove i personalne **login skripte** i **bash history** odnosno listu komandi koje su prethodno kucali.
+
+* `~/.bashrc`
+* `~/.bash_history`
+
+Korisnik prilikom logovanja ce biti odveden u home direktorij. Putanja do home direktorija je definisana u varijabli `$HOME`. Mozemo ispisati trenutnu vrijednost **$HOME** varijable pomocu **echo** komande na sljedeci nacin.
+
+````
+echo $HOME
+````
+Korisnici mogu pristupiti home folderu tako sto koriste **cd** komandu bez argumenata te ako koriste znak tildu odnosno **~**.
+
+#### Vježba: nekoliko načina kako pristupiti home folderu
+
+* koristiti `cd` komanu bez argumenata.
+
+```
+cd
+```
+
+* kao argument `cd` komandi proslijediti znak tildu tj. `~`.
+
+```
+cd ~
+```
+* kao argument `cd` komandi proslijediti build in shell varijablu `$HOME`
+
+```
+cd $HOME
+```
+
+### 2.3.4 Prethodni direktorij
+
+Korisna opcija komandi **cd** je **-** opcija. Njihova kombinacija izgleda ovako `cd -`. Ova komanda korisnika vraca u prethodni diretorij. Ovo funkcionise pomocu varijable **$OLDPWD**.
+
+#### 2.3.4.1 Vjezba: vracanje u prethodni direktorij
+
+````
+cd ~
+cd /tmp
+echo $OLDPWD
+cd $OLDPWD
+cd /home
+cd -
+echo $OLDPWD
+````
+
+### 2.3.6 Putanje do Fajlova
+
+Kada pristupamo fajlovimo koristimo putanje. Putanje mogu biti
+
+* `apsolutne` putanje
+* `relativne` putannje
+
+Primjeri putanja
+
+* **.** - Trenutni tj. tekući direktoriju.
+* **..** - Direktorij iznad ili roditelj trenutnog direktorija.
+* **../..** - Direktorij dva direktorija iznad trenutnog direktorija.
+* **/etc/passwd** - Apsulutna ili puna putanja do fajla `passwd` koji se nalazu u sistemom `etc` direktoriju.
+* **../etc/passwd** - Ukuloko je trenutni direktorij `/home` ovo bi bila relativna putanja na `passwd` fajla.
+
 
 #### Fajlovi i direktoriji koji imaju razmak u imenu
 
 File ili direktorij sa space Moj File se pise kao ```Moj\ file```
 
-### Ispis sadržaja direktorija sa komandom `ls`
+### 2.3.7 Ispis sadržaja direktorija sa komandom `ls`
 
 Listanje
 
@@ -259,7 +393,7 @@ Listanje
 ls
 ```
 
-Listaj a-detalje, l-long format, h-velicina fileova izrazena razumljivije
+Listaj **a**-detalje, **l**-long format, **h**-velicina fileova izrazena razumljivije
 
 ```
 ls —a -l -h
@@ -344,29 +478,6 @@ cd ../../NEKI FOLDER
 ````
 man cd
 ````
-
-### Home folder
-
-Korsnici imaju sopstveni `home` direktorij koji se nalazi u folderu `/home`. Izuzetak je `root` korisnik, čiji home direktorij se nalazi na lokaciji `/root`.
-
-#### Vježba: nekoliko načina kako pristupiti home folderu
-
-* koristiti `cd` komanu bez argumenata.
-
-```
-cd
-```
-
-* kao argument `cd` komandi proslijediti znak tildu tj. `~`.
-
-```
-cd ~
-```
-* kao argument `cd` komandi proslijediti build in shell varijablu `$HOME`
-
-```
-cd $HOME
-```
 
 
 ## Komanda **find**
