@@ -1671,3 +1671,341 @@ Sta se desi ako izbrisemo drugi fajl, da li ce prvi fajl biti izbrisan?
 ```
 rm fajl_drugi
 ```
+
+# 6 Bash Script
+
+##### List/info manual:
+```$ man bash```
+
+```man info```
+
+##### List manual with number of lines:
+```$ man bash | wc -l```
+
+-First two character in script should be 
+#! (shebeng)
+#!/bin/bash
+
+-Make scripts executambe with ```chmon u+x```, but i jou dont have permisions, you can run script with ```bash name_of_sript```
+-If your directory dont contain script ```bash ./name_of_script.sh```
+
+### Variables in bash:
+-export command
+-unset for remove variable
+-echo $variable for value of variable
+
+-export mynewvar or declare -x mynewvar
+-export and ansigh in same time ```export var2="var2 value"```
+
+Export functions
+```export -f myfunction```
+
+##### Bash startup:
+-Check path ```pwd```
+PATH=$PATH:/usr/local/bin
+
+
+#### Working with aliases:
+-Aliases are for commands
+```alias ll="ls -ahl"```
+```alias copy="cp"```
+
+-List defined aliases with typed ```alias```
+
+**unset** alias with commans ```unalias```
+
+###Variables
+
+####Typesets:
+typeset -i x -> x must be integer
+-let- allwos to convenient arithmetics: x++, x=x**2, x=x*3...
+
+####Declare variables####
+
+-if its string **-l** means all upercase, **-u*** lowercase and **-r** readonly
+-declare with **-a MyArray** means myarray as indexed array
+
+**exp.**
+
+```#!/bin/bash
+declare -l lstring="ABCdef"
+declare -u ustring="ABCdef"
+declare -r readonly="A Value"
+declare -a Myarray
+declare -A Myarray2
+
+echo lstring=$lstring
+echo ustring=$ustring
+echo readonly=$readonly
+readonly="New Value"
+Myarray[2]="Second Value"
+echo 'Myarray[2]= ' ${Myarray[2]}
+Myarray2["soccer"]="beer"
+echo 'Myarray2[soccer]= ' ${Myarray2["soccer"]} 
+```
+
+
+### The Read Command
+
+#### While loop
+```
+#!/bin/bash
+while 
+  ((x<10))
+do
+  echo loop $x; date>date.$x
+  ((x=x+1))
+done
+```
+
+-While loop with pipeline and reading 3 line (c) from the list
+```
+#!/bin/bash
+
+ls -l | while
+  read a b c d
+do
+ echo owner $c
+done
+```
+
+
+#### For loop
+```
+for <var> in <list>
+do 
+  command list
+done
+```
+exp.
+```
+for animal in dog cat sheep
+do
+ echo animal is $animal
+done
+```
+-seq command for sequence
+```seq 1 9``` -> print sequence 1,2,3,4,5,6,7,8,9
+
+```{A..Z} or {1..10} -> same but without seq```
+
+Using seq in foorloop
+```for i in `seq 1` ```
+
+Loop per word from file
+```for d in $(<data_file)```
+
+Making a list a file globbing
+```for j in *.c```
+
+```for f in (find . -name *.c)``` -> loop, ind filename in current direstory with start extension with font c
+
+#### Reading
+
+-Read first and second line from data_file file
+```
+export a=first
+export b=second
+export c=third
+
+echo a is '['$a']', b is '['$b']' and c is '[' $c']'
+read a b <data_file
+echo a is '['$a']', b is '['$b']' and c is '[' $c']'
+```
+
+-Read third column (owner) from ls command
+```
+#!/bin/bash
+
+ls -l /etc | while
+      read a b c d
+do
+      echo owner is $c
+done
+```
+
+-Show number of lines from particular file
+```nl my-file.sh```
+
+#### Redirection and Pipes
+
+0=>stdin (Standard in)
+1=>stdout (Standard out)
+2=>sterr (Standard error)
+
+```command &> file``` -> gets stdout and stderr from command (file be created or overwritten)
+
+
+```command | command2```
+Commans2's stdin comes from command's stdout
+
+-Open or close file descriptors
+
+```exec N< myfile``` -> opens file descriptor N for reading from file myfile
+```exec N> myfile```-> opens file descriptor N for writing from file myfile
+```exec N<> myfile```-> opens file descriptor N for reading and writing from file myfile
+```exec N>&-```-> close file descriptor N
+
+#### Arithmetics operations
+
+-use in (( )) or with *let*
+
+### Bash Functions
+
+```
+function NAME {
+  function body
+}
+
+function NAME {
+  echo starting
+  return
+  
+  this part of code will not be executed
+}
+```
+### If/Else Statement
+
+
+**exp**
+
+```
+if
+grep -q important myfile
+then
+   echo myfile has importans stuff
+else
+   echo my file doesn’t have important stuff
+fi
+```
+
+$? -> What is you status? 
+If it’s 1,2 or 3 it’s an error, but if it’s 0 than program succefully xecuted
+
+```		
+if [ $? -eq 0 ]; then
+  echo
+  echo Program was successfully created, exiting program."
+else
+  echo "Failed, exitting."
+```
+
+Test - numeric Operators:
+-eq -> ==
+-lt -> <
+-le -> <=
+-ne -> &&
+
+Some tests:
+
+-succes if x is a directory
+```test -d X```
+
+-succes if x is regular file
+```test -f X```
+
+-succes if x is not empty and if exists
+```test -s X```
+
+-succes if x you have x permission on X file (same for w or r permission)
+```test -x X```
+
+
+### Filters and Paremeter Expansions
+-Filters can be used with pipes
+
+**head** - prints first n lines
+**tail** - prints last n lines
+
+exp:
+
+```ls -l | head 5``` -> show first 5 lines form ls -l
+```ls -l | tail 5``` -> show last 7 lines form ls -l
+
+**wc**(word count) - prints line and words
+```wc -l``` - prints number of lines
+
+**awk** Breaks the line into the fields $1, $2
+
+#### Positional strings
+
+Script parameters
+
+-To reference multidigital use {} eg. ${10}, or you have to name string as variable ${MojaVarijabla}
+
+-${0} -> its path program to itself
+
+-```shift``` command moves $1 to $2
+
+```
+#!/bin/bash
+
+echo agr1 is $1 arg 11 is ${11}
+shift
+echo now arg1 is $1 arg 11 is ${11}
+echo program is $0
+```
+
+###### Unset of null variables
+
+```
+${variable <OPR> value}
+x=${var:-HAmburger}
+```
+-```:-``` if var unset or null, return value: otherwise return value of var
+-```:=``` if var unset or null, var is assigned value and returned
+-```:?``` Displays an error and exit script if var unset/null
+-```:+``` if var unset or null, return nothing: otherwise return value
+
+```
+#!/bin/bash
+
+unset x
+a=${x:-Hotdog}
+echo a is $a
+echo x is $x
+
+a=${x:=Hotdog}
+echo a is $a
+echo x is $x
+
+unset x
+${x:?}
+echo Will not get here
+```
+
+###### String operations
+
+```${var:offset}``` - value of var starting as offset
+```${var:offset:len}``` - value of var starting at offset up to lenght len
+```${#var}``` - lenght of var
+
+prefix anf postfix are handy to processing filenames/paths
+```${var#pre}``` - removing mathching prefix
+```${var%post}``` - remove suffix
+
+
+### Using coprocesses in bash
+
+-Coprocess is background process where you can get file descriprion for the process's stdin and stdout and it implemented with pipe
+
+### Debugging scripts
+
+```$bash prog``` -> Run prog; don't need execute permission
+
+```bash -x prog``` Echo commands after processing; can also do set -x or set +x  inside of script
+
+```bash -n prog``` Do not execute commands, check for syntax error omly
+
+
+
+
+
+
+
+
+
+
+
+
+
