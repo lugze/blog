@@ -1714,13 +1714,13 @@ PATH=$PATH:/usr/local/bin
 
 **unset** alias with commans ```unalias```
 
-###Variables
+### Variables
 
-####Typesets:
+#### Typesets:
 typeset -i x -> x must be integer
 -let- allwos to convenient arithmetics: x++, x=x**2, x=x*3...
 
-####Declare variables####
+**Declare variables**
 
 -if its string **-l** means all upercase, **-u*** lowercase and **-r** readonly
 -declare with **-a MyArray** means myarray as indexed array
