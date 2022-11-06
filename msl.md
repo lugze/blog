@@ -527,7 +527,7 @@ Archive komande
 
 ## Procesi
 
-# Izlistaj sve procese svih korisnika
+#### Izlistaj sve procese svih korisnika
 
 ```
 ps -ef
@@ -542,19 +542,19 @@ ili
 ps -aux
 ```
 
-# izlistaj procese samo za sshd korisnika
+### izlistaj procese samo za sshd korisnika
 
 ```
 ps -f -u sshd
 ```
 
-# sortiraj procese po potrošnji memorije
+### sortiraj procese po potrošnji memorije
 
 ```
 ps aux --sort pmem
 ```
 
-# sortoranje procesa po CPU potrošnji
+### sortoranje procesa po CPU potrošnji
 
 ```
 ps aux --sort pcpu
@@ -562,13 +562,14 @@ ps aux --sort pcpu
 
 ### Slanje procesa i background
 
+Da bi poslali komandu u backgroun, nakon komande dodamo znak `&` tj. znak ampersand.
 
-
-nakon komande dodamo znak &
+U sljedecem primjeru zelimo da pingamo google svakih 5 sekundi sa komandom `ping -i 5 google.com`. Da bi je poslali u background, aa sami kraj komande dodajemo znak `&`.
 
 ```
-nano &
+ping -i 5 google.com &
 ```
+Na ovaj nacin komanda ce biti izvrsavana u pozadini i svakih 5 sekundi ce nam ispisati rezultat na ekran, dok se rad u terminalu moze nastaviti.
 
 izlistamo procese u backgroundu
 
@@ -593,9 +594,26 @@ Ukucavamo
 ```
 kill 1 --> broj procesa
 ```
+#### SIGHUP i bacground procesi
+
+Proces koji je poslan u background direktno je vezan za sessiju terminala prek kojeg je korisnik pokrenuo taj isti proces. Kada se korisnik odjavi tj. uradi logout svim background procesima ce biti poslan `SIGHUP` signal. Signal `SIGHUP` je skracenica za `signal hang up` i sluzi za terminiranje procesa.
 
 
+<<<<<<< HEAD
 ## Koristenje jerkyll-a (Transform your plain text into static websites)
+=======
+
+Ako zelimo da background proces ostane u `running` stanju i da istom procesu ne bude poslan `SIGHUP` signal onda koristimo `nohup` komanu kao prefix.
+
+
+* Sljedeci primjer koristimo ping komandu da pingamo udaljeni host `google.com` svakih `5` sekundi, te istu komandu saljemo u background. Pomocu `nohup` taj background proces nece biti ugasen nakon sto se korisnik koji je pokrenuo komandu odjavi sa terminala.
+
+````
+nohup ping -i 5 google.com &
+````
+
+### Koristenje jerkyll-a (Transform your plain text into static websites)
+>>>>>>> ac6e9df (dodajem nohup za background procese)
 
 1. Logovanje na server
 2. Dodavanje novog korisnika
@@ -618,18 +636,20 @@ gem update —system
 ```
 
 
-6. Kao korisnik generisati novi kljuc
+* 6. Kao korisnik generisati novi kljuc
+
 ```
 ssh-keygen -t rsa
 ```
 
-7. generisani kljuc za korisnika dodati na github repo gdje je forkovan lugze blog
-8. Instaliranje bundle-a
+* 7. generisani kljuc za korisnika dodati na github repo gdje je forkovan lugze blog
+
+* 8. Instaliranje bundle-a
 ```
 apt-get install bundle
 ```
 
-9. Ponoviti postupak kloniranja datog repo-a i instalacije jekyll-a
+* 9. Ponoviti postupak kloniranja datog repo-a i instalacije jekyll-a
 
 ```
 git clone naziv git repoa
@@ -639,7 +659,7 @@ instalacije jekyll-a
 gem install jekyll bundler
 ```
 
-10. Pokretanje jekyll serve u backgroundu
+* 10. Pokretanje jekyll serve u backgroundu
 
 ```
 bundle exec jekyll serve &
