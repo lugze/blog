@@ -9,6 +9,49 @@ Verzija dokumenta 0.0.2
 * TOC
 {:toc}
 
+# 1 Linux Zajednica
+
+## 1.1 Evolucija Linux i popularnih operativnih sistema
+
+* open source filozofija
+* Distribucije
+* Embedded Systems
+
+* Android
+* Debian, Ubuntu (LTS)
+* CentOS, openSUSE, Red Hat
+* Linux Mint, Scientific Linux
+
+## 1.2 Poznate open source aplikacije
+
+* OpenOffice.org, LibreOffice, Thunderbird, Firefox, GIMP
+* Apache HTTPD, NGINX, MySQL, NFS, Samba
+* C, Java, Perl, shell, Python, Ruby ,Samba
+* dpkg, apt-get, rpm, yum
+
+# 2: Snalaženje na Linux Sistemu
+
+
+## 2.3 Using Directories and Listing Files
+
+Description: Navigation of home and system directories and listing files in various locations.
+
+**Key Knowledge Areas:**
+
+* Files, directories
+* Hidden files and directories
+* Home
+* Absolute and relative paths
+
+**Terms and Utilities:**
+
+* Common options for ls
+* Recursive listings
+* cd
+* . and ..
+* home and ~
+
+
 ## Uobičajena organizacija foldera u Linuxu
 
 * `/bin`  - programi koje koriste i administratori i korisnici
@@ -22,7 +65,111 @@ Verzija dokumenta 0.0.2
 
 * Više na [linku](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard).
 
-## Upravljanje korisnicima i grupama
+
+
+###  Rad sa fajlovima i direktorijima
+
+File ili direktorij sa space Moj File se pise kao ```Moj\ file```
+
+#### Ispis sadržaja direktorija
+
+```ls```  -> listanje
+
+```ls —a -l -h``` -> Listaj a-detalje, l-long format, h-jasnije covjeku
+
+ili ovako:
+
+```
+ls -alh
+```
+
+##### Ispisi listu fajlova i direktorija unutar trenutnog direktorija
+
+```
+ls .
+```
+
+* Ispisi listu fajlova i direktorija unutar trenutnog direktorija ukljucujuci i sakrivene fajlove skriveni fajlvi su fajlovi cije ime pocinje sa tackom odnosno znakom .
+
+```
+ls -al .
+```
+
+* Ispisi listu fajlova i direktorija unutar trenutnog direktorija, te sadrzaj direktorija koji se nalaze u tekućem direktoriju
+
+```
+ls -al *
+```
+
+
+* Ispisi listu fajlova i direktorija unutar trenutnog direktorija na nacin da i direktorije tretiramo kao obične fajlove te ne ispisujemo njihov sadržaja
+
+```
+ls -ald *
+```
+
+
+Ispisi listu fajlova i direktorija koji pocinju sa znakom . odnosno ispisi samo skrivene fajlove i direktorije
+
+```
+ls -ald .*
+```
+
+
+#### Ispisi inode broj fajla
+
+```
+ls -i ime_fajla
+```
+
+
+
+
+
+```
+ls -R IME FOLDERA/
+```
+
+-> gledanje u sadrzinu i oko foldera rekurzivno tj. pregled cijele strukture foldera
+
+
+```
+ls —help
+```
+
+ -> pomoc o komandi
+
+
+```
+man ls
+```
+ -> man-om objasnjvamo komande i lista se sa f i b
+
+
+```
+cd IME FOLDERA
+```
+ -> ulazak u folder
+
+SAMO cd vraca na pocetni folder
+
+```
+cd ..
+```
+ -> izlazak iz foldera
+
+```
+cd ../../NEKI FOLDER
+```
+ -> ulazak na udaljeni folder, dva levela iznad
+
+
+
+
+
+
+
+### Home folder
 
 Korsnici imaju sopstveni `home` direktorij koji se nalazi u folderu `/home`. Izuzetak je `root` korisnik, čiji home direktorij se nalazi na lokaciji `/root`.
 
@@ -43,6 +190,19 @@ cd ~
 ```
 cd $HOME
 ```
+
+
+
+
+
+
+
+
+
+
+## Upravljanje korisnicima i grupama
+
+
 ### Komanda `finger`
 
 Komanda `finger` ispisuje informacije o korisniku. Kao argument komandi proslijedimo korisničko ime tj. `username` korisnika. U sljedećem primjeru `finger` će prikazati informacije o korisniku `root`.
@@ -116,190 +276,21 @@ id -G korisnik
 1001 27
 ```
 
-## Rad sa fajlovima i direktorijima
+## 2.4 Creating, Moving and Deleting Files
 
-File ili direktorij sa space Moj File se pise kao ```Moj\ file```
+Description: Create, move and delete files and directories under the home directory.
 
-#### Ispis sadržaja direktorija
+**Key Knowledge Areas:**
 
-```ls```  -> listanje
+*    Files and directories
+*    Case sensitivity
+*    Simple globbing and quoting
 
-```ls —a -l -h``` -> Listaj a-detalje, l-long format, h-jasnije covjeku
+**Terms and Utilities:**
 
-ili ovako:
+*  mv, cp, rm, touch
+*  mkdir, rmdir
 
-```
-ls -alh
-```
-
-##### Ispisi listu fajlova i direktorija unutar trenutnog direktorija
-
-```
-ls .
-```
-
-* Ispisi listu fajlova i direktorija unutar trenutnog direktorija ukljucujuci i sakrivene fajlove skriveni fajlvi su fajlovi cije ime pocinje sa tackom odnosno znakom .
-
-```
-ls -al .
-```
-
-* Ispisi listu fajlova i direktorija unutar trenutnog direktorija, te sadrzaj direktorija koji se nalaze u tekućem direktoriju
-
-```
-ls -al *
-```
-
-
-* Ispisi listu fajlova i direktorija unutar trenutnog direktorija na nacin da i direktorije tretiramo kao obične fajlove te ne ispisujemo njihov sadržaja
-
-```
-ls -ald *
-```
-
-
-Ispisi listu fajlova i direktorija koji pocinju sa znakom . odnosno ispisi samo skrivene fajlove i direktorije
-
-```
-ls -ald .*
-```
-
-
-#### Ispisi inode broj fajla
-
-```
-ls -i ime_fajla
-```
-
-
-### Kreiranje simboličkih linkova
-
-prvo napravimo fajl
-
-```
-touch fajl_jedan
-```
-
-
-zapišemo nesto u fajl pomoću redirekcije
-
-```
-echo "NEKI TESTNI SADRZAJ">fajl_jedan
-```
-
-
-provjerimo da li je zapisano u fajl
-
-```
-cat fajl_jedan
-```
-
-napravimo simbolički link na novi fajl
-
-```
-ln -s fajl_jedan fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
-```
-
-ispišemo sadrzaj drugog fajla koji je simbolički link
-
-```
-cat fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
-```
-
-možemo primjetiti da je sadržaj oba fajla isti
-
-provjerimo inodove oba fajla
-
-```
-ls -i fajl_jedan
-ls -i fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
-```
-
-možemo promjetiti da su inode brojevi razliciti sto znaci da su razliciti fajlove te ako jedan izbrisemo to znaci da drugi fajl nece biti izbrisan
-
-
-#### Vjezba: izbrisati prvi fajl. Da li je drugi fajl koji je simbolicki link izbrisan? Da li mozemo pomocu cat komande izlistati sadrzaj drugog fajla?
-
-
-
-## Hard linkovi
-
-Kreirati fajl i dodati neki sadrzaj
-
-```
-touch fajl_prvi
-echo "NEKI TESTNI SADRZAJ">fajl_prvi
-```
-
-napraviti hard link
-
-```
-ln fajl_prvi fajl_drugi
-```
-
-provjeriti inode brojeve za oba fajla
-
-```
-ls -i fajl_prvi
-6257560 fajl_prvi
-```
-
-inode broj fajla je broj `6257560`
-```
-ls -i fajl_drugi
-6257560 fajl_drugi
-```
-
-inode broj drugog fajla je takodjer `6257560`
-
-
-inode brojevi su isti sto znaci da su oba fajla linkaju na istu lokaciju na disku
-
-
-##### Vjezba: Sta se desi ako izbrisemo drugi fajl, da li ce prvi fajl biti izbrisan?
-
-
-```
-rm fajl_drugi
-```
-
-
-```
-ls -R IME FOLDERA/
-```
-
--> gledanje u sadrzinu i oko foldera rekurzivno tj. pregled cijele strukture foldera
-
-
-```
-ls —help
-```
-
- -> pomoc o komandi
-
-
-```
-man ls
-```
- -> man-om objasnjvamo komande i lista se sa f i b
-
-
-```
-cd IME FOLDERA
-```
- -> ulazak u folder
-
-SAMO cd vraca na pocetni folder
-
-```
-cd ..
-```
- -> izlazak iz foldera
-
-```
-cd ../../NEKI FOLDER
-```
- -> ulazak na udaljeni folder, dva levela iznad
 
 
 ### Putanje do programa
@@ -435,6 +426,11 @@ su korisnik -l
 ```
  (novi login shell) - logovanje kao korisnik
 
+
+
+# Topic 5: Security and File Permissions
+
+
 ```
 chmod -> change the permission on a file
 ```
@@ -461,7 +457,7 @@ Read = 4, Write = 2, Execute =1
 ```sudo chown korinik test.sh``` -> prebacujem prava filea na usera korinik
 
 
-Using pipes:
+# Using pipes:
 
 ```echo “hello” | wc``` -> 1  1  16  one line, one word and 6 characters
 
@@ -643,8 +639,12 @@ Ako zelimo da background proces ostane u `running` stanju i da istom procesu ne 
 nohup ping -i 5 google.com &
 ````
 
+<<<<<<< HEAD
 ### Koristenje jerkyll-a (Transform your plain text into static websites)
 >>>>>>> ac6e9df (dodajem nohup za background procese)
+=======
+### Koristenje jekyll-a (Transform your plain text into static websites)
+>>>>>>> 932f79c (update)
 
 * 1. Logovanje na server
 
@@ -853,3 +853,116 @@ x<MAC>
 [P<domain>]p<bus>s<slot>[f<function>][d<dev_id>]
 [P<domain>]p<bus>s<slot>[f<function>][u<port>][..][c<config>][i<interface>]
 ````
+
+
+
+
+
+
+# 5.4 Special Directories and Files
+
+Description: Special directories and files on a Linux system including special permissions.
+
+Key Knowledge Areas:
+
+*    Using temporary files and directories
+*    Symbolic links
+
+**Terms and Utilities:**
+
+*    /tmp/, /var/tmp/ and Sticky Bit
+*    ls -d
+*    ln -s
+
+
+
+### Kreiranje simboličkih linkova
+
+prvo napravimo fajl
+
+```
+touch fajl_jedan
+```
+
+
+zapišemo nesto u fajl pomoću redirekcije
+
+```
+echo "NEKI TESTNI SADRZAJ">fajl_jedan
+```
+
+
+provjerimo da li je zapisano u fajl
+
+```
+cat fajl_jedan
+```
+
+napravimo simbolički link na novi fajl
+
+```
+ln -s fajl_jedan fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
+```
+
+ispišemo sadrzaj drugog fajla koji je simbolički link
+
+```
+cat fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
+```
+
+možemo primjetiti da je sadržaj oba fajla isti
+
+provjerimo inodove oba fajla
+
+```
+ls -i fajl_jedan
+ls -i fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
+```
+
+možemo promjetiti da su inode brojevi razliciti sto znaci da su razliciti fajlove te ako jedan izbrisemo to znaci da drugi fajl nece biti izbrisan
+
+
+#### Vjezba: izbrisati prvi fajl. Da li je drugi fajl koji je simbolicki link izbrisan? Da li mozemo pomocu cat komande izlistati sadrzaj drugog fajla?
+
+
+
+## Hard linkovi
+
+Kreirati fajl i dodati neki sadrzaj
+
+```
+touch fajl_prvi
+echo "NEKI TESTNI SADRZAJ">fajl_prvi
+```
+
+napraviti hard link
+
+```
+ln fajl_prvi fajl_drugi
+```
+
+provjeriti inode brojeve za oba fajla
+
+```
+ls -i fajl_prvi
+6257560 fajl_prvi
+```
+
+inode broj fajla je broj `6257560`
+```
+ls -i fajl_drugi
+6257560 fajl_drugi
+```
+
+inode broj drugog fajla je takodjer `6257560`
+
+
+inode brojevi su isti sto znaci da su oba fajla linkaju na istu lokaciju na disku
+
+
+##### Vjezba: Sta se desi ako izbrisemo drugi fajl, da li ce prvi fajl biti izbrisan?
+
+
+```
+rm fajl_drugi
+```
