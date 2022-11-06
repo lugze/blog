@@ -1,4 +1,7 @@
 # blog
+
+Link to the live blog.
+
 * https://lugze.github.io/blog/
 
 # Howto build locally
