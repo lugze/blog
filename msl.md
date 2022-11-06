@@ -4,53 +4,7 @@ title: Mala Škola Linux-a
 permalink: /mala-skola-linuxa/
 ---
 
-Verzija dokumenta 0.0.2
-
-* TOC
-{:toc}
-
-# 1 Linux Zajednica
-
-## 1.1 Evolucija Linux i popularnih operativnih sistema
-
-* open source filozofija
-* Distribucije
-* Embedded Systems
-
-* Android
-* Debian, Ubuntu (LTS)
-* CentOS, openSUSE, Red Hat
-* Linux Mint, Scientific Linux
-
-## 1.2 Poznate open source aplikacije
-
-* OpenOffice.org, LibreOffice, Thunderbird, Firefox, GIMP
-* Apache HTTPD, NGINX, MySQL, NFS, Samba
-* C, Java, Perl, shell, Python, Ruby ,Samba
-* dpkg, apt-get, rpm, yum
-
-# 2: Snalaženje na Linux Sistemu
-
-
-## 2.3 Using Directories and Listing Files
-
-Description: Navigation of home and system directories and listing files in various locations.
-
-**Key Knowledge Areas:**
-
-* Files, directories
-* Hidden files and directories
-* Home
-* Absolute and relative paths
-
-**Terms and Utilities:**
-
-* Common options for ls
-* Recursive listings
-* cd
-* . and ..
-* home and ~
-
+Verzija dokumenta 0.0.1
 
 ## Uobičajena organizacija foldera u Linuxu
 
@@ -65,111 +19,7 @@ Description: Navigation of home and system directories and listing files in vari
 
 * Više na [linku](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard).
 
-
-
-###  Rad sa fajlovima i direktorijima
-
-File ili direktorij sa space Moj File se pise kao ```Moj\ file```
-
-#### Ispis sadržaja direktorija
-
-```ls```  -> listanje
-
-```ls —a -l -h``` -> Listaj a-detalje, l-long format, h-jasnije covjeku
-
-ili ovako:
-
-```
-ls -alh
-```
-
-##### Ispisi listu fajlova i direktorija unutar trenutnog direktorija
-
-```
-ls .
-```
-
-* Ispisi listu fajlova i direktorija unutar trenutnog direktorija ukljucujuci i sakrivene fajlove skriveni fajlvi su fajlovi cije ime pocinje sa tackom odnosno znakom .
-
-```
-ls -al .
-```
-
-* Ispisi listu fajlova i direktorija unutar trenutnog direktorija, te sadrzaj direktorija koji se nalaze u tekućem direktoriju
-
-```
-ls -al *
-```
-
-
-* Ispisi listu fajlova i direktorija unutar trenutnog direktorija na nacin da i direktorije tretiramo kao obične fajlove te ne ispisujemo njihov sadržaja
-
-```
-ls -ald *
-```
-
-
-Ispisi listu fajlova i direktorija koji pocinju sa znakom . odnosno ispisi samo skrivene fajlove i direktorije
-
-```
-ls -ald .*
-```
-
-
-#### Ispisi inode broj fajla
-
-```
-ls -i ime_fajla
-```
-
-
-
-
-
-```
-ls -R IME FOLDERA/
-```
-
--> gledanje u sadrzinu i oko foldera rekurzivno tj. pregled cijele strukture foldera
-
-
-```
-ls —help
-```
-
- -> pomoc o komandi
-
-
-```
-man ls
-```
- -> man-om objasnjvamo komande i lista se sa f i b
-
-
-```
-cd IME FOLDERA
-```
- -> ulazak u folder
-
-SAMO cd vraca na pocetni folder
-
-```
-cd ..
-```
- -> izlazak iz foldera
-
-```
-cd ../../NEKI FOLDER
-```
- -> ulazak na udaljeni folder, dva levela iznad
-
-
-
-
-
-
-
-### Home folder
+## Upravljanje korisnicima i grupama
 
 Korsnici imaju sopstveni `home` direktorij koji se nalazi u folderu `/home`. Izuzetak je `root` korisnik, čiji home direktorij se nalazi na lokaciji `/root`.
 
@@ -190,19 +40,6 @@ cd ~
 ```
 cd $HOME
 ```
-
-
-
-
-
-
-
-
-
-
-## Upravljanje korisnicima i grupama
-
-
 ### Komanda `finger`
 
 Komanda `finger` ispisuje informacije o korisniku. Kao argument komandi proslijedimo korisničko ime tj. `username` korisnika. U sljedećem primjeru `finger` će prikazati informacije o korisniku `root`.
@@ -276,21 +113,191 @@ id -G korisnik
 1001 27
 ```
 
-## 2.4 Creating, Moving and Deleting Files
+## Rad sa fajlovima i direktorijima
 
-Description: Create, move and delete files and directories under the home directory.
+File ili direktorij sa space Moj File se pise kao ```Moj\ file```
 
-**Key Knowledge Areas:**
+#### Ispis sadržaja direktorija
 
-*    Files and directories
-*    Case sensitivity
-*    Simple globbing and quoting
+```ls```  -> listanje
 
-**Terms and Utilities:**
+```ls —a -l -h``` -> Listaj a-detalje, l-long format, h-jasnije covjeku
 
-*  mv, cp, rm, touch
-*  mkdir, rmdir
+ili ovako:
 
+```
+ls -alh
+```
+
+##### Ispisi listu fajlova i direktorija unutar trenutnog direktorija
+
+```
+ls .
+```
+
+Ispisi listu fajlova i direktorija unutar trenutnog direktorija ukljucujuci i sakrivene fajlove skriveni fajlvi su fajlovi cije ime pocinje sa tackom odnosno znakom .
+
+```
+ls -al .
+```
+
+Ispisi listu fajlova i direktorija unutar trenutnog direktorija, te sadrzaj direktorija koji se nalaze u tekućem direktoriju
+
+```
+ls -al *
+```
+
+
+Ispisi listu fajlova i direktorija unutar trenutnog direktorija na nacin da i direktorije tretiramo kao obične fajlove te ne ispisujemo njihov sadržaja
+
+```
+ls -ald *
+```
+
+
+Ispisi listu fajlova i direktorija koji pocinju sa znakom . odnosno ispisi samo skrivene fajlove i direktorije
+
+```
+ls -ald .*
+```
+
+
+#### Ispisi inode broj fajla
+
+```
+ls -i ime_fajla
+```
+
+
+### Kreiranje simboličkih linkova
+
+prvo napravimo fajl
+
+```
+touch fajl_jedan
+```
+
+
+zapišemo nesto u fajl pomoću redirekcije
+
+```
+echo "NEKI TESTNI SADRZAJ">fajl_jedan
+```
+
+
+provjerimo da li je zapisano u fajl
+
+```
+cat fajl_jedan
+```
+
+napravimo simbolički link na novi fajl
+
+```
+ln -s fajl_jedan fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
+```
+
+ispišemo sadrzaj drugog fajla koji je simbolički link
+
+```
+cat fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
+```
+
+možemo primjetiti da je sadržaj oba fajla isti
+
+provjerimo inodove oba fajla
+
+```
+ls -i fajl_jedan
+ls -i fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
+```
+
+možemo promjetiti da su inode brojevi razliciti sto znaci da su razliciti fajlove te ako jedan izbrisemo to znaci da drugi fajl nece biti izbrisan
+
+
+#### Vjezba: izbrisati prvi fajl. Da li je drugi fajl koji je simbolicki link izbrisan? Da li mozemo pomocu cat komande izlistati sadrzaj drugog fajla?
+
+
+
+## Hard linkovi
+
+Kreirati fajl i dodati neki sadrzaj
+
+```
+touch fajl_prvi
+echo "NEKI TESTNI SADRZAJ">fajl_prvi
+```
+
+napraviti hard link
+
+```
+ln fajl_prvi fajl_drugi
+```
+
+provjeriti inode brojeve za oba fajla
+
+```
+ls -i fajl_prvi
+6257560 fajl_prvi
+```
+
+inode broj fajla je broj `6257560`
+```
+ls -i fajl_drugi
+6257560 fajl_drugi
+```
+
+inode broj drugog fajla je takodjer `6257560`
+
+
+inode brojevi su isti sto znaci da su oba fajla linkaju na istu lokaciju na disku
+
+
+##### Vjezba: Sta se desi ako izbrisemo drugi fajl, da li ce prvi fajl biti izbrisan?
+
+
+```
+rm fajl_drugi
+```
+
+
+```
+ls -R IME FOLDERA/
+```
+
+-> gledanje u sadrzinu i oko foldera rekurzivno tj. pregled cijele strukture foldera
+
+
+```
+ls —help
+```
+
+ -> pomoc o komandi
+
+
+```
+man ls
+```
+ -> man-om objasnjvamo komande i lista se sa f i b
+
+**********************
+
+```
+cd IME FOLDERA
+```
+ -> ulazak u folder
+
+SAMO cd vraca na pocetni folder
+
+```
+cd ..
+```
+ -> izlazak iz foldera
+
+```
+cd ../../NEKI FOLDER
+```
+ -> ulazak na udaljeni folder, dva levela iznad
 
 
 ### Putanje do programa
@@ -426,11 +433,6 @@ su korisnik -l
 ```
  (novi login shell) - logovanje kao korisnik
 
-
-
-# Topic 5: Security and File Permissions
-
-
 ```
 chmod -> change the permission on a file
 ```
@@ -457,7 +459,7 @@ Read = 4, Write = 2, Execute =1
 ```sudo chown korinik test.sh``` -> prebacujem prava filea na usera korinik
 
 
-# Using pipes:
+Using pipes:
 
 ```echo “hello” | wc``` -> 1  1  16  one line, one word and 6 characters
 
@@ -525,7 +527,7 @@ Archive komande
 
 ## Procesi
 
-#### Izlistaj sve procese svih korisnika
+# Izlistaj sve procese svih korisnika
 
 ```
 ps -ef
@@ -540,19 +542,19 @@ ili
 ps -aux
 ```
 
-### izlistaj procese samo za sshd korisnika
+# izlistaj procese samo za sshd korisnika
 
 ```
 ps -f -u sshd
 ```
 
-### sortiraj procese po potrošnji memorije
+# sortiraj procese po potrošnji memorije
 
 ```
 ps aux --sort pmem
 ```
 
-### sortoranje procesa po CPU potrošnji
+# sortoranje procesa po CPU potrošnji
 
 ```
 ps aux --sort pcpu
@@ -560,19 +562,15 @@ ps aux --sort pcpu
 
 ### Slanje procesa i background
 
-Da bi poslali komandu u backgroun, nakon komande dodamo znak `&` tj. znak ampersand.
 
-U sljedecem primjeru zelimo da pingamo google svakih 5 sekundi sa komandom `ping -i 5 google.com`. Da bi je poslali u background, aa sami kraj komande dodajemo znak `&`.
+
+nakon komande dodamo znak &
 
 ```
-ping -i 5 google.com &
+nano &
 ```
 
-Na ovaj nacin komanda ce biti izvrsavana u pozadini i svakih 5 sekundi ce nam ispisati rezultat na ekran, dok se rad u terminalu moze nastaviti.
-
-
-
-* izlistamo procese u backgroundu
+izlistamo procese u backgroundu
 
 ```
 jobs
@@ -595,99 +593,43 @@ Ukucavamo
 ```
 kill 1 --> broj procesa
 ```
-#### Zapisivanje poruka u log datoteku
-
-U proslom primjeru samo koristi komandu koja pinga `google.com` svakih 5 sekundi te nam ispisuje rezultate na `STDOUT` odnosno ekran. To je u odredjenim situacijama korisno jer korisnika informise u statusu izvrsavanja komande u pozadini, ali cesto samo ometa korisnika u radu.
-
-U situacijama gdje ne zelimo da komanda ispisuje nepotrebne informacije na ekran koristimo redirekciju u fajl pomocu znaka `>`. To mozemo uraditi na sljedeci nacin.
-
-* U ovom primjeru pingamo `google.com` svakih `5` sekundi te poruka koje salje komanda redirektujemo sa ekrana u fajl `/tmp/ping_google.log`, te na samom kraju stavljamo znak `&` cime zeljenu komandu saljemo u background.
-
-````
-ping -i 5 google.com > /tmp/ping_google.log &
-````
-
-Sada mozemo nastaviti sa radom a ako zelimo periodicno provjeriti stanje komande koristimo `tail` da bi procitali zapis u fajl `/tmp/ping_google.log`.
-
-````
-tail /tmp/ping_google.log
-````
-
-ili citanja u `real time` modu
-
-````
-tail -f /tmp/ping_google.log
-````
-
-Ako zelimo prekinuti `real time` citanje koristimo kombinaciju tipki `CTRL+C`.
-
-#### SIGHUP i bacground procesi
-
-Proces koji je poslan u background direktno je vezan za sessiju terminala prek kojeg je korisnik pokrenuo taj isti proces. Kada se korisnik odjavi tj. uradi logout svim background procesima ce biti poslan `SIGHUP` signal. Signal `SIGHUP` je skracenica za `signal hang up` i sluzi za terminiranje procesa.
 
 
-<<<<<<< HEAD
-## Koristenje jerkyll-a (Transform your plain text into static websites)
-=======
+###Koristenje jerkyll-a (Transform your plain text into static websites)
 
-Ako zelimo da background proces ostane u `running` stanju i da istom procesu ne bude poslan `SIGHUP` signal onda koristimo `nohup` komanu kao prefix.
-
-
-* Sljedeci primjer koristimo ping komandu da pingamo udaljeni host `google.com` svakih `5` sekundi, te istu komandu saljemo u background. Pomocu `nohup` taj background proces nece biti ugasen nakon sto se korisnik koji je pokrenuo komandu odjavi sa terminala.
-
-````
-nohup ping -i 5 google.com &
-````
-
-<<<<<<< HEAD
-### Koristenje jerkyll-a (Transform your plain text into static websites)
->>>>>>> ac6e9df (dodajem nohup za background procese)
-=======
-### Koristenje jekyll-a (Transform your plain text into static websites)
->>>>>>> 932f79c (update)
-
-* 1. Logovanje na server
-
-* 2. Dodavanje novog korisnika
-
+1. Logovanje na server
+2. Dodavanje novog korisnika
 ```
 adduser korisnik
 ```
 
 3. Logovanje kao korisnik
-
 ```
 su korisnik -l
 ```
 
+
 4. Instalacija programskog jezika (u ovom slucaju rvm i ruby 2.5)
-
 5.
-
 ```
 gem update
-````
 i
-
-```
 gem update —system
 ```
 
 
-* 6. Kao korisnik generisati novi kljuc
-
+6. Kao korisnik generisati novi kljuc
 ```
 ssh-keygen -t rsa
 ```
 
-* 7. generisani kljuc za korisnika dodati na github repo gdje je forkovan lugze blog
-
-* 8. Instaliranje bundle-a
+7. generisani kljuc za korisnika dodati na github repo gdje je forkovan lugze blog
+8. Instaliranje bundle-a
 ```
 apt-get install bundle
 ```
 
-* 9. Ponoviti postupak kloniranja datog repo-a i instalacije jekyll-a
+9. Ponoviti postupak kloniranja datog repo-a i instalacije jekyll-a
 
 ```
 git clone naziv git repoa
@@ -697,13 +639,13 @@ instalacije jekyll-a
 gem install jekyll bundler
 ```
 
-* 10. Pokretanje jekyll serve u backgroundu
+10. Pokretanje jekyll serve u backgroundu
 
 ```
 bundle exec jekyll serve &
 ```
 
-### Pronalazenje public ip adrese i komande ping/traceroute
+###Pronalazenje public ip adrese i komande ping/traceroute
 
 `ping ime servera` - mjerenje odaziva nekog servera. Ovom komandom, pored drugih podataka, saznajemo public ip servera
 
@@ -711,7 +653,7 @@ bundle exec jekyll serve &
 
 IP adresa - adresa servera
 
-`0.0.0.0` - Obicno oznacava da host nije konfigurisan sa IP adrwsom (Ukoliko server ima 10 ip adresa, ovakvim navodom server ce slusati svih 10 tj. sve adrese)
+`0.0.0.0` - Ukoliko server ima 10 ip adresa, ovakvim navodom server ce slusati svih 10 tj. sve adrese
 `127.0.0.1` - IP adresa lokalnog racunara (nije routabilna)
 
 #### Pronalazenje javne ili privatne IP adrese nekog servera:
@@ -730,7 +672,7 @@ ili
 
 Nakon ukucanie komande trazimo adresu a `inet` prefiksom sto je ujedno i public ip adresa servera
 
-* Zasto kao obicni korisnik moramo kucati punu putanju do `ifconfig` komande?
+##### Zasto kao obicni korisnik moramo kucati punu putanju do `ifconfig` komande?
 
 Komanda ifconfig se nalazi u direktoriju `/sbin` stoga moramo provjeriti da li se taj direktorij nalazi u `$PATH` shell varijabli. Korisniku su dostupni programi tj. komande koji se nalaze u pitanjama foldera koji su izlistani u `$PATH` shell varijabli.
 
@@ -746,7 +688,7 @@ root
 
  ````
  echo $PATH
- ````
+ ```
 
  ili filtriramo samo za `/sbin` gdje se nalazi ifconfig
 
@@ -765,7 +707,7 @@ root
  eu emin -l
  ````
 
-* provjerimo da li je login bio uspjesan
+ * provjerimo da li je login bio uspjesan
 
  ````
  whoami
@@ -817,11 +759,11 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
 
 Private IPv4 address spaces
 
-| RFC1918 name | IP address range | number of addresses |
-|-------------|----------------|--------------------|
-| 24-bit block | 10.0.0.0-10.255.255.255 | 16,777,216 |
-| 20-bit block | 172.16.0.0-172.31.255.255 | 1,048,576 |
-| 16-bit block | 192.168.0.0 – 192.168.255.255 | 65,536 |
+RFC1918 name | IP address range | number of addresses
+-------------  ----------------   --------------------
+24-bit block | 10.0.0.0-10.255.255.255 | 16,777,216
+20-bit block | 172.16.0.0-172.31.255.255	|	1,048,576
+16-bit block | 192.168.0.0 – 192.168.255.255	| 65,536
 
 Izlistavanje server interfejska komandom:
 
@@ -829,140 +771,6 @@ Izlistavanje server interfejska komandom:
 ifconfig
 ```
 
-* inet denotes IPv4 traffic
-* inet6 denotes IPv6 traffic
+inet denotes IPv4 traffic
 
-
-### Predictable network interface device nameS
-
-
-U zavisnost od tipa interfejsa imena imaju prefikse:
-
-* 1. en for Ethernet,
-* 2. wl for wireless LAN (WLAN),
-* 3. for wireless wide area network (WWAN)
-
-
-Imena imaju tipove:
-
-````
-o<index>
-
-s<slot>[f<function>][d<dev_id>]
-x<MAC>
-[P<domain>]p<bus>s<slot>[f<function>][d<dev_id>]
-[P<domain>]p<bus>s<slot>[f<function>][u<port>][..][c<config>][i<interface>]
-````
-
-
-
-
-
-
-# 5.4 Special Directories and Files
-
-Description: Special directories and files on a Linux system including special permissions.
-
-Key Knowledge Areas:
-
-*    Using temporary files and directories
-*    Symbolic links
-
-**Terms and Utilities:**
-
-*    /tmp/, /var/tmp/ and Sticky Bit
-*    ls -d
-*    ln -s
-
-
-
-### Kreiranje simboličkih linkova
-
-prvo napravimo fajl
-
-```
-touch fajl_jedan
-```
-
-
-zapišemo nesto u fajl pomoću redirekcije
-
-```
-echo "NEKI TESTNI SADRZAJ">fajl_jedan
-```
-
-
-provjerimo da li je zapisano u fajl
-
-```
-cat fajl_jedan
-```
-
-napravimo simbolički link na novi fajl
-
-```
-ln -s fajl_jedan fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
-```
-
-ispišemo sadrzaj drugog fajla koji je simbolički link
-
-```
-cat fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
-```
-
-možemo primjetiti da je sadržaj oba fajla isti
-
-provjerimo inodove oba fajla
-
-```
-ls -i fajl_jedan
-ls -i fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
-```
-
-možemo promjetiti da su inode brojevi razliciti sto znaci da su razliciti fajlove te ako jedan izbrisemo to znaci da drugi fajl nece biti izbrisan
-
-
-#### Vjezba: izbrisati prvi fajl. Da li je drugi fajl koji je simbolicki link izbrisan? Da li mozemo pomocu cat komande izlistati sadrzaj drugog fajla?
-
-
-
-## Hard linkovi
-
-Kreirati fajl i dodati neki sadrzaj
-
-```
-touch fajl_prvi
-echo "NEKI TESTNI SADRZAJ">fajl_prvi
-```
-
-napraviti hard link
-
-```
-ln fajl_prvi fajl_drugi
-```
-
-provjeriti inode brojeve za oba fajla
-
-```
-ls -i fajl_prvi
-6257560 fajl_prvi
-```
-
-inode broj fajla je broj `6257560`
-```
-ls -i fajl_drugi
-6257560 fajl_drugi
-```
-
-inode broj drugog fajla je takodjer `6257560`
-
-
-inode brojevi su isti sto znaci da su oba fajla linkaju na istu lokaciju na disku
-
-
-##### Vjezba: Sta se desi ako izbrisemo drugi fajl, da li ce prvi fajl biti izbrisan?
-
-
-```
-rm fajl_drugi
-```
+inet6 denotes IPv6 traffic
