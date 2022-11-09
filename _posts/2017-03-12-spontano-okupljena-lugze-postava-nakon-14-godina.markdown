@@ -11,8 +11,8 @@ prilika zasluzuje zaseban post. U nastavku su slike sa meetupa.
 
 # LugZe meetup 2003 godine.
 
-![Meetup 2003 godine]({{ site.url }}/assets/images/meetups/lugze_sastanak_2003_godina.jpg)
+![Meetup 2003 godine]({{ site.url }}/blog/assets/images/meetups/lugze_sastanak_2003_godina.jpg)
 
 # ZeForge meetup 2017 godine.
 
-![Meetup 2017 godine]({{ site.url }}/assets/images/meetups/lugze_members_2017_godina.jpg)
+![Meetup 2017 godine]({{ site.url }}/blog/assets/images/meetups/lugze_members_2017_godina.jpg)
