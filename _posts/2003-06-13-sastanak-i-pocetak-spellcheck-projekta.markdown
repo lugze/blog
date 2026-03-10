@@ -24,3 +24,6 @@ Rad se odvijao u KWrite/KWord, ali su se pojavili problemi sa enkodiranjem - bos
 Gomez je primijetio dobar napredak - pet slova zavrseno u cetiri dana. Vedran je ponudio smjestanje materijala na CVS repozitorij.
 
 Grungy je otkrio da gedit (GTK editor) ispravno radi sa bs_BA jezickim podesavanjem, dok su KDE editori imali problema.
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/sastanak-15-06-2003/633)*

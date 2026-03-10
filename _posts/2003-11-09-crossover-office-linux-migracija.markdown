@@ -19,3 +19,6 @@ Naveo je Disney kao primjer: cijena implementacije Wine-a je bila ispod 15.000 d
 Grungy je kreirao simulaciju "My Computer" ikone koristeci Konqueror sa komandom `devices:/`, dijeleći screenshot sa zajednicom. Ovo je bio jedan od njegovih kreativnih pristupa da Linux ucini pristupacnijim korisnicima koji prelaze sa Windows-a.
 
 Gomez je dodao: "K3b best!" dok je vedran tvrdio da "K3b ima sve sto Nero ima."
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/crossover-office-2-1-0-podrzava-dreamweaver-i-flash/829)*

@@ -15,3 +15,6 @@ Grungy je potvrdio da je predao dokumentarac Hamu tokom licne posjete u Zenici, 
 Gomez je na povezanoj temi predlozio grupno gledanje u CSI i prevodjenje dokumentarca. Vedran je preporucio jos jedan film - Revolution OS, koji je am kasnije uploadovao na server i koji je gomez opisao kao "fenomenalan."
 
 Ovo dijeljenje dokumentaraca medju clanovima bilo je tipicno za LugZe zajednicu - u doba sporih internet konekcija, fizicka razmjena CD-ova bila je kljucna za sirenje Linux kulture.
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/codename-linux-the-code-dokumentarac/835)*

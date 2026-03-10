@@ -31,6 +31,8 @@ permalink: /o-nama/
 
 **2017 — Povratak.** Nakon perioda smanjene aktivnosti, reaktivirana web stranica i blog. Pokrenuti novi tutorijali o Linuxu, Ruby-ju i shell programiranju. Na ZeForge meetupu se spontano okupila originalna LugZe postava — 14 godina nakon prvih aktivnosti.
 
+**2022 — Linux kafa. ☕** 2. novembra 2022. kreirana je WhatsApp grupa **„Linux kafa"** koja je ponovo spojila stare i nove članove zajednice. Grupa služi kao mjesto za razmjenu znanja, diskusije i dogovaranje redovnih druženja uz kafu — u pravom LugZe duhu. 🐧
+
 ---
 
 ### 📸 LugZe kroz godine

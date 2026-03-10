@@ -19,3 +19,6 @@ Grungy je izvijestio da konzerve od ananasa daju najbolji signal, bolji od dizaj
 Gomez je pohvalio projekat kao dokaz ozbiljnog organizacionog rada i zahvalio Nerminu Batakovicu za ideju. Planovi su ukljucivali kreiranje male LAN mreze za korisnike, sa potencijalnim prosirenjem na web servise kroz partnerstvo sa bibliotekom.
 
 Babysitter je na forumu humoristicno javio da su vijesti prenijele informaciju o "jakim radio smetnjama koje uticu na radarski sistem", okrivljujuci LugZe wireless projekat.
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/slike-lugze-wireless-projekta/854)*

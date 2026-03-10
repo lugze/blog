@@ -20,3 +20,6 @@ Grungy je kritikovao americku poslovnu praksu kupovine evropskih proizvoda i pre
 - **Babysitter:** Zabrinut, poceo uciti Knoppix kao alternativu
 - **IceBreaker:** Filozofski pristup - alternative uvijek postoje
 - **Vedran:** Njemacka vlada investirala u KDE, gradovi ce preci na druge distribucije ako se KDE napusti
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/novell-kupuje-suse/822)*

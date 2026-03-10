@@ -21,3 +21,6 @@ Pobjednici koji su dobili nagrade UTIC sponzora i jednogodisnje clanstvo ULK BiH
 Medju ostalim ucesnicima bili su: Amar Prasovic, Almir Dzinovic, Senad Uka, Mirza Nakicevic, Sanel Zukan, Alen Sarkinovic, Leo Hatvani, Bakir Helic, Aldin Kapetanovic, Amila Akagic, Nermin Ziga, Vedran Ljubovic i drugi.
 
 Nagrada je bila 6 mjeseci dial-up konekcije - tipicna nagrada za to vrijeme.
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/rezultati-maratona-6/1586)*

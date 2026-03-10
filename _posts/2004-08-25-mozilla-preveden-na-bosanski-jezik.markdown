@@ -21,3 +21,6 @@ Na forumu se razvila znacajna diskusija o nacinu odrzavanja prevoda. Vedran je p
 Bono i mesa su pozvali na dugorocno razmisljanje - vise pregledaca hvata vise gresaka, a projekat treba prezivjeti eventualne promjene u vodjstvu. Vedran je ukazao na konkretne nekonzistentnosti sa ULK standardima, npr. Edit meni preveden kao "Uredivanje" umjesto standardnog "Izmijeni".
 
 Ova diskusija je pokazala zrelost zajednice - od pocetnog entuzijazma do ozbiljnog razmisljanja o odrzivosti open source projekata.
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/mozilla-na-bosanskom/1236)*

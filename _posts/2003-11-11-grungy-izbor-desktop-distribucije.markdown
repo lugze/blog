@@ -19,3 +19,6 @@ Grungy je objasnio svoju poziciju:
 > Windows je postavio standarde koje ne mozemo ignorisati. Trazim dobro desktop okruzenje.
 
 Diskusija je ukljucivala i nihad-a koji je pohvalio Apple-ov pristup kao primjer kvalitetnog BSD-baziranog grafickog desktopa.
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/izbor-desktop-distribucije/832)*

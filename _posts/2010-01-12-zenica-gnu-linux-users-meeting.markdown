@@ -25,3 +25,6 @@ SoulSeeker je nakon sastanka napisao:
 Nedim.bfo je primijetio: "Ovo sastanak AA, pa niko pive nije narucio!" Na sto je gomez odgovorio: "Nastojimo zivjeti zdravo."
 
 Gomez je najavio planove za buduci sastanak i eventualno reprizu u Sarajevu.
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/koristil-se-u-zenici-linux/4094)*

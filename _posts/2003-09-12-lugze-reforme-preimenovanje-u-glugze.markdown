@@ -17,3 +17,6 @@ Na NVU temi je grungy citirao: "RMS lugze is with you!" i pojasnio da je RMS sug
 Gomez je podrzao koristenje "GNU/Linux" terminologije i registraciju pod GLUG domenom. Mesa je branio Mulalicevu korespondenciju sa RMS-om, naglasivsi da to nije uzrokovalo podjelu vec da je donijelo pozitivan doprinos.
 
 Grungy je humoristicno predlozio obracanje lokalnoj televiziji za emisiju "GNU Generation" koja bi pratila price pet geek-ova.
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/raspad-ili-reforme-okrenute-ka-globalizaciji/752)*

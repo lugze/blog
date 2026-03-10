@@ -21,3 +21,6 @@ Vise informacija o seminaru bilo je dostupno na `http://linux.zenica.ba/`.
 Nakon seminara, ShereKhan je pohvalio organizaciju i posebno istakao prezentaciju Adisa Nezirovica o razvoju GNU/Linux aplikacija. Predlozio je da se buduci seminari podijele na pocetnicke i napredne sekcije, jer je dio sadrzaja bio repetitivan za iskusnije korisnike.
 
 Fotografije sa seminara su bile dostupne na `http://howto.linux.org.ba/galerija/v/zenica05/`. Adis je podijelio svoju prezentaciju u PDF formatu, a do decembra 2005. pripremljen je formalni izvjestaj od 20 stranica koji je predat lokalnim vlastima.
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/2-zenica-linux-seminar/1904)*

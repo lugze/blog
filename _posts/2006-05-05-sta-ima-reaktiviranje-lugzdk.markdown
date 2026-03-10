@@ -23,3 +23,6 @@ Gomez je odgovorio sa ambicioznim planovima:
 Dogovoren je sastanak u Cabare klubu u BNP Zenica. Mesa je javio da je nova domena kupljena i server online na `http://glugzdk.ba/`.
 
 Na sastanku su podjeljene aktivnosti i zakazana prva radionica za 3. juni na Masinskom fakultetu u Zenici sa pocetkom u 10h. Takodjer se okvirno razgovaralo o seminaru i drugim aktivnostima.
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/sta-ima/2567)*

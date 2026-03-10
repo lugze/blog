@@ -19,3 +19,6 @@ Sahbaz je pitao o mogucnosti preuzimanja samo prevoditeljskih fajlova odvojeno o
 ## Vaznost projekta
 
 Bosnawi je predlozio kontaktiranje zvanicnog OpenOffice.org tima, dok je vedran objasnio razliku izmedju Native-Lang projekata i rada na lokalizaciji. Kasnija diskusija dovela je do instaliranja bosanskog foruma za OpenOffice.org na `bs.openoffice.info`.
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/openoffice-org-bosanski/1029)*

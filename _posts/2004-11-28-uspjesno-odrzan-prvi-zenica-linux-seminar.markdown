@@ -31,3 +31,6 @@ Svaka prezentacija je trajala oko 40 minuta:
 ## Nastavak
 
 Seminar je bio dio sire inicijative za digitalnu pismenost, sa planovima za buduce Linux radionice i maratone prevodenja sirom regije. Tri predavaca nisu mogla prisustvovati, ali kvalitet prezentacija je bio odlican.
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/uspjesno-odrzan-zenica-linux-seminar/1387)*

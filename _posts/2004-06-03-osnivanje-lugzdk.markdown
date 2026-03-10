@@ -29,3 +29,7 @@ Mesa je na [forum.linux.org.ba](https://forum.linux.org.ba/t/lugzdk-linux-user-g
 Prvi zvanicni sastanak zakazan za 12. juni 2004. u 15:00 u Cabare klubu. Grungy je izrazio podrsku za lokalne LUG-ove, uz upozorenje da se izbjegnu greske prethodnih grupa i da se njeguje "profesionalan odnos medju lokalnim lugovima."
 
 Mesa je 16. avgusta najavio prvi prevodilacki maraton za 21. avgusta na Masinskom fakultetu u Zenici, sa fokusom na prevodjenje GNOME-a.
+
+---
+
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/lugzdk-linux-user-group-zdk/1111)*

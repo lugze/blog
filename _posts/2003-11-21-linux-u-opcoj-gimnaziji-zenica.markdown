@@ -15,3 +15,6 @@ Sadrzaj se cinio kao ucenicka prezentacija iz treceg razreda - sto je bio ohrabr
 Testni_hamo2 je pitao "zasto pico prvi?" komentarisuci redoslijed tekst editora na tabli. Babysitter je pitao hoce li ulica u Zenici biti nazvana po Linusu Torvaldsu, na sto je gomez "pojasnio" da ce Titova ulica postati Stallman ulica, a Sejmen ulica postati Torvalds ulica.
 
 Grungy je sa humorom primijetio da se pozitivne stvari desavaju nakon njegovog odlaska iz gimnazije.
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/linux-u-opcoj-gimnaziji-zenica/848)*

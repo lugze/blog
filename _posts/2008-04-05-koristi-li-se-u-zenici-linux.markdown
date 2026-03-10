@@ -21,3 +21,6 @@ ShereKhan je podijelio pricu o tome kako ga je gomez konvertovao na Ubuntu:
 > Gomez ima barem 50% zasluge u 'konvertovanju' mene na Ubuntu, barem kod kuce. Kad se sjetim, bila je to tragedija u kuci kada je mali brat skonto da je Windows otisao iz kuce i da se nece vise vratiti :)
 
 Gomez je dodao: "Ovo je primjer da se Linuxom moze i sevapa zaraditi."
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/koristil-se-u-zenici-linux/4094)*

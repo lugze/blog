@@ -15,3 +15,12 @@ Prvobitni plan je bio instalacija SuSE 8.0, ali je na kraju odluceno da se koris
 Gomez je planirao drzati prve casove dok profesor ne savlada osnove, a na svom licnom racunaru je koristio Slackware.
 
 Ovo je bio jedan od prvih koraka ka sirenju Linuxa u obrazovnim institucijama u Zenici i BiH.
+
+## Siri kontekst
+
+Ova inicijativa nije nastala u vakuumu. Na forumu je u decembru 2002. korisnik crazy_m pokrenuo diskusiju o uvodjenju Linuxa u skolske nastavne planove, predlazuci "3-5 lekcija" posvecenih Linuxu u skolama. Diskusija je otkrila i prakticne prepreke - korisnik Babysitter je ukazao na to da oglasi za posao zahtijevaju poznavanje MS Office-a, sto je otezavalo argumentaciju za Linux u obrazovanju.
+
+Gomezov potez da fizicki instalira Linux u svojoj gimnaziji na 15 Pentium-2 racunara bio je jedan od prvih konkretnih koraka - prelazak sa teorije na praksu. Sve se ovo desavalo samo oko 2 godine nakon pokretanja projekta lugbih.org, u periodu kada je Linux zajednica u BiH tek pocinjala da se formira.
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/linux-u-osnovnim-srednjim-skolama/454)*

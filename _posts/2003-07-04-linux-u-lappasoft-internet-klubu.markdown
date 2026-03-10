@@ -14,3 +14,8 @@ Grungy je na [forum.linux.org.ba](https://forum.linux.org.ba/t/linux-u-lappasoft
 Cilj je bio upoznati zainteresovane posjetioce sa operativnim sistemom uz pristup mrezi i internetu. Redovni posjetioci su se vec upoznali sa Linuxom, sto je generisalo lokalni interes.
 
 Grungy je predlozio postavljanje promotivnih materijala koji bi reklamirali kafic kao "prvi internet klub sa Linux OS-om" u Zenici. Takodje je napomenuo da su Lappasoft programeri zainteresovani za portanje svog ICA softvera na Linux platformu.
+
+Ovo je bilo dio sire LugZe strategije da Linux ucini vidljivim u javnim prostorima u Zenici. U 2003. godini vecina ljudi u BiH nikada nije vidjela Linux kako radi na pravom racunaru. Internet kafici su bili primarni nacin na koji su mnogi ljudi pristupali internetu, sto ih je cinilo idealnim mjestima za upoznavanje sa Linuxom. Ideja promovisanja Lappasoft-a kao "prvog internet kluba sa Linux OS-om" imala je znacajan potencijal za podizanje lokalne svijesti o open source softveru.
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/linux-u-lappasoft-internet-klubu/658)*

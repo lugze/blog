@@ -13,3 +13,8 @@ Web stranica je bila hostovana na `zenica.infostudy.ba` na LugZe serveru, sto po
 > Namjeravamo da napravimo nesto kao bundle ovih zajednica.
 
 Grungy je pozvao zainteresovane stanovnike Zenice da se jave kako bi pomogli u realizaciji ove inicijative. Ovo je bio primjer kako je LugZe, pored Linux aktivnosti, podrzavao i siru IT zajednicu u Zenici.
+
+Ucenje na daljinu (distance learning) je bio relativno nov koncept u BiH 2003. godine. Cinjenica da je grungy hostovao ovu zajednicu na LugZe serveru pokazuje kako je infrastruktura Linux zajednice sluzila sirim obrazovnim potrebama. LugZe server na Masinskom fakultetu u Zenici postajao je hub ne samo za Linux korisnike, vec i za siru zenicku IT zajednicu.
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/zajednica-dl-studena-zenice/666)*

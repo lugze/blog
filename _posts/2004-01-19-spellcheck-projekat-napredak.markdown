@@ -23,3 +23,6 @@ Grungy je u martu objavio zavrsetak slova M i P sa skorim upload-om na CVS, te n
 U septembru 2004. grungy je zatrazio novog koordinatora zbog nedostatka vremena, a vedran se ponudio da preuzme tu ulogu do kraja godine.
 
 Grungy je predlozio da provjera pravopisa treba biti temelj za dalji rad na lokalizaciji, cak predlazuci automatizovani skript koji bi koristeci bazu pravopisa sam prevodio .pot fajlove.
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/spellcheck-projekat/917)*

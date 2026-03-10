@@ -23,3 +23,6 @@ Pregovori izmedju ULK-a i LugZe-a rezultirali su dogovorom o: zadrzavanju domene
 Na forumu se razvila siroka diskusija o organizacionoj strukturi Linux zajednice u BiH. Grungy je pohvalio IceBreaker-ov "iskren i objektivan odgovor" i postavio pitanje o opasnosti od fragmentacije zajednice na vise odvojenih organizacija umjesto kolaborativnog rada na lokalizaciji.
 
 Gomez je opisao demokratski proces odlucivanja unutar LugZe-a, dok je alcak iz Malezije apelirao na jedinstvo zajednice, naglasivsi da organizacioni konflikti podrivaju napredak Linuxa.
+
+---
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/izvjestaj-o-radu-lugze-a/808)*

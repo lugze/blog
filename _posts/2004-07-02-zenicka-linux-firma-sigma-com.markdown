@@ -17,3 +17,7 @@ Testni_hamo2 je spomenuo da je direktor firme prisustvovao jednom od prevodilack
 ## Gomez-ov doprinos
 
 U istom periodu, gomez je na forumu izvijestio o uspjesnoj implementaciji besplatnih open source rjesenja u vecim firmama poput BH Steel-a, opcine Zenica i kantonalne vlade, zahvaljujuci partnerskim kontaktima.
+
+---
+
+*Originalni post: [forum.linux.org.ba](https://forum.linux.org.ba/t/zenicka-soft-linux-solutions/1147)*
