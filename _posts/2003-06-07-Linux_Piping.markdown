@@ -107,7 +107,7 @@ grungy@linux:/usr > cat test.txt | grep "blah"
 ```
 
 
-• Datoteka /etc/servise sadrzi listu prepoznatljivih TCP/IP servisa, ciji sadrzaj mozemo sortirati po abecedi na sljedeci nacin:
+• Datoteka /etc/services sadrzi listu prepoznatljivih TCP/IP servisa, ciji sadrzaj mozemo sortirati po abecedi na sljedeci nacin:
 
 ```
 grungy@linux:~> cat /etc/services | sort

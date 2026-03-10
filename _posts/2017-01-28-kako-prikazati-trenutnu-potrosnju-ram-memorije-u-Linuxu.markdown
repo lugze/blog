@@ -91,7 +91,7 @@ Total:        146G       133G        12G{% endhighlight %}
 - Opcija -o izbacuje prikaz linije "buffer adjusted"
 
 {% highlight shell %}
-free -g -h -o
+free -h -o
 {% endhighlight %}
 
 {% highlight shell %}
@@ -103,7 +103,7 @@ Swap:          20G        11G       9.1G
 - Zbog lakseg koristenja format pisanja se moze pojednostaviti u sljedeci
 
 {% highlight shell %}
-free -ghto
+free -hto
 {% endhighlight %}
 
 ispis
