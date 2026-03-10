@@ -4,42 +4,45 @@ title: Mala Škola Linux-a
 permalink: /mala-skola-linuxa/
 ---
 
-Verzija dokumenta 0.0.1
+Verzija dokumenta 0.0.2
 
 ## Uobičajena organizacija foldera u Linuxu
 
 * `/bin`  - programi koje koriste i administratori i korisnici
-* `/dev`  - datoteke koje predstavljaju hardverske uredjaje (mrezna, graficka)  
+* `/dev`  - datoteke koje predstavljaju hardverske uređaje (mrežna, grafička)
 * `/etc`  - konfiguracijske datoteke
 * `/home` - direktoriji korisnika
 * `/sbin` - sistemski programi
 * `/tmp`  - privremene datoteke
-* `/usr`  - korisnicki programi, dokumentacija i biblioteke
-* `/var`  - sistemski zapisi i druge datoteke.
+* `/usr`  - korisnički programi, dokumentacija i biblioteke
+* `/var`  - sistemski zapisi i druge datoteke
 
-* Više na [linku](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard).
+Više na [Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard).
 
 ## Upravljanje korisnicima i grupama
 
-Korsnici imaju sopstveni `home` direktorij koji se nalazi u folderu `/home`. Izuzetak je `root` korisnik, čiji home direktorij se nalazi na lokaciji `/root`.
+Korisnici imaju sopstveni `home` direktorij koji se nalazi u folderu `/home`. Izuzetak je `root` korisnik, čiji home direktorij se nalazi na lokaciji `/root`.
 
-#### Vježba: nekoliko načina kako pristupiti home folderu
+### Vježba: nekoliko načina kako pristupiti home folderu
 
-* koristiti `cd` komanu bez argumenata.
+Koristiti `cd` komandu bez argumenata:
 
 ```
 cd
 ```
-* kao argument `cd` komandi proslijediti znak tildu tj. `~`.
+
+Kao argument `cd` komandi proslijediti tildu tj. `~`:
 
 ```
 cd ~
 ```
-* kao argument `cd` komandi proslijediti build in shell varijablu `$HOME`
+
+Kao argument `cd` komandi proslijediti built-in shell varijablu `$HOME`:
 
 ```
 cd $HOME
 ```
+
 ### Komanda `finger`
 
 Komanda `finger` ispisuje informacije o korisniku. Kao argument komandi proslijedimo korisničko ime tj. `username` korisnika. U sljedećem primjeru `finger` će prikazati informacije o korisniku `root`.
@@ -48,12 +51,11 @@ Komanda `finger` ispisuje informacije o korisniku. Kao argument komandi proslije
 finger root
 ```
 
-kao odgovor dobijamo sljedeće informacije
+Kao odgovor dobijamo sljedeće informacije:
 
 ```
-finger root
-Login: root           			Name: root
-Directory: /root                    	Shell: /bin/bash
+Login: root                     Name: root
+Directory: /root                Shell: /bin/bash
 On since Sun Mar 11 19:22 (UTC) on pts/2 from 77.77.218.xx
    18 minutes 24 seconds idle
      (messages off)
@@ -63,7 +65,7 @@ New mail received Mon Mar  5 15:40 2018 (UTC)
 No Plan.
 ```
 
-Ukoliko dobijete grešku `-bash: finger: command not found` potrebno je da instalirate komandu sa na sljedeći način:
+Ukoliko dobijete grešku `-bash: finger: command not found` potrebno je da instalirate komandu na sljedeći način:
 
 ```
 apt-get update
@@ -72,41 +74,41 @@ apt-get install finger
 
 ### Komanda `id`
 
-Ova komanda nam daje informacije o korisniku kao što su
+Ova komanda nam daje informacije o korisniku kao što su:
 
-* `id`     - broj korisnika
-* `gid`    - group id tj. broj primarne grupe kojoj korinsik pripada
-* `groups` - kompletna lista grupa kojoj korisnik pripada, tj gid i naziv grupe.
+* `uid`    - broj korisnika
+* `gid`    - group id tj. broj primarne grupe kojoj korisnik pripada
+* `groups` - kompletna lista grupa kojoj korisnik pripada, tj. gid i naziv grupe
 
-Kada komandi `id` argument ostavimo prazan, podrzaumijeva se da zelimo saznati informacije o trenutno logovanom korisniku, odnosno korisniki koji izvrsava komandu. Primjer:
+Kada komandi `id` argument ostavimo prazan, podrazumijeva se da želimo saznati informacije o trenutno logovanom korisniku, odnosno korisniku koji izvršava komandu. Primjer:
 
 ```
 id
 uid=0(root) gid=0(root) groups=0(root)
 ```
 
-Kada kao argument komandi `id` proslijedimo `username` dobijemo info o tom korinsiku.
+Kada kao argument komandi `id` proslijedimo `username` dobijemo info o tom korisniku:
 
 ```
 id korisnik
 uid=1001(korisnik) gid=1001(korisnik) groups=1001(korisnik),27(sudo)
 ```
 
-Ako želimo saznati samo `id` broj korinsiko koristimo parametar `-u`.
+Ako želimo saznati samo `uid` broj korisnika koristimo parametar `-u`:
 
 ```
 id -u root
 0
 ```
 
-Ako želimo saznati broj primarne grupe nekog korisnika, koristimo parametar `-g`.
+Ako želimo saznati broj primarne grupe nekog korisnika, koristimo parametar `-g`:
 
 ```
 id -g korisnik
 1001
 ```
 
-Ako želimo saznati brojeve svih grupa kojoj priapada korisnik, korisitmo parametar `-G`.
+Ako želimo saznati brojeve svih grupa kojoj pripada korisnik, koristimo parametar `-G`:
 
 ```
 id -G korisnik
@@ -115,195 +117,193 @@ id -G korisnik
 
 ## Rad sa fajlovima i direktorijima
 
-File ili direktorij sa space Moj File se pise kao ```Moj\ file```
+File ili direktorij sa razmakom u imenu, npr. `Moj File`, piše se kao `Moj\ File`.
 
-#### Ispis sadržaja direktorija
+### Ispis sadržaja direktorija
 
-```ls```  -> listanje
+`ls` - listanje sadržaja direktorija
 
-```ls —a -l -h``` -> Listaj a-detalje, l-long format, h-jasnije covjeku
+`ls -a -l -h` - listaj sa svim detaljima: `-a` sve fajlove (i skrivene), `-l` long format, `-h` human-readable veličine
 
-ili ovako:
+Ili skraćeno:
 
 ```
 ls -alh
 ```
 
-##### Ispisi listu fajlova i direktorija unutar trenutnog direktorija
+Ispiši listu fajlova i direktorija unutar trenutnog direktorija:
 
 ```
 ls .
 ```
 
-Ispisi listu fajlova i direktorija unutar trenutnog direktorija ukljucujuci i sakrivene fajlove skriveni fajlvi su fajlovi cije ime pocinje sa tackom odnosno znakom .
+Ispiši listu fajlova i direktorija uključujući i skrivene fajlove (skriveni fajlovi su fajlovi čije ime počinje sa tačkom `.`):
 
 ```
 ls -al .
 ```
 
-Ispisi listu fajlova i direktorija unutar trenutnog direktorija, te sadrzaj direktorija koji se nalaze u tekućem direktoriju
+Ispiši listu fajlova i direktorija unutar trenutnog direktorija, te sadržaj direktorija koji se nalaze u tekućem direktoriju:
 
 ```
 ls -al *
 ```
 
-
-Ispisi listu fajlova i direktorija unutar trenutnog direktorija na nacin da i direktorije tretiramo kao obične fajlove te ne ispisujemo njihov sadržaja
+Ispiši listu fajlova i direktorija unutar trenutnog direktorija na način da i direktorije tretiramo kao obične fajlove te ne ispisujemo njihov sadržaj:
 
 ```
 ls -ald *
 ```
 
-
-Ispisi listu fajlova i direktorija koji pocinju sa znakom . odnosno ispisi samo skrivene fajlove i direktorije
+Ispiši samo skrivene fajlove i direktorije (koji počinju sa znakom `.`):
 
 ```
 ls -ald .*
 ```
 
-
-#### Ispisi inode broj fajla
+### Ispis inode broja fajla
 
 ```
 ls -i ime_fajla
 ```
 
-
 ### Kreiranje simboličkih linkova
 
-prvo napravimo fajl
+Prvo napravimo fajl:
 
 ```
 touch fajl_jedan
 ```
 
-
-zapišemo nesto u fajl pomoću redirekcije
+Zapišemo nešto u fajl pomoću redirekcije:
 
 ```
-echo "NEKI TESTNI SADRZAJ">fajl_jedan
+echo "NEKI TESTNI SADRZAJ" > fajl_jedan
 ```
 
-
-provjerimo da li je zapisano u fajl
+Provjerimo da li je zapisano u fajl:
 
 ```
 cat fajl_jedan
 ```
 
-napravimo simbolički link na novi fajl
+Napravimo simbolički link na novi fajl:
 
 ```
 ln -s fajl_jedan fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
 ```
 
-ispišemo sadrzaj drugog fajla koji je simbolički link
+Ispišemo sadržaj drugog fajla koji je simbolički link:
 
 ```
 cat fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
 ```
 
-možemo primjetiti da je sadržaj oba fajla isti
+Možemo primijetiti da je sadržaj oba fajla isti.
 
-provjerimo inodove oba fajla
+Provjerimo inode-ove oba fajla:
 
 ```
 ls -i fajl_jedan
 ls -i fajl_dva_koji_je_simbolicki_link_na_prvi_fajl
 ```
 
-možemo promjetiti da su inode brojevi razliciti sto znaci da su razliciti fajlove te ako jedan izbrisemo to znaci da drugi fajl nece biti izbrisan
+Možemo primijetiti da su inode brojevi različiti što znači da su to različiti fajlovi, te ako jedan izbrišemo to znači da drugi fajl neće biti izbrisan.
 
+#### Vježba
 
-#### Vjezba: izbrisati prvi fajl. Da li je drugi fajl koji je simbolicki link izbrisan? Da li mozemo pomocu cat komande izlistati sadrzaj drugog fajla?
+Izbrisati prvi fajl. Da li je drugi fajl koji je simbolički link izbrisan? Da li možemo pomoću `cat` komande izlistati sadržaj drugog fajla?
 
+### Hard linkovi
 
-
-## Hard linkovi
-
-Kreirati fajl i dodati neki sadrzaj
+Kreirati fajl i dodati neki sadržaj:
 
 ```
 touch fajl_prvi
-echo "NEKI TESTNI SADRZAJ">fajl_prvi
+echo "NEKI TESTNI SADRZAJ" > fajl_prvi
 ```
 
-napraviti hard link
+Napraviti hard link:
 
 ```
 ln fajl_prvi fajl_drugi
 ```
 
-provjeriti inode brojeve za oba fajla
+Provjeriti inode brojeve za oba fajla:
 
 ```
 ls -i fajl_prvi
 6257560 fajl_prvi
 ```
 
-inode broj fajla je broj `6257560`
+Inode broj fajla je `6257560`.
+
 ```
 ls -i fajl_drugi
 6257560 fajl_drugi
 ```
 
-inode broj drugog fajla je takodjer `6257560`
+Inode broj drugog fajla je također `6257560`.
 
+Inode brojevi su isti što znači da se oba fajla linkaju na istu lokaciju na disku.
 
-inode brojevi su isti sto znaci da su oba fajla linkaju na istu lokaciju na disku
+#### Vježba
 
-
-##### Vjezba: Sta se desi ako izbrisemo drugi fajl, da li ce prvi fajl biti izbrisan?
-
+Šta se desi ako izbrišemo drugi fajl, da li će prvi fajl biti izbrisan?
 
 ```
 rm fajl_drugi
 ```
 
+### Rekurzivno listanje sadržaja foldera
 
 ```
-ls -R IME FOLDERA/
+ls -R IME_FOLDERA/
 ```
 
--> gledanje u sadrzinu i oko foldera rekurzivno tj. pregled cijele strukture foldera
+Pregledamo cijelu strukturu foldera rekurzivno.
 
+### Pomoć o komandama
 
 ```
-ls —help
+ls --help
 ```
 
- -> pomoc o komandi
-
+Prikazuje kratku pomoć o komandi.
 
 ```
 man ls
 ```
- -> man-om objasnjvamo komande i lista se sa f i b
 
-**********************
+Prikazuje detaljni manual za komandu. Navigacija: `f` (naprijed), `b` (nazad), `q` (izlaz).
+
+---
+
+### Navigacija kroz direktorije
+
+Ulazak u folder:
 
 ```
-cd IME FOLDERA
+cd IME_FOLDERA
 ```
- -> ulazak u folder
 
-SAMO cd vraca na pocetni folder
+Samo `cd` bez argumenata vraća na home folder.
+
+Izlazak iz foldera (jedan nivo gore):
 
 ```
 cd ..
 ```
- -> izlazak iz foldera
+
+Ulazak na udaljeni folder, dva nivoa iznad:
 
 ```
-cd ../../NEKI FOLDER
+cd ../../NEKI_FOLDER
 ```
- -> ulazak na udaljeni folder, dva levela iznad
-
 
 ### Putanje do programa
 
-
-koristimo komandu whereis i which da saznamo putanju gdje je instaliran program, odnosno gdje se nalazi binary trazenog programa
+Koristimo komande `whereis` i `which` da saznamo putanju gdje je instaliran program, odnosno gdje se nalazi binary traženog programa:
 
 ```
 whereis nano
@@ -321,8 +321,9 @@ whereis bash
 which rvm
 ```
 
+### Vježba: praćenje pwd vrijednosti
 
-#### Vjezba: pratiti kako se mijenja pwd vrijednost nakon svake izmjene current directorija
+Pratiti kako se mijenja `pwd` vrijednost nakon svake izmjene trenutnog direktorija:
 
 ```
 cd ~
@@ -336,28 +337,36 @@ pwd
 echo $PWD
 ```
 
+### Kreiranje direktorija
 
-```mkdir``` -> pravljenej foldera
+`mkdir` - pravljenje foldera
 
-```mkdir folder/subfolder/subsubfolder```
+```
+mkdir folder/subfolder/subsubfolder
+```
 
-```mkdir -p``` -> pravljenej parent directorija, koristi se u slucaju da parent folder ne postoji te zelimo u isto vrijeme napraviti parent folder te u njemu subfoldere
+`mkdir -p` - pravljenje parent direktorija. Koristi se u slučaju da parent folder ne postoji te želimo u isto vrijeme napraviti parent folder i u njemu subfoldere:
 
+```
+mkdir -p folder/subfolder/subsubfolder
+```
 
-```touch mojFile.txt```
- -> pravljenje filea
+### Kreiranje, kopiranje i premještanje fajlova
+
+Pravljenje fajla:
+
+```
+touch mojFile.txt
+```
+
+Kopiranje fajla:
 
 ```
 cp mojFile.txt mojNoviFile.txt
 ```
- -> kopiranje filea
 
-move files:
+Premještanje fajlova (može se koristiti i za preimenovanje):
 
-```
-mv
-```
- -> pomijeranje fileova koje se moze koristiti i za rename
 ```
 mv novi_file.txt najbolji_folder
 ```
@@ -366,17 +375,18 @@ mv novi_file.txt najbolji_folder
 mv novi_file.txt najbolji_folder/novi_file2
 ```
 
-```mv najbolji_folder/*.txt .``` -> pomjeri sve fileove koji zavrsavaju sa .txt iz najbolji_folder u trenutni folder
-
-Wildcards:
+Pomjeri sve `.txt` fajlove iz `najbolji_folder` u trenutni folder:
 
 ```
-* -> any number of characters
-? -> one of the character
+mv najbolji_folder/*.txt .
 ```
 
+### Wildcards (džoker znakovi)
 
-delete files:
+* `*` - bilo koji broj znakova
+* `?` - tačno jedan znak
+
+### Brisanje fajlova
 
 ```
 rm novi_file.txt
@@ -386,362 +396,402 @@ rm novi_file.txt
 rm noviji_file?.txt
 ```
 
+Rekurzivno brisanje fajlova (ukoliko folder ima sadržaja):
 
 ```
-rm -r
-```
- -> rekurzivno brisanje fileova (ukoliko folder ima sadrzaja)
-
-Pretraga fileova:
-
-```
-find . -name “naziv”
-find . -name “naziv*”
+rm -r ime_foldera
 ```
 
-Rekurzivno pretrazi sve fajlove u odredisnom direktoriju (u sljedecom primjeru to je direktorij /home)
+### Pretraga fajlova
+
+```
+find . -name "naziv"
+find . -name "naziv*"
+```
+
+Rekurzivno pretraži sve fajlove u odredišnom direktoriju (u sljedećem primjeru to je direktorij `/home`):
 
 ```
 find /home
 ```
 
-Pretraga za fajlovima, u tekucem direktoriju, samo tipa file (ne izlistavamo direktorije)
+Pretraga samo za fajlovima u tekućem direktoriju (ne izlistavamo direktorije):
 
 ```
 find . -type f
 ```
 
-Pretraga za direktorijima, ne ispisuju se fajlovima
+Pretraga samo za direktorijima (ne ispisuju se fajlovi):
 
 ```
 find . -type d
 ```
 
+### Prompt znakovi
 
-```
-$ - nalazim se u useru
-# - sada sam root
-```
+* `$` - nalazimo se kao obični korisnik
+* `#` - nalazimo se kao root
+
+### Promjena korisnika
+
+Prelazak u root (potrebna šifra):
 
 ```
 su root
 ```
- -> prelazak u root (potrebna sifra)
+
+Logovanje kao korisnik (novi login shell):
 
 ```
 su korisnik -l
 ```
- (novi login shell) - logovanje kao korisnik
+
+### Dozvole nad fajlovima
+
+`chmod` - mijenja dozvole nad fajlom.
+
+Oktalne dozvole:
 
 ```
-chmod -> change the permission on a file
+User -> Groups -> Others
+Read = 4, Write = 2, Execute = 1
 ```
 
-Octal file permisions:
+Simboličke oznake:
+
+* `+` dodaje dozvolu
+* `-` uklanja dozvolu
+* `=` postavlja dozvolu ali uklanja ostale
+
+Primjeri:
+
+Uklanjamo korisniku pravo čitanja fajla `test.sh`:
 
 ```
-User -> Groups -> others
-Read = 4, Write = 2, Execute =1
+chmod u-r test.sh
 ```
 
+Isto ali oktalno (write za vlasnika, read za grupu i ostale):
+
 ```
-+ adds permission
-- remove permission
-= adds permission but removes others
+chmod 244 test.sh
 ```
 
-```chmod u-r test.sh``` -> uzimamo useru pravo citanja filea test.sh
+Prebacujemo vlasništvo fajla na root:
 
-```chmod 244 test.sh``` -> isto ali oktalno
+```
+sudo chown root test.sh
+```
 
-```sudo chown root test.sh``` -> prebacujem prava filea na root
+Prebacujemo vlasništvo fajla na korisnika:
 
-```sudo chown korinik test.sh``` -> prebacujem prava filea na usera korinik
+```
+sudo chown korisnik test.sh
+```
 
+### Korištenje pipe-ova
 
-Using pipes:
+```
+echo "hello" | wc
+```
 
-```echo “hello” | wc``` -> 1  1  16  one line, one word and 6 characters
+Rezultat: `1  1  6` - jedna linija, jedna riječ i 6 znakova.
 
+### Čitanje sadržaja fajlova
 
-Cat - Concatenate(stick two or more things together) and print files
+`cat` (concatenate) - ispisuje sadržaj fajla:
 
-```cat dugiTekst.txt``` -> izlistavamo cijeli tekst
+```
+cat dugiTekst.txt
+```
 
-```head dugiTekst.txt``` -> prvih 10 linija
+`head` - ispisuje prvih 10 linija:
 
-```tail dugiTekst.txt``` -> zadnjih 10 linija
+```
+head dugiTekst.txt
+```
 
-# Ispiši zadnjih 5 linija pomoću tail komande
+`tail` - ispisuje zadnjih 10 linija:
+
+```
+tail dugiTekst.txt
+```
+
+Ispiši zadnjih 5 linija pomoću `tail` komande:
 
 ```
 tail -n 5 dugiTekst.txt
 ```
 
-```
-cat dugiText | cat -n | tail -n 5
-```
- -> kombinacija
+Kombinacija komandi sa pipe-om:
 
-```less dugiText``` -> izlistavanje
+```
+cat dugiTekst.txt | cat -n | tail -n 5
+```
 
-### Grep - Search files for text that matches a given pattern
+`less` - interaktivno pregledavanje dugačkih fajlova:
+
+```
+less dugiTekst.txt
+```
+
+### Grep - pretraga teksta u fajlovima
 
 ```
 grep "text" file.txt
 ```
 
+### Korisne komande
 
+* `.`  - oznaka za trenutni folder
+* `ls -al` - pregled svih fajlova u trenutnom direktoriju (uključujući skrivene)
+* `printenv` - ispis svih environment varijabli
+* `pwd` - print working directory, provjera putanje na kojoj se nalazimo
 
-```.``` -> Current folder
+### Generisanje SSH ključa
 
+```
+ssh-keygen -t rsa
+```
 
-```la -al``` -> view . files from current directory
+### Dodavanje korisnika u sudo ili admin grupu
 
-```printnv``` -> printanje svih varijabli
+```
+adduser username sudo
+```
 
-```su korisnik -l``` (novi login shell)
+```
+adduser username admin
+```
 
-```pwd``` -> print working directory i provjera putanje na kojoj se nalazimo
+### Archive komande
 
-#### Generisanje set key-a
+```
+tar -cvf myfile.tar Vjezba_Files/
+```
 
-```ssh-keygen -t rsa```
-
-
-
-#### Adding users to sudo or admin group
-
-```adduser username sudo```
-
-```adduser username admin```
-
-
-
-Archive komande
-
-```tar -cvf (c-create, v-verbot, f-output to file) myfile.tar Vjezba\ Files/```
-
-
+Opcije: `c` - create, `v` - verbose, `f` - output to file.
 
 ## Procesi
 
-# Izlistaj sve procese svih korisnika
+Izlistaj sve procese svih korisnika:
 
 ```
 ps -ef
 ```
-e --> ispis svih procesa u sistemu
-f --> ispis dodatnih podataka o procesima
 
+* `e` - ispis svih procesa u sistemu
+* `f` - ispis dodatnih podataka o procesima
 
-ili
+Ili:
 
 ```
-ps -aux
+ps aux
 ```
 
-# izlistaj procese samo za sshd korisnika
+Izlistaj procese samo za `sshd` korisnika:
 
 ```
 ps -f -u sshd
 ```
 
-# sortiraj procese po potrošnji memorije
+Sortiraj procese po potrošnji memorije:
 
 ```
 ps aux --sort pmem
 ```
 
-# sortoranje procesa po CPU potrošnji
+Sortiranje procesa po CPU potrošnji:
 
 ```
 ps aux --sort pcpu
 ```
 
-### Slanje procesa i background
+### Slanje procesa u background
 
-
-
-nakon komande dodamo znak &
+Nakon komande dodamo znak `&`:
 
 ```
 nano &
 ```
 
-izlistamo procese u backgroundu
+Izlistamo procese u backgroundu:
 
 ```
 jobs
 ```
 
-vratimo komandu u foreground
+Vratimo komandu u foreground:
 
 ```
 fg
 ```
 
-Stopiranje background procesa:
-Nakon izlistavanja procesa
+Stopiranje background procesa. Nakon izlistavanja procesa:
+
 ```
 jobs
 [1]+  Running   "Komanda koju smo poslali u background"
 ```
-Ukucavamo
+
+Ubijamo proces po broju:
 
 ```
-kill 1 --> broj procesa
+kill %1
 ```
 
+### Korištenje Jekyll-a
 
-###Koristenje jerkyll-a (Transform your plain text into static websites)
+Jekyll pretvara običan tekst u statičke web stranice.
 
 1. Logovanje na server
-2. Dodavanje novog korisnika
+2. Dodavanje novog korisnika:
+
 ```
 adduser korisnik
 ```
 
-3. Logovanje kao korisnik
+3. Logovanje kao korisnik:
+
 ```
 su korisnik -l
 ```
 
+4. Instalacija programskog jezika (u ovom slučaju RVM i Ruby 2.5)
 
-4. Instalacija programskog jezika (u ovom slucaju rvm i ruby 2.5)
-5.
+5. Ažuriranje gem-ova:
+
 ```
 gem update
-i
-gem update —system
+gem update --system
 ```
 
+6. Kao korisnik generisati novi ključ:
 
-6. Kao korisnik generisati novi kljuc
 ```
 ssh-keygen -t rsa
 ```
 
-7. generisani kljuc za korisnika dodati na github repo gdje je forkovan lugze blog
-8. Instaliranje bundle-a
-```
-apt-get install bundle
-```
+7. Generisani ključ za korisnika dodati na GitHub repo gdje je forkovan LugZe blog.
 
-9. Ponoviti postupak kloniranja datog repo-a i instalacije jekyll-a
+8. Instaliranje Bundler-a:
 
 ```
-git clone naziv git repoa
+gem install bundler
 ```
-instalacije jekyll-a
+
+9. Kloniranje repozitorija i instalacija Jekyll-a:
+
 ```
+git clone naziv_git_repoa
 gem install jekyll bundler
 ```
 
-10. Pokretanje jekyll serve u backgroundu
+10. Pokretanje Jekyll servera u backgroundu:
 
 ```
 bundle exec jekyll serve &
 ```
 
-###Pronalazenje public ip adrese i komande ping/traceroute
+### Pronalaženje public IP adrese i komande ping/traceroute
 
-`ping ime servera` - mjerenje odaziva nekog servera. Ovom komandom, pored drugih podataka, saznajemo public ip servera
+`ping ime_servera` - mjerenje odaziva nekog servera. Ovom komandom, pored drugih podataka, saznajemo public IP servera.
 
-`traceroute ime servera` - izlistavanje svih routea, servera koji se nalaze u hijerarhiji nekog servera
+`traceroute ime_servera` - izlistavanje svih ruta, servera koji se nalaze u hijerarhiji do nekog servera.
 
-IP adresa - adresa servera
+IP adresa - adresa servera:
 
-`0.0.0.0` - Ukoliko server ima 10 ip adresa, ovakvim navodom server ce slusati svih 10 tj. sve adrese
-`127.0.0.1` - IP adresa lokalnog racunara (nije routabilna)
+* `0.0.0.0` - ukoliko server ima 10 IP adresa, ovakvim navodom server će slušati na svim adresama
+* `127.0.0.1` - IP adresa lokalnog računara (nije routabilna)
 
-#### Pronalazenje javne ili privatne IP adrese nekog servera:
+### Pronalaženje javne ili privatne IP adrese servera
 
-* 1. Ukoliko zelimo saznati ip adresu remote servera na kojem se nalazimo
-
-```
-ifconfig - ukoliko smo root
-```
-
-ili
+Ukoliko želimo saznati IP adresu remote servera na kojem se nalazimo:
 
 ```
-/sbin/ifconfig - ukoliko smo korisnik
+ifconfig
 ```
 
-Nakon ukucanie komande trazimo adresu a `inet` prefiksom sto je ujedno i public ip adresa servera
+Ukoliko smo neprivilegovani korisnik:
 
-##### Zasto kao obicni korisnik moramo kucati punu putanju do `ifconfig` komande?
+```
+/sbin/ifconfig
+```
 
-Komanda ifconfig se nalazi u direktoriju `/sbin` stoga moramo provjeriti da li se taj direktorij nalazi u `$PATH` shell varijabli. Korisniku su dostupni programi tj. komande koji se nalaze u pitanjama foldera koji su izlistani u `$PATH` shell varijabli.
+**Napomena:** Moderna zamjena za `ifconfig` je komanda `ip addr`.
 
+Nakon ukucane komande tražimo adresu sa `inet` prefiksom što je ujedno i IP adresa servera.
 
- Kada smo logovani kao root korisnik to mozemo testirati na sljedeci nacin.
+#### Zašto kao obični korisnik moramo kucati punu putanju do `ifconfig` komande?
 
- ````
- whoami
+Komanda `ifconfig` se nalazi u direktoriju `/sbin` stoga moramo provjeriti da li se taj direktorij nalazi u `$PATH` shell varijabli. Korisniku su dostupni programi tj. komande koje se nalaze u putanjama foldera koji su izlistani u `$PATH` shell varijabli.
+
+Kada smo logovani kao root korisnik to možemo testirati na sljedeći način:
+
+```
+whoami
 root
- ````
+```
 
- Izlistamo foldere iz `$PATH` varijable
+Izlistamo foldere iz `$PATH` varijable:
 
- ````
- echo $PATH
- ```
-
- ili filtriramo samo za `/sbin` gdje se nalazi ifconfig
-
- ````
- echo $PATH | grep '/sbin'
- /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
- ````
-
- kao sto vidimo dobili smo trazeni `/sbin` sto znaci da root moze direktno pozivati programe koji se nalaze u `/sbin` direktoriju.
-
- Sada je potrebno isto da uradimo za obicnog/neprivilegovanog korisnika kako bi provjerili zasto taj isti korisnik nema po defaultu pristup komandama iz `/sbin` direktorija.
-
- * logujemo se kao neprivilegovano korisnik
-
- ````
- eu emin -l
- ````
-
- * provjerimo da li je login bio uspjesan
-
- ````
- whoami
-emin
-````
-
-* zatim provjerimo sadrzaj `$PATH` varijable
-
-````
+```
 echo $PATH
-````
+```
 
-* ili filtriramo za `/sbin` direkotorijem sto je cilj ove vjezbe
+Ili filtriramo samo za `/sbin` gdje se nalazi `ifconfig`:
 
-````
+```
 echo $PATH | grep '/sbin'
-````
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+```
 
-dobijamo prazan odgovor sto znaci da se `/sbin` ne nalazi u `$PATH` varijabli. To je razlog zasto po defaultu ne mozemo koristiti komandu `ifconfig` i dobijamo gresku `ifconfig: command not found`.
+Kao što vidimo dobili smo traženi `/sbin` što znači da root može direktno pozivati programe koji se nalaze u `/sbin` direktoriju.
 
-* Ovo mozemo rijesiti tako sto za trenutnog korisnika dodamo `/sbin` putanju u `$PATH` varijablu. Potrenno je uraditi sljedece
+Sada je potrebno isto da uradimo za običnog/neprivilegovanog korisnika kako bi provjerili zašto taj isti korisnik nema po defaultu pristup komandama iz `/sbin` direktorija.
 
-````
-PATH=$PATH:/sbin
-````
+Logujemo se kao neprivilegovani korisnik:
 
-Sada mozemo koristiti `ifconfig` komandu a da ne unosimo punu putanju do komande.
+```
+su emin -l
+```
 
-````
+Provjerimo da li je login bio uspješan:
+
+```
 whoami
 emin
-````
+```
 
-````
-fconfig lo
+Zatim provjerimo sadržaj `$PATH` varijable:
+
+```
+echo $PATH
+```
+
+Ili filtriramo za `/sbin` direktorij što je cilj ove vježbe:
+
+```
+echo $PATH | grep '/sbin'
+```
+
+Dobijamo prazan odgovor što znači da se `/sbin` ne nalazi u `$PATH` varijabli. To je razlog zašto po defaultu ne možemo koristiti komandu `ifconfig` i dobijamo grešku `ifconfig: command not found`.
+
+Ovo možemo riješiti tako što za trenutnog korisnika dodamo `/sbin` putanju u `$PATH` varijablu:
+
+```
+PATH=$PATH:/sbin
+```
+
+Sada možemo koristiti `ifconfig` komandu bez unošenja pune putanje:
+
+```
+whoami
+emin
+```
+
+```
+ifconfig lo
 lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         inet 127.0.0.1  netmask 255.0.0.0
         inet6 ::1  prefixlen 128  scopeid 0x10<host>
@@ -750,26 +800,25 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         RX errors 0  dropped 0  overruns 0  frame 0
         TX packets 2563  bytes 299115 (292.1 KiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-````
+```
 
-* Napomena: na ovaj nacin smo samo trenutno izmijenili vrijednost `$PATH` varijable, nakon sto se korisnik odjavi tj. uradi logout vrijednost `$PATH` varijable ce biti vracena na prvobitno postavke tj. bice resetovana.
+**Napomena:** Na ovaj način smo samo trenutno izmijenili vrijednost `$PATH` varijable. Nakon što se korisnik odjavi tj. uradi logout, vrijednost `$PATH` varijable će biti vraćena na prvobitne postavke tj. biće resetovana.
 
-### Kako prepoznavati privatne ip adrese
+### Kako prepoznavati privatne IP adrese
 
-Private IPv4 address spaces
+Private IPv4 address spaces:
 
-RFC1918 name | IP address range | number of addresses
--------------  ----------------   --------------------
-24-bit block | 10.0.0.0-10.255.255.255 | 16,777,216
-20-bit block | 172.16.0.0-172.31.255.255	|	1,048,576
-16-bit block | 192.168.0.0 – 192.168.255.255	| 65,536
+| RFC1918 naziv | IP adresni raspon | Broj adresa |
+|---|---|---|
+| 24-bit blok | 10.0.0.0 – 10.255.255.255 | 16,777,216 |
+| 20-bit blok | 172.16.0.0 – 172.31.255.255 | 1,048,576 |
+| 16-bit blok | 192.168.0.0 – 192.168.255.255 | 65,536 |
 
-Izlistavanje server interfejska komandom:
+Izlistavanje server interfejsa komandom:
 
 ```
 ifconfig
 ```
 
-inet denotes IPv4 traffic
-
-inet6 denotes IPv6 traffic
+* `inet` označava IPv4 saobraćaj
+* `inet6` označava IPv6 saobraćaj
