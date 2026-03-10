@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="hero">
+    <h1 class="hero-title">🐧 {{ site.title | escape }}</h1>
+    <p class="hero-subtitle">{{ site.description | escape }}</p>
+    <p class="hero-tagline">Tutorijali, savjeti i resursi iz svijeta Linuxa, open-source-a i programiranja.</p>
+  </div>
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">📝 {{ page.list_title | default: "Najnoviji postovi" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        <div class="post-card">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">📅 {{ post.date | date: date_format }}</span>
+          {%- if post.categories.size > 0 -%}
+            <span class="post-categories">
+              {%- for cat in post.categories -%}
+                <span class="category-badge">{{ cat }}</span>
+              {%- endfor -%}
+            </span>
+          {%- endif -%}
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {%- if site.show_excerpts -%}
+            <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+          {%- endif -%}
+        </div>
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">📡 Pretplatite se <a href="{{ "/feed.xml" | relative_url }}">putem RSS-a</a></p>
+  {%- endif -%}
+</div>
