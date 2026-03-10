@@ -9,14 +9,21 @@ layout: default
         <span class="terminal-dot red"></span>
         <span class="terminal-dot yellow"></span>
         <span class="terminal-dot green"></span>
-        <span class="terminal-title">lugze@zenica: ~</span>
+        <span class="terminal-title">🐧 lugze@zenica: ~</span>
       </div>
       <div class="terminal-body">
         <p class="terminal-line"><span class="prompt">$</span> cat /etc/motd</p>
-        <h1 class="hero-title">{{ site.title | escape }}</h1>
+        <h1 class="hero-title">🐧 {{ site.title | escape }}</h1>
         <p class="hero-subtitle">{{ site.description | escape }}</p>
-        <p class="terminal-line"><span class="prompt">$</span> echo "Tutorijali, savjeti i resursi iz svijeta Linuxa, open-source-a i programiranja."</p>
-        <p class="hero-tagline">Tutorijali, savjeti i resursi iz svijeta Linuxa, open-source-a i programiranja.</p>
+        <p class="terminal-line"><span class="prompt">$</span> neofetch --ascii</p>
+        <div class="hero-stats">
+          <span class="stat">📦 Postovi: {{ site.posts.size }}</span>
+          <span class="stat">🏷️ Kategorije: {{ site.categories.size }}</span>
+          <span class="stat">🕐 Od: 2002</span>
+          <span class="stat">💻 OS: Linux</span>
+        </div>
+        <p class="terminal-line"><span class="prompt">$</span> echo "Tutorijali, savjeti i resursi iz svijeta Linuxa, open-source-a i programiranja. 🚀"</p>
+        <p class="hero-tagline">Tutorijali, savjeti i resursi iz svijeta Linuxa, open-source-a i programiranja. 🚀</p>
         <p class="terminal-line cursor"><span class="prompt">$</span> <span class="blink">_</span></p>
       </div>
     </div>
@@ -26,7 +33,7 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">
-      <span class="heading-icon">></span> {{ page.list_title | default: "Najnoviji postovi" }}
+      <span class="heading-icon">📝</span> {{ page.list_title | default: "Najnoviji postovi" }}
     </h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
@@ -34,7 +41,7 @@ layout: default
         <div class="post-card">
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
           <div class="post-card-meta">
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <span class="post-meta">📅 {{ post.date | date: date_format }}</span>
             {%- if post.categories.size > 0 -%}
               <span class="post-categories">
                 {%- for cat in post.categories -%}
@@ -56,6 +63,6 @@ layout: default
       {%- endfor -%}
     </ul>
 
-    <p class="rss-subscribe"><span class="prompt">$</span> subscribe <a href="{{ "/feed.xml" | relative_url }}">--rss</a></p>
+    <p class="rss-subscribe">📡 Pretplatite se <a href="{{ "/feed.xml" | relative_url }}">putem RSS-a</a></p>
   {%- endif -%}
 </div>

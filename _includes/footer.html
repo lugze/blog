@@ -4,37 +4,38 @@
   <div class="wrapper">
     <div class="footer-content">
       <div class="footer-col">
-        <h3 class="footer-heading">{{ site.title | escape }}</h3>
+        <h3 class="footer-heading">🐧 {{ site.title | escape }}</h3>
         <p class="footer-description">{{- site.description | escape -}}</p>
       </div>
 
       <div class="footer-col">
-        <h3 class="footer-heading">Kontakt</h3>
+        <h3 class="footer-heading">📬 Kontakt</h3>
         <ul class="contact-list">
           {%- if site.email -%}
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li>📧 <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
           {%- endif -%}
           {%- if site.github_username -%}
-          <li><a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a></li>
+          <li>💻 <a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a></li>
           {%- endif -%}
         </ul>
       </div>
 
       <div class="footer-col">
-        <h3 class="footer-heading">Linkovi</h3>
+        <h3 class="footer-heading">🔗 Linkovi</h3>
         <ul class="contact-list">
-          <li><a href="{{ "/kategorije/" | relative_url }}">Kategorije</a></li>
-          <li><a href="{{ "/mala-skola-linuxa/" | relative_url }}">Mala Skola Linux-a</a></li>
-          <li><a href="{{ "/feed.xml" | relative_url }}">RSS Feed</a></li>
+          <li>📂 <a href="{{ "/kategorije/" | relative_url }}">Kategorije</a></li>
+          <li>📖 <a href="{{ "/mala-skola-linuxa/" | relative_url }}">Mala Škola Linux-a</a></li>
+          <li>🔧 <a href="{{ "/linux-komande/" | relative_url }}">Linux komande</a></li>
+          <li>📡 <a href="{{ "/feed.xml" | relative_url }}">RSS Feed</a></li>
         </ul>
       </div>
     </div>
 
     <div class="footer-bottom">
       <p>
-        <span class="prompt">$</span> uptime &mdash; since 2002 &bull;
-        Powered by <a href="https://jekyllrb.com">Jekyll</a> &bull;
-        <a href="https://github.com/{{ site.github_username }}">Open Source</a>
+        🐧 uptime — since 2002 &bull;
+        ⚡ Powered by <a href="https://jekyllrb.com">Jekyll</a> &bull;
+        🔓 <a href="https://github.com/{{ site.github_username }}">Open Source</a>
       </p>
     </div>
   </div>
