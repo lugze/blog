@@ -1,11 +1,11 @@
 #
 title: LugZe blog
 email: info@lugze.org
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   Linux User Group of Zenica
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "/blog"
 url: "https://lugze.github.io"
-github_username:  lugze
+github_username: lugze
 
 # Build settings
 
@@ -13,9 +13,20 @@ github_username:  lugze
 permalink: /:categories/:year/:title.html
 
 ## Markdown
-
 markdown: kramdown
 theme: minima
+
+show_excerpts: true
+
+# Control navigation order
+header_pages:
+  - kategorije.md
+  - msl.md
+  - linux-komande.md
+  - faq.md
+  - arhiva.md
+  - about.md
+
 plugins:
   - jekyll-feed
 exclude:

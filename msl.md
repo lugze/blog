@@ -518,7 +518,6 @@ grep "text" file.txt
 
 
 
-<<<<<<< HEAD
 Archive komande
 
 ```tar -cvf (c-create, v-verbot, f-output to file) myfile.tar Vjezba\ Files/```
