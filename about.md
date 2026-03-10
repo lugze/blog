@@ -37,17 +37,17 @@ permalink: /o-nama/
 
 ### 📸 LugZe kroz godine
 
-**LugZe 2003. godine:**
+**21. maj 2003. — Dva LugZe člana u hodniku Mašinskog fakulteta u Zenici.** Jedan u crnoj Debian majici, drugi u bijeloj majici sa Tux pingvinom i natpisom „Linux Korisnik Zenice" — razmjenjuju knjige i šire open-source znanje. Rani dani zajednice. 🐧
 
-![LugZe 2003. godine]({{ site.url }}/blog/assets/images/meetups/lugze_2003.jpeg)
+![LugZe članovi na Mašinskom fakultetu, 21.05.2003.]({{ site.url }}/blog/assets/images/meetups/lugze_2003.jpeg)
 
-**LugZe meetup 2003. godine:**
+**21. maj 2003. — Grupna fotografija LugZe ekipe ispred kafića u Zenici.** Šest mladih članova pozira nakon druženja — u prvom planu prepoznatljiva crna Debian majica, iza njih natpis „Caffe" i vinova loza. Večernja atmosfera, osmijesi i zajedništvo. ☕
 
-![LugZe meetup 2003. godine]({{ site.url }}/blog/assets/images/meetups/lugze_sastanak_2003_godina.jpg)
+![LugZe meetup ispred kafića, 21.05.2003.]({{ site.url }}/blog/assets/images/meetups/lugze_sastanak_2003_godina.jpg)
 
-**Spontano okupljanje originalne postave na ZeForge meetupu 2017. godine:**
+**2017. — Spontano okupljanje originalne LugZe postave na ZeForge meetupu, 14 godina kasnije.** Pet članova u modernom coworking prostoru sa zelenim stubovima i velikim prozorima — isti entuzijazam, malo više godina i iskustva. Od Debian majica do poslovnih košulja, LugZe duh je ostao isti. 💚
 
-![LugZe members 2017. godine]({{ site.url }}/blog/assets/images/meetups/lugze_members_2017_godina.jpg)
+![LugZe reunion na ZeForge meetupu, 2017.]({{ site.url }}/blog/assets/images/meetups/lugze_members_2017_godina.jpg)
 
 ---
 
