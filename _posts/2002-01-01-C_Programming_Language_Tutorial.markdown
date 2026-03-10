@@ -673,7 +673,7 @@ pozicija = 2; // govori gdje ce biti upisan sljedeci
 +-----+-------+
 + A   +  0    +  // znaci ch postaje 65 sto je ASCII kod za 'A', ta vrijednost se prenosi ovdje ovako : moj_niz[pozicija++]=ch
 +-----+-------+
-+ B   +  1    +// znaci ch postaje 65 sto je ASCII kod za 'B', ta vrijednost se prenosi ovdje ovako : moj_niz[pozicija++]=ch
++ B   +  1    +// znaci ch postaje 66 sto je ASCII kod za 'B', ta vrijednost se prenosi ovdje ovako : moj_niz[pozicija++]=ch
 +-----+-------+
 +     +  2    +
 +-----+-------+

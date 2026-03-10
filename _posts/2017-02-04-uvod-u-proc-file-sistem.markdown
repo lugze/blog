@@ -14,7 +14,7 @@ tags:
 Proc je virtuelni file sistem koji je mountiran u `/proc` direktorij te sadrzi poddirektorije
 i fajlove u kojima se nalaze informacije o samom operativnom sistemu, kao sto su pokrenuti procesi, te hardveru.
 Proc folder i fajlovi nisu snimljeni na disku nego se nalaze u  RAM memoriji. Interesantno je da velicina fajlova i direktorija u `/proc` iznosi `0`.
-Ovo omogucuje `VHS` (Virtual File System) sto znaci da fajl ne sadrzi informacije sve do trenutka kada mu korisnik pristupi.
+Ovo omogucuje `VFS` (Virtual File System) sto znaci da fajl ne sadrzi informacije sve do trenutka kada mu korisnik pristupi.
 U tom trenutku sadrzaj se dinamicki ucita iz kernela i napuni sadrzajem. 
 Ovo mozemo lako provjeriti koristeci komandu `file` koja analizira fajlove te ispise infrmacije o tipu fajla. 
 
@@ -109,7 +109,7 @@ ls /proc
 * Nakon zavrsene vjezbe potrebno je uraditi `unmount`
 
 {% highlight shell %}
-unmount /mnt/proc
+umount /mnt/proc
 {% endhighlight %}
 
 ## Primjeri

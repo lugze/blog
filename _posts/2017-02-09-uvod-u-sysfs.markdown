@@ -7,7 +7,7 @@ categories: linux sysfs 101
 tags: [linux, proc]
 ---
 
-* Sysfs je spoj `proc`, `devfs`, and `devpty` virtuelnih file sistema te i sam je virtuelni file sistem.
+* Sysfs je spoj `proc`, `devfs`, and `devpts` virtuelnih file sistema te i sam je virtuelni file sistem.
 * Osnovna svrha mu je pružanje informacija o hardverskoj komponenti sistema userspace programima kao sto je `udev`.
 * Ovaj virtuelni sistem je aktuelan od Linux 2.6 kernel verzije čime su virtuelni fajlovi vezani za hardver izmjesteni iz `/proc` direktorija.
 * Pristup sysfs-u se moze izvrsiti pristupum `/sys/`` direktoriju iz shella.

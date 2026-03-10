@@ -19,7 +19,7 @@ ispis
 
 MemTotal:       131917312 kB
 MemFree:         3970444 kB
-MemCommitted:   354429952 kB
+MemAvailable:   67890124 kB
 
 {% endhighlight %}
 
@@ -56,10 +56,10 @@ Swap:           20         11          9
 {% endhighlight %}
 
 
-- Prikazm potrosnje u formatu lakse citljivom za covjeka tzv human 
+- Prikazm potrosnje u formatu lakse citljivom za covjeka tzv human
 
 {% highlight shell %}
-free -g -h
+free -h
 {% endhighlight %}
 
 ispis
@@ -75,7 +75,7 @@ Swap:          20G        11G       9.1G
 - Total odnosno zbirni prikaz kolicine RAM memorije i velcine swap particije
 
 {% highlight shell %}
-free -g -h -t
+free -h -t
 {% endhighlight %}
 
 ispis

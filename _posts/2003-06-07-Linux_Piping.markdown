@@ -92,7 +92,7 @@ grungy@linux:~> ps -Hefw | less
 • Snimanje listinga direktorijau datoteku:
 
 ```
-grungy@linux:/usr > ln -l > ~/usr-listing.txt
+grungy@linux:/usr > ls -l > ~/usr-listing.txt
 ```
 
 navedena komanda snima sadrzaj direktorija /usr u home direktorij korisnika u datoteku usr-listing.txt .
