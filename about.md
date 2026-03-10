@@ -19,9 +19,9 @@ Kako je amar-ze jednom napisao na forumu: *"Zenica ti je najaktivniji grad Linux
 **2003.** — Dobijamo domenu `lugze.org` i server na Mašinskom fakultetu zahvaljujući profesoru **Samiru Lemešu**. Aktivno sarađujemo sa ULK (Unija Linux Korisnika). Redovna druženja u zeničkim kafićima postaju tradicija.
 
 **2004.** — Godina u kojoj se desilo sve.
-- **am** (Ahmet Mulalić) prevodi **Mozillu 1.7.2 na bosanski jezik** — oko 9.000 stringova. Dva dana nakon završetka, prevod je na zvaničnoj mozilla.org stranici. Na forumu se razvila ozbiljna diskusija o održavanju prevoda — Vedran je predlagao kolaborativne alate, Bono i mesa su pozivali na dugoročno razmišljanje. Pokazalo se da zajednica zna razmišljati i dalje od početnog entuzijazma.
+- **am** (Ahmet Mulalić) prevodi **Mozillu 1.7.2 na bosanski jezik** — oko 9.000 stringova. Dva dana nakon završetka, prevod je na zvaničnoj mozilla.org stranici. Na forumu se razvila ozbiljna diskusija o održavanju prevoda — Bono i mesa su pozivali na dugoročno razmišljanje, a i vanjski saradnici su predlagali kolaborativne alate. Pokazalo se da zajednica zna razmišljati i dalje od početnog entuzijazma.
 - Pokrenut projekat **provjere pravopisa za bosanski jezik** na `provjera-pravopisa.lugze.org`.
-- **28. novembra** — u **Bosanskom narodnom pozorištu** u Zenici održan **prvi Linux seminar u Bosni i Hercegovini**. Oko 100 učesnika uprkos lošem vremenu i kasnoj promociji. Prezentacije po 40 minuta — od historije Unixa do Mozilla prevoda. Predavali Vedran Ljubović, Adis Nezirović, Samir Lemeš, Kemal Sanjta, Ahmet Mulalić i drugi.
+- **28. novembra** — u **Bosanskom narodnom pozorištu** u Zenici održan **prvi Linux seminar u Bosni i Hercegovini**. Oko 100 učesnika uprkos lošem vremenu i kasnoj promociji. Prezentacije po 40 minuta — od historije Unixa do Mozilla prevoda. Predavali Adis Nezirović, Samir Lemeš, Kemal Sanjta, Ahmet Mulalić i gosti poput Vedrana Ljubovića.
 
 **2005.** — Drugi Zenica Linux Seminar. Pripremljen 20-straničan izvještaj za lokalne vlasti.
 
@@ -33,7 +33,7 @@ Kako je amar-ze jednom napisao na forumu: *"Zenica ti je najaktivniji grad Linux
 
 **2009.** — OpenCoffee Zenica. Amar organizuje neformalna tech druženja u kafiću — bez agende, samo kafica i razgovor.
 
-**2010.** — Sastanak u Caffe Ekran-u (u kinu). SoulSeeker nakon druženja piše: *"Moram priznati da su momci prva liga. Doslovce sam impresioniran njihovim pojavama, stavom, informatičkim gardom, znanjem... svime."* Nedim.bfo primjećuje: *"Ovo je sastanak AA, pa niko pive nije naručio!"* Gomez: *"Nastojimo živjeti zdravo."* Iste godine — **re-aktivacija LUGZDK-a**, planovi za zvaničnu registraciju udruženja, a Vedran traži da se konačno arhiviraju Zenica Linux Seminari koji su do tada postojali *"samo u sjećanjima učesnika"*.
+**2010.** — Sastanak u Caffe Ekran-u (u kinu). SoulSeeker nakon druženja piše: *"Moram priznati da su momci prva liga. Doslovce sam impresioniran njihovim pojavama, stavom, informatičkim gardom, znanjem... svime."* Nedim.bfo primjećuje: *"Ovo je sastanak AA, pa niko pive nije naručio!"* Gomez: *"Nastojimo živjeti zdravo."* Iste godine — **re-aktivacija LUGZDK-a**, planovi za zvaničnu registraciju udruženja. Na forumu se traži da se konačno arhiviraju Zenica Linux Seminari koji su do tada postojali *"samo u sjećanjima učesnika"*.
 
 **2017.** — Nakon više od 10 godina minimalne aktivnosti, reaktivirana web stranica i blog. Sajt zamišljen kao blog gdje će članovi postati kratke postove po vlastitoj želji. Na ZeForge meetupu se spontano okupila originalna LugZe postava — 14 godina nakon prvih aktivnosti. Kako je nedim napisao: *"Ova prilika zaslužuje zaseban post."*
 
@@ -66,11 +66,9 @@ Kako je amar-ze jednom napisao na forumu: *"Zenica ti je najaktivniji grad Linux
 - **Mesa** — organizator, pisac izvještaja, old school postava
 - **Ahmet Mulalić (am)** — preveo Mozillu na bosanski — 9.000 stringova, sam
 - **Amar-ze** — čovjek koji je uvijek pitao *"šta ima?"* i pokretao stvari kad bi se zajednica uspavala
-- **Vedran Ljubović** — predavač, uvijek razmišljao korak unaprijed o održivosti projekata
 - **Adis Nezirović** — predavač o historiji Unixa i razvoju GNU/Linux aplikacija
 - **Neziric (Haris)** — predvodio re-aktivaciju LUGZDK-a 2010., organizovao takmičenje za logo
-- **Admeer** — autor tutorijala o shell programiranju
-- **Admir** — autor tutorijala
+- **Admir Sivro** — autor tutorijala o shell programiranju i Linuxu
 
 ...i svi koji su došli na seminar, instalirali Linux komšiji, podijelili CD na forumu, ili jednostavno popili kafu sa ekipom. 🐧
 
