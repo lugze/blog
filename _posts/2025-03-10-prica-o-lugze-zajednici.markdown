@@ -167,6 +167,12 @@ Mesa javlja da je domena kupljena i server online. Prva radionica zakazana za 3.
 
 A onda — **profesionalna TV reklama** za Linux seminar. AbsintheSyringe je opisao reklamu kao *„Totalno totalno kul. Profesionalno 100%."* Download od 10 MB — značajan za vrijeme dial-up konekcija. Gomez traži od korisnika sa kontaktima na TV stanicama da pomognu sa distribucijom. Grassroots promocija u punom zamahu.
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 1em 0;">
+  <iframe src="https://www.youtube.com/embed/59X6cZHROz0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+</div>
+
+*Promo video za 3. Zenica Linux Seminar — uploadovao gomezbih na YouTube. Ista ona reklama koju je AbsintheSyringe opisao kao „totalno totalno kul, profesionalno 100%".*
+
 ![Uramljeni plakat 3. Zenica Linux Seminara 2006.](/blog/assets/images/linux_zenica_seminar_2006_1.jpeg)
 
 *Plakat trećeg Zenica Linux Seminara — velika bijela trojka na crvenoj pozadini sa siluetama Tux pingvina. „3. Zenica Linux Seminar — Subota 02.12.2006. — Bosansko Narodno Pozorište Zenica — ULAZ JE BESPLATAN!" Program: Značaj OS platformi u savremenom poslovanju (Nijaz Bajgorić, prof.dr.), Život „full time" Linux desktop korisnika, XGL/Compiz — revolucija grafičkih okruženja (Mehmed Šačirović), Debian, apt-get into it, Moderni pristupi u borbi protiv SPAM-a, X11 Window system (Sanel Žukan), Upotreba slobodnog softvera u obrazovanju, Tipovi virtualizacija (Kemal Šanjta), Embedded Linux (Mirza Naharević), Logičko programiranje u open source okruženju, Open source software u strategiji informacionog društva u BiH (Samir Lemeš, mr.), Linux u telekomunikacijama (Emir Kasumović i Senaid Hodžanović, UKI), Put ka otvorenoj firmi u BiH (Ernad Husremović). Sponzori: Općina Zenica, BICOM SYSTEMS Ltd., SIGMACOM SOFTWARE Zenica, GOG COMPUTERS, WEST SIDE APARTMANI, BNP Zenica, ULKBIH, UBUNTU LINUX. Od tri člana i konzervi do sponzora i 15 predavanja — LugZe je narastao.*
