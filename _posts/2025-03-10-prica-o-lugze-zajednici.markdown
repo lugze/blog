@@ -137,6 +137,10 @@ Oko 100 učesnika uprkos lošem vremenu i kasnoj promociji. Prezentacije po 40 m
 
 Predavali gomez, Samir Lemeš, Ahmet Mulalić, te gosti poput Vedrana Ljubovića i Adisa Nezirovića.
 
+![Linux radionica na Mašinskom fakultetu, 06.11.2004.](/blog/assets/images/Linux_radionica_na_Masinstvu_06_11_2004.jpeg)
+
+*Radionica na Mašinskom fakultetu u Zenici — predavač pokazuje na projektoru dok polaznici prate za CRT monitorima. Klasična računarska učionica 2004. godine: veliki bijeli kućišta, CRT ekrani i gomila entuzijazma. Ovako je izgledalo širenje Linuxa u Zenici — praktično, hands-on, u prostorijama fakulteta.*
+
 ---
 
 ## 2005–2006. — Seminari, reklame i ambicije
