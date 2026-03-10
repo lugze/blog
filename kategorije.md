@@ -11,7 +11,7 @@ Vidi također: [📄 Dokumentacija]({{ "/dokumentacija/" | relative_url }}) · [
   <ul>
     {% for post in site.categories.linux %}
       {% if post.url %}
-        <li><a href="{{ post.url }}">🔹 {{ post.title }}</a></li>
+        <li><a href="{{ post.url | relative_url }}">🔹 {{ post.title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>
@@ -22,7 +22,7 @@ Vidi također: [📄 Dokumentacija]({{ "/dokumentacija/" | relative_url }}) · [
   <ul>
     {% for post in site.categories.ruby %}
       {% if post.url %}
-        <li><a href="{{ post.url }}">🔹 {{ post.title }}</a></li>
+        <li><a href="{{ post.url | relative_url }}">🔹 {{ post.title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>
@@ -33,7 +33,7 @@ Vidi također: [📄 Dokumentacija]({{ "/dokumentacija/" | relative_url }}) · [
   <ul>
     {% for post in site.categories.blog %}
       {% if post.url %}
-        <li><a href="{{ post.url }}">🔹 {{ post.title }}</a></li>
+        <li><a href="{{ post.url | relative_url }}">🔹 {{ post.title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>
@@ -44,7 +44,7 @@ Vidi također: [📄 Dokumentacija]({{ "/dokumentacija/" | relative_url }}) · [
   <ul>
     {% for post in site.categories.lugze %}
       {% if post.url %}
-        <li><a href="{{ post.url }}">🔹 {{ post.title }}</a></li>
+        <li><a href="{{ post.url | relative_url }}">🔹 {{ post.title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>
