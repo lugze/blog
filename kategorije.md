@@ -9,7 +9,7 @@ permalink: /kategorije/
   <ul>
     {% for post in site.categories.linux %}
       {% if post.url %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        <li><a href="{{ post.url }}">🔹 {{ post.title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>
@@ -20,7 +20,7 @@ permalink: /kategorije/
   <ul>
     {% for post in site.categories.ruby %}
       {% if post.url %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        <li><a href="{{ post.url }}">🔹 {{ post.title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>
@@ -31,7 +31,7 @@ permalink: /kategorije/
   <ul>
     {% for post in site.categories.blog %}
       {% if post.url %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        <li><a href="{{ post.url }}">🔹 {{ post.title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>
@@ -42,7 +42,7 @@ permalink: /kategorije/
   <ul>
     {% for post in site.categories.lugze %}
       {% if post.url %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        <li><a href="{{ post.url }}">🔹 {{ post.title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>

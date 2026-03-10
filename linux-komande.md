@@ -4,705 +4,476 @@ title: Linux komande
 permalink: /linux-komande/
 ---
 
+Referenca Linux komandi od A do Z. Komande označene sa **(zastarjelo)** su zamijenjene modernijim alternativama.
 
 #### A
 
-```adduser``` - Kreiranje korisnickih naloga.
+`adduser` - Kreiranje korisničkih naloga.
 
-```anacron``` - Administrativna komanda koja se normalno pokrece pri podizanju sistema
-i periodino izvršava komande. Lista poslova se podrazumjevano cita iz
-datoteke /etc/anacrontab.
+`anacron` - Administrativna komanda koja se pokreće pri podizanju sistema i periodično izvršava komande. Lista poslova se podrazumijevano čita iz datoteke /etc/anacrontab.
 
-```apropos``` - Na standardnom izlazu prikazuje ime i opis svih komandi koje u opisu
-imaju zadati string.
+`apropos` - Na standardnom izlazu prikazuje ime i opis svih komandi koje u opisu imaju zadati string.
 
-```apt-get``` - Debian Package Management System - alat za rad sa paketima iz
-komandne linije. Front-end za APT.
+`apt-get` - Debian Package Management System - alat za rad sa paketima iz komandne linije. Front-end za APT.
 
-```aptitude``` - Debian Package Management System - alat za interaktivni rad sa
-paketima. Front-end sa sistemom tekstualnih menija za APT.
+`aptitude` - Debian Package Management System - alat za interaktivni rad sa paketima. Front-end sa sistemom tekstualnih menija za APT.
 
-```arch``` - Prikazuje arhitekturu racunara na standardnom izlazu (kao uname -m).
+`arch` - Prikazuje arhitekturu računara na standardnom izlazu (kao `uname -m`).
 
-```arp``` - TCP/IP administrativna komanda za rad sa ARP kešom kernela. ARP se
-koristi za prevodjenje IP adresa u MAC adrese mrežnih adaptera.
+`arp` - TCP/IP administrativna komanda za rad sa ARP kešom kernela. ARP se koristi za prevođenje IP adresa u MAC adrese mrežnih adaptera. **Napomena:** na modernim sistemima koristite `ip neigh`.
 
-```at``` - Komanda kojom se zakazuje izvršenje drugih komandi u odredjeno vrijeme.
+`at` - Komanda kojom se zakazuje izvršenje drugih komandi u određeno vrijeme.
 
-```atd``` - Daemon koji izvršava komande zakazane komandom at. Normalno se
-pokrece prilikom podizanja sistema.
+`atd` - Daemon koji izvršava komande zakazane komandom `at`. Normalno se pokreće prilikom podizanja sistema.
 
-```atq``` - Prikazuje zakazane at poslove korisnika. U slucaju da komandu zada
-superuser, prikazuju se svi zakazani poslovi.
+`atq` - Prikazuje zakazane `at` poslove korisnika. U slučaju da komandu zada superuser, prikazuju se svi zakazani poslovi.
 
-```atrm``` - Brisanje zakazanih at poslova
+`atrm` - Brisanje zakazanih `at` poslova.
 
 
 #### B
 
-```badblocks``` - Administrativna komanda za analizu površine diskova
+`badblocks` - Administrativna komanda za analizu površine diskova.
 
-```banner``` - Na standardnom izlazu prikazuje string kao "poster".
+`basename` - Izdvaja ime datoteke iz pune putanje, uklanjajući direktorijumski prefiks i opcioni sufiks (na primer: `basename /home/korisnik/fajl.txt` ispisuje `fajl.txt`). Komanda je korisna za shell programiranje.
 
-```basename``` - Prikazuje ime direktorijuma bez vodece apsolutne putanje (na primer:
-basename $PWD). Komanda je korisna za shell programiranje.
+`bash` - Bash komandni interpreter (Bourne-Again Shell).
 
-```bash``` - Bash komandni interpreter (Bourne-Again Shell).
+`batch` - Slično komandi `at`, izvršava komande date na standardnom ulazu. Ukoliko se vrijeme izvršenja ne navede, komande se izvršavaju kada opterećenje sistema (load average) padne ispod praga 1.5.
 
-```bashburn``` - Front-end za cdrecord (snimanje CD-ROM medijuma).
+`bc` - Interaktivni kalkulator koji ulazne podatke prima sa standardnog ulaza ili iz datoteke.
 
-```batch``` - Slino komandi at, izvršava komande date na standardnom ulazu. Ukoliko
-se vreme izvršenja ne navede, komande se izvršavaju kada optereenje
-sistema dostigne dovoljno nizak nivo (80%).
-
-```bc``` - Interaktivni kalkulator koji ulazne podatke prima sa standardnog ulaza ili
-iz datoteke.
-
-```biod``` - NFS server.
-
-```bzip2``` - Paket za kompresiju slian programu gzip koji koristi drugacije algoritme i
-postiže vei stepen kompresije. Paket ukljuuje programe za kompresiju i
-dekompresiju (bzip2, bunzip2), pregledanje sadržaja (bzcat, bzless,
-bzmore) i oporavak (bzip2recover).
+`bzip2` - Paket za kompresiju sličan programu gzip koji koristi drugačije algoritme i postiže veći stepen kompresije. Paket uključuje programe za kompresiju i dekompresiju (bzip2, bunzip2), pregledanje sadržaja (bzcat, bzless, bzmore) i oporavak (bzip2recover).
 
 
 #### C
 
-```cal``` - Prikazuje kalendar za tekuci mjesec. Takodje može prikazati godišnji ili
-mesecni kalendar za godinu i mjesec koji se navode kao parametri.
+`cal` - Prikazuje kalendar za tekući mjesec. Takođe može prikazati godišnji ili mjesečni kalendar za godinu i mjesec koji se navode kao parametri.
 
-```cancel``` - Uklanjanje poslova iz reda za štampu (System V).
+`cancel` - Uklanjanje poslova iz reda za štampu (System V).
 
-```cat``` - Konkatenacija datoteka i prikazivanje na standardnom izlazu.
+`cat` - Konkatenacija datoteka i prikazivanje na standardnom izlazu.
 
-```cdrecord``` - Program za snimanje kompakt diskova sa velikim brojem opcija.
+`cfdisk` - Administrativni program sa sistemom menija za particionisanje diska.
 
-```cfdisk``` - Administrativni program sa sistemom menija za particionisanja diska
+`chgrp` - Promjena grupe kojoj objekat sistema datoteka pripada. U opštem slučaju ovu komandu može da izvrši root, a na nekim sistemima može i vlasnik objekta.
 
-```chgrp``` - Promena grupe kojoj objekat sistema datoteka pripada. U opštem slucaju
-ovu komandu može da izvrši root, a na nekim sistemima može i vlasnik
-objekta.
+`chmod` - Promjena pristupnih prava objekta sistema datoteka. Ovu komandu mogu da izvrše root i vlasnik objekta.
 
-```chmod``` - Promjena pristupnih prava objekta sistema datoteka. Ovu komandu mogu
-da izvrše root i vlasnik objekta.
+`chown` - Promjena vlasnika objekta sistema datoteka. U opštem slučaju ovu komandu može da izvrši root, a na nekim sistemima može i vlasnik objekta.
 
-```chown``` - Promjena vlasnika objekta sistema datoteka. U opštem sluaju ovu
-komandu može da izvrši root, a na nekim sistemima može i vlasnik
-objekta.
+`chpasswd` - Administrativna komanda za grupnu promjenu lozinki korisnika (čita parove korisnik:lozinka sa standardnog ulaza).
 
-```chpasswd``` - Administrativna komanda za promenu lozinke.
+`chsh` - Promjena komandnog interpretera koji se pokreće nakon login procesa. Ime komandnog interpretera se navodi sa apsolutnom putanjom.
 
-```chsh``` - Promena komandnog interpretera koji se pokree nakon login procesa. Ime
-komandnog interpretera se navodi sa apsolutnom putanjom.
+`chvt` - Prelazak na virtuelni terminal N. Ukoliko terminal ne postoji, biće napravljen. Ekvivalentno kombinaciji tastera Ctrl+Alt+N, gdje je N broj terminala.
 
-```chvt``` - Prelazak na virtuelni terminal N. Ukoliko terminal ne postoji bie
-napravljen. Ekvivalentno kombinaciji tastera <Ctrl-Alt-N>, gde je N broj
-terminala.
+`cksum` - Izračunavanje CRC kontrolne sume za datoteku.
 
-```cksum``` -  Run-anje CRC ek-sume za datoteku.
+`clear` - Brisanje ekrana terminala.
 
-```clear``` - Brisanje ekrana.
+`cmp` - Upoređivanje datoteka i prikazivanje prve razlike na standardnom izlazu.
 
-```cmp``` - Uporedjivanje datoteka i prikazivanje prve razlike na standardnom izlazu.
+`compress` - Program za kompresiju datoteka. **(zastarjelo)** Gzip i bzip2 se danas koriste umjesto ovog programa.
 
-```compress``` - Program za kompresiju datoteka. Gzip i bzip2 se danas koriste umesto
-ovog programa.
+`cp` - Kopiranje datoteke, grupe datoteka ili dijelova direktorijumskog stabla. Takođe se može koristiti za kreiranje linkova.
 
-```cp``` - Kopiranje datoteke, grupe datoteka ili delova direktorijumskog stabla.
-Takodje se može koristiti za kreiranje linkova.
+`cpio` - Arhiviranje i dearhiviranje datoteka (copy-out i copy-in). Takođe se može koristiti za kopiranje datoteka u aktivnom UNIX stablu (copy-pass).
 
-```cpio``` -  Arhiviranje i dearhiviranje datoteka (copy-out i copy-in). Takoe se može
-koristiti za kopiranje datoteka u aktivnom UNIX stablu (copy-pass).
+`cron` - Administrativna komanda koja se pokreće pri podizanju sistema i periodično izvršava komande. Cron provjerava korisničke crontab datoteke (nalaze se u direktorijumu /var/spool/cron/crontabs, a imenovane su na osnovu korisničkih naloga) svaki minut i pokreće programe koje tada treba izvršiti.
 
-```cron``` - Administrativna komanda koja se normalno pokree pri podizanju sistema
-i periodino izvršava komande. Cron proverava korisnike crontab
-datoteke (nalaze se u direktorijumu /var/spool/cron/crontabs a imenovane
-su na osnovu korisnikih naloga) svaki minuta i po i pokree programe
-koje tada treba izvršiti.
+`crontab` - Zakazivanje periodičnog izvršenja komandi u specificiranim intervalima. Zavisno od konkretnog UNIX sistema, izvršenje mogu zakazati svi ili samo privilegovani korisnici.
 
-```crontab``` -  Zakazivanje periodinog izvršenja komandi, odnosno izvršenja u
-specificiranim intervalima. Zavisno od konkretnog UNIX sistema
-izvrsenje mogu zakazati svi ili samo privilegovani korisnici.
+`curl` - Alat za prenos podataka sa ili na server koristeći podržane protokole (HTTP, HTTPS, FTP, SFTP i mnoge druge). Veoma fleksibilan alat za rad sa web servisima i API-jima.
 
 
 #### D
 
+`date` - Prikazuje ili postavlja trenutni datum i vrijeme.
 
-```date``` - Prikazuje trenutni datum i vreme.
+`dd` - Konvertuje i kopira datoteku ili određeni dio medijuma. Prilikom pristupa medijumu može zaobići sistem datoteka, čime je omogućeno kopiranje medijuma koji nisu ni u jednom od formata koje UNIX prepoznaje.
 
-```dd``` - Konvertuje i kopira datoteku ili odreeni deo medijuma. Prilikom pristupa
-medijumu može zaobici sistem datoteka, ime je omoguceno kopiranje
-medijuma koji nisu ni u jednom od formata koje UNIX prepoznaje.
+`debugfs` - Administrativna komanda kojom se ostvaruje pristup zaglavlju i meta-data strukturama ext2/ext3/ext4 sistema datoteka.
 
-```debugfs``` - Administrativna komanda kojom se ostvaruje pristup zaglavlju i meta-data
-strukturama ext2 sistema datoteka.
+`depmod` - Kreira datoteku u kojoj je opisana međusobna zavisnost programskih modula kernela.
 
-```depmod``` - Kreira datoteku u kojoj je opisana medjusobna zavisnost programskih
-modula.
+`df` - Prikazuje iskorištenost aktiviranih sistema datoteka.
 
-```df``` - Prikazuje iskorišenost aktiviranih sistema datoteka.
+`diff` - Upoređuje datoteke i prikazuje sve razlike na standardnom izlazu.
 
-```diff``` - Uporedjuje datoteke i prikazuje sve razlike na standardnom izlazu.
+`dig` - Komanda za slanje upita DNS serverima, fleksibilnija od `nslookup` komande.
 
-```dig``` - Komanda za slanje upita DNS serverima, fleksibilnija od nslookup
-komande.
+`dpkg` - Debian Package Management System - rad sa paketima iz komandne linije.
 
-```dpkg``` - Debian Package Management System - rad sa paketima iz komandne
-linije.
+`du` - Prikazuje količinu prostora na sistemu datoteka koju zauzimaju datoteke u poddirektorijumima tekućeg direktorijuma.
 
-```dselect``` - Debian Package Management System - okruženje sa menijima.
+`dumpe2fs` - Administrativna komanda koja na standardnom izlazu prikazuje informacije iz superbloka sistema datoteka.
 
-```du``` - Prikazuje kolicinu prostora na sistemu datoteka koju zauzimaju datoteke u
-poddirektorijumima tekuceg direktorijuma.
-
-```dumpe2fs``` - Administrativna komanda koja na standardnom izlazu prikazuje
-infomacije iz superbloka sistema datoteka
 
 #### E
 
-```e2fsck``` - Administrativna komanda za provjeru integriteta ext2 i ext3 sistema
-datoteka.
+`e2fsck` - Administrativna komanda za provjeru integriteta ext2, ext3 i ext4 sistema datoteka.
 
-```e2image``` - Administrativna komanda za kreiranje slike (image) znaajnijih delova
-sistema datoteka (kao što je superblok) na izmenljivom medijumu
-(disketi).
+`e2image` - Administrativna komanda za kreiranje slike (image) značajnijih dijelova sistema datoteka (kao što je superblok) na izmjenljivom medijumu.
 
-```e2label``` - Administrativna komanda za prikazivanje i promenu imena sistema
-datoteka.
+`e2label` - Administrativna komanda za prikazivanje i promjenu imena (labele) sistema datoteka.
 
-```echo``` - Prikazuje niz karaktera ili vrednost promenljive na standardnom izlazu.
+`echo` - Prikazuje niz karaktera ili vrijednost promjenljive na standardnom izlazu.
 
-```edquota``` - Editor kvota.
+`edquota` - Editor kvota.
 
-```egrep``` - Traži regularne izraze u datoteci.
+`egrep` - Traži proširene regularne izraze u datoteci. Na modernim sistemima ekvivalentno sa `grep -E`.
 
-```emacs``` - Emacs tekst editor.
+`emacs` - Emacs tekst editor.
 
-```env``` - Prikazuje vrednosti promenljivih koje ine okruženje.
+`env` - Prikazuje vrijednosti promjenljivih koje čine okruženje, ili pokreće komandu u modifikovanom okruženju.
 
-```expr``` - Obavlja jednostavne aritmetike operacije.
+`expr` - Obavlja jednostavne aritmetičke operacije.
 
 #### F
 
-```fdformat``` - Formatiranje disketa niskog nivoa.
+`fdisk` - Administrativni program za particionisanje hard diskova.
 
-```fdisk``` - Administrativni program za particionisanje hard diskova.
+`fgconsole` - Prikazuje broj trenutno aktivne virtuelne konzole (na primer 2, ukoliko korisnik radi na /dev/tty2).
 
-```fgconsole``` - Prikazuje broj trenutno aktivne virtuelne konzole (na primer 2, ukoliko
-korisnik radi na /dev/tty2).
+`find` - Traži datoteku na osnovu zadatih kriterijuma u aktivnom UNIX stablu.
 
-```fgrep``` - Traži niz karaktera u datoteci.
+`finger` - Prikazuje informacije o korisnicima, uključujući i informacije iz datoteka .plan i .project u home direktorijumu korisnika.
 
-```find``` - Traži datoteku na osnovu zadatih kriterijuma u aktivnom UNIX stablu.
+`free` - Prikazuje informacije o iskorištenosti operativne memorije i swap prostora.
 
-```finger``` - Prikazuje informacije o korisnicima, ukljuujui i informacije iz datoteka
-.plan i .project u home direktorijumu korisnika.
+`fsck` - Administrativna komanda za provjeru integriteta sistema datoteka.
 
-```fingerd``` - Server za informacije o korisnicima.
+`ftp` - Interaktivni program za transfer datoteka između dva udaljena sistema. **(zastarjelo)** Koristite `sftp` ili `scp` za siguran transfer.
 
-```free``` - Prikazuje informacije o iskorišenosti operativne memorije i swap
-prostora.
-
-```fsck``` - Administrativna komanda za proveru integriteta sistema datoteka.
-
-```ftp``` - Interaktivni program za transfer datoteka izmeu dva udaljena sistema.
-
-```ftpd``` - FTP server.
 
 #### G
 
-```gpm``` - Server za miša koji obezbeuje cut-and-paste funkcionalnost na Linux
-konzoli.
+`grep` - Traži regularne izraze u datotekama. Jedna od najkorištenijih Linux komandi.
 
-```grep``` - Traži osnovne regularne izraze u datoteci.
+`groupadd` - Administrativna komanda za kreiranje nove korisničke grupe.
 
-```groupadd``` - Administrativna komanda za kreiranje nove korisnike grupe.
+`groupdel` - Administrativna komanda za brisanje postojeće korisničke grupe.
 
-```groupdel``` - Administrativna komanda za brisanje postojee korisnike grupe
+`groupmod` - Administrativna komanda za modifikovanje parametara grupe.
 
-```groupmod``` - Administrativna komanda za modifikovanje parametara grupe.
+`groups` - Prikazuje grupe kojima navedeni korisnik pripada.
 
-```groups``` - Prikazuje grupe kojima navedeni korisnik pripada.
+`grpck` - Administrativna komanda za provjeru integriteta datoteka /etc/group i /etc/gshadow.
 
-```grpck``` - Administrativna komanda koja uklanja duplikate iz datoteke /etc/group.
+`gunzip` - Dekompresija .gz datoteka.
 
-```grpconv``` - Administrativna komanda za kreiranje /etc/gshadow datoteke, u koju se
-smeštaju sve grupne lozinke.
-
-```grpunconv``` - Administrativna komanda kojom se uklanja /etc/gshadow datoteka.
-
-```gunzip``` - Dekompresija .gz datoteka.
-
-```gzexe``` - Kreiranje samoraspakujue izvršne gzip datoteke. Nakon pokretanja takva
-datoteka e se sama dekompresovati. Ovde se štedi na prostoru, ali gubi na
-vremenu potrebnom za izvršavanje datoteke.
-
-```gzip``` - Kompesija datoteka u .gz format.
+`gzip` - Kompresija datoteka u .gz format.
 
 
 #### H
 
-```halt``` - Administrativna komanda za zaustavljanje sistema. Ukoliko se sistem
-nalazi u nivoima izvršenja 0 ili 6 halt zaustavlja sve procese, a inace
-poziva komandu shutdown -h.
+`halt` - Administrativna komanda za zaustavljanje sistema. Ukoliko se sistem nalazi u nivoima izvršenja 0 ili 6, halt zaustavlja sve procese, a inače poziva komandu `shutdown -h`.
 
-```hdparm``` - Administrativna komanda za pregledanje i postavljanje parametara hard
-diskova. Koristi se uglavnom na IDE diskovima.
+`hdparm` - Administrativna komanda za pregledanje i postavljanje parametara hard diskova. Koristi se uglavnom na IDE/SATA diskovima.
 
-```head``` - Prikazuje pocetak datoteke.
+`head` - Prikazuje početak datoteke (podrazumijevano prvih 10 linija).
 
-```hexdump``` - Prikazuje datoteku u heksadecimalnom ili oktalnom formatu.
+`hexdump` - Prikazuje datoteku u heksadecimalnom ili oktalnom formatu.
 
-```host``` - Prikazuje informacije o racunarima i zonama u DNS domenu.
+`host` - Prikazuje informacije o računarima i zonama u DNS domenu.
 
-```hostname``` - Prikazuje ime raunara, pri cemu privilegovani korisnik može dodeliti
-novo ime racunaru.
+`hostname` - Prikazuje ime računara, pri čemu privilegovani korisnik može dodijeliti novo ime računaru.
 
-```hwclock``` - Administrativna komanda kojom privilegovani korisnik može podesiti
-hardverski sat sistema.
+`hwclock` - Administrativna komanda kojom privilegovani korisnik može podesiti hardverski (RTC) sat sistema.
 
 
 #### I
 
-```id``` - Prikazivanje informacija o korisnicima, ukljucujuci i clanstvo u grupama.
+`id` - Prikazivanje informacija o korisnicima, uključujući UID, GID i članstvo u grupama.
 
-```ifconfig``` - TCP/IP administrativna komanda za konfigurisanje mrežnih interfejsa
-rezidentnih u kernelu. Komandom ifconfig mogu se postaviti parametri
-poput IP adrese, maske podmreže i broadcast adrese. Komanda ifconfig se
-koristi prilikom podizanja sistema radi postavljanja parametara mrežnog
-interfejsa. Nakon toga naješe se koristi u dijagnostike svrhe - komanda
-prikazuje trenutnu konfiguraciju mrežnog interfejsa i MAC adresu mrežne
-kartice.
+`ifconfig` - TCP/IP administrativna komanda za konfigurisanje mrežnih interfejsa rezidentnih u kernelu. **(zastarjelo)** Na modernim sistemima koristite `ip addr` i `ip link`.
 
-```inetd``` - TCP/IP administrativna komanda kojom se može zaustaviti ili pokrenuti
-inetd wrapper.
+`init` - Osnovni proces (PID 1) i administrativna komanda za inicijalizaciju sistema i promjenu nivoa izvršenja. Na modernim sistemima zamijenjen sa `systemd`.
 
-```init``` - Osnovni proces i administrativna komanda za inicijalizaciju sistema
-(forsira se novo itanje konfiguracione datoteke /etc/inittab) i promenu
-nivoa izvršenja.
+`ip` - Moderna komanda za upravljanje mrežnim interfejsima, rutiranjem, tunelima i ARP kešom. Zamjenjuje `ifconfig`, `route`, `arp` i `netstat`.
 
-```ipchains``` - Administrativna komanda za konfigurisanje firewalla u Linux kernelu 2.2
+`ipchains` - Administrativna komanda za konfigurisanje firewalla u Linux kernelu 2.2. **(zastarjelo)** Zamijenjeno sa `iptables`, a zatim `nftables`.
 
-```iptables``` - Administrativna komanda za konfigurisanje firewalla u Linux kernelu 2.4
+`iptables` - Administrativna komanda za konfigurisanje firewalla (netfilter) u Linux kernelu 2.4+. Na modernim sistemima zamjenjuje se sa `nftables`/`nft`.
+
+
+#### J
+
+`journalctl` - Komanda za pregled logova iz systemd journal sistema. Zamjenjuje tradicionalno čitanje log fajlova iz /var/log/.
+
 
 #### K
 
-```kernelversion``` - Prikazuje verziju tekueg kernela.
+`kill` - Šalje signale procesu sa poznatim PID-om.
 
-```kill``` - Šalje signale procesu sa poznatim PID
+`killall` - Šalje signale svim procesima nastalim pokretanjem određenog programa (kao argument se navodi ime programa).
 
-```killall``` - Ubija procese nastale pokretanjem odreenog programa (kao argument se
-navodi ime programa).
 
 #### L
 
-```last``` - Prikazuje nekoliko poslednjih login procedura, odnosno imena korisnika,
-terminal, ime udaljenog raunara i vreme prijavljivanja na sistem.
+`last` - Prikazuje nekoliko posljednjih login procedura, odnosno imena korisnika, terminal, ime udaljenog računara i vrijeme prijavljivanja na sistem.
 
-```lastb``` - Prikazuje nekoliko poslednjih neuspešnih login procedura, u istom
-formatu kao i last.
+`lastb` - Prikazuje nekoliko posljednjih neuspješnih login procedura, u istom formatu kao i `last`.
 
-```lastlog``` - Prikazuje sve korisnike sistema i vreme kada su se zadnji put prijavili na
-sistem.
+`lastlog` - Prikazuje sve korisnike sistema i vrijeme kada su se zadnji put prijavili na sistem.
 
-```less``` - Interaktivni program za pregledanje sadržaja tekstualnih datoteka.
+`less` - Interaktivni program za pregledanje sadržaja tekstualnih datoteka. Napredniji od `more`.
 
-```ln``` - Kreiranje hard i simbolikih linkova.
+`ln` - Kreiranje hard i simboličkih linkova.
 
-```locale``` - Štampa izveštaj o regionalnim podešavanjima na standardnom izlazu.
+`locale` - Štampa izvještaj o regionalnim podešavanjima na standardnom izlazu.
 
-```lockfile``` - Kreira specijalne semafor datoteke koje se koriste za ograniavanje
-pristupa datotekama.
+`login` - Prijavljivanje na sistem. Treći proces u nizu init-getty-login-shell.
 
-```login``` - Prijavljivanje na sistem. Trei proces u nizu init-getty-login-shell.
+`logname` - Prikazuje ime korisnika koji je prijavljen na sistem na osnovu podataka u datoteci /var/run/utmp.
 
-```logname``` - Prikazuje ime korisnika koji je prijavljen na sistem na osnovu podataka u
-datoteci /var/run/utmp.
+`look` - Prikazuje riječi iz datoteke /usr/share/dict/words koje počinju zadatim nizom karaktera.
 
-```look``` - Prikazuje rei iz datoteke /usr/dict/words koje poinju zadatim nizom
-karaktera.
+`ls` - Prikazuje sadržaj direktorijuma na standardnom izlazu.
 
-```lp``` - Štampanje iz komandne linije (System V).
+`lsattr` - Prikazuje specijalne atribute datoteka karakteristične za ext2/ext3/ext4 sisteme datoteka.
 
-```lpadmin``` - Administracija CUPS servisa za štampu.
+`lsblk` - Prikazuje informacije o blok uređajima (diskovi, particije) u formatu stabla.
 
-```lpc``` - Administrativna komanda za kontrolu LPRng servisa za štampu.
+`lsmod` - Prikazuje module učitane u tekuće jezgro.
 
-```lpd``` - LPRng line printer daemon (servis za štampu).
-
-```lpinfo``` - Informacije o štampaima (CUPS).
-
-```lpq``` - Ispitivanje reda za štampu (BSD).
-
-```lpr``` - Štampanje iz komandne linije (BSD).
-
-```lprm``` - Uklanjanje poslova iz reda za štampu (BSD).
-
-```lpstat``` - Ispitivanje reda za štampu (System V).
-
-```ls``` - Prikazuje sadržaj direktorijuma na standardnom izlazu.
-
-```lsattr``` - Prikazuje specijalne atribute datoteka karakteristine za ext2 i ext3
-sisteme datoteka.
-
-```lsmod``` - Prikazuje module uitane u tekue jezgro.
-
+`lsof` - Prikazuje otvorene datoteke i procese koji ih koriste.
 
 
 #### M
 
-```mail``` - Prikazivanje, itanje i slanje pošte drugim korisnicima sistema.
+`mail` - Prikazivanje, čitanje i slanje pošte drugim korisnicima sistema.
 
-```make``` - Prevoenje i povezivanje izvornog koda na osnovu datoteke makefile.
+`make` - Prevođenje i povezivanje izvornog koda na osnovu datoteke Makefile.
 
-```man``` - Prikazuje stranicu uputstva (man page) za odreenu komandu.
+`man` - Prikazuje stranicu uputstva (man page) za određenu komandu.
 
-```mtools``` - Alati za rad sa MS-DOS diskovima. Koriste DOS sintaksu, odnosno
-korisnici se diskovima obraaju preko labela, a ne preko nodova.
+`mesg` - Komanda kojom korisnik dozvoljava ili zabranjuje drugim korisnicima da mu šalju poruke komandom `write`.
 
-```mesg``` Komanda kojom korisnik dozvoljava ili zabranjuje drugim korisnicima da
-mu šalju poruke komandom write.
+`mkdir` - Kreiranje direktorijuma. Sa opcijom `-p` kreira i roditeljske direktorijume ako ne postoje.
 
-```mkdir``` - Kreiranje direktorijuma u aktivnom UNIX stablu.
+`mkfs` - Administrativna komanda, front-end za alate kojima se kreiraju sistemi datoteka (mkfs.ext4, mkfs.xfs, itd.).
 
-```mkfs``` - Administrativna komanda, front-end za alate kojima se kreiraju sistemi
-datoteka.
+`mkfifo` - Kreiranje imenovanih FIFO datoteka (imenovani pipe).
 
-```mkfs.ext2``` - Administrativna komanda za kreiranje ext2 sistema datoteka (mke2fs).
+`mknod` - Kreiranje specijalnih datoteka (nodova), odnosno datoteka koje mogu da šalju i primaju podatke (karakter i blok uređaji).
 
-```mkfs.ext3``` - Administrativna komanda za kreiranje ext3 sistema datoteka.
+`mkswap` - Administrativna komanda za kreiranje logičke strukture swap datoteke ili particije.
 
-```mkfs.msdos``` - Administrativna komanda za kreiranje MS-DOS sistema datote
-ka.
+`modinfo` - Štampa na standardnom izlazu informacije o određenom modulu kernela. Informacije se čitaju iz zaglavlja datoteke u kojoj se taj modul nalazi.
 
-```mkfifo``` - Kreiranje imenovanih FIFO datoteka (imenovani pipe).
+`modprobe` - Administrativna komanda za učitavanje i uklanjanje modula kernela, uz automatsko rješavanje zavisnosti.
 
-```mkisofs``` - Kreiranje ISO9660/Joliet/HFS (Macintosh Hierarchical File System)
-sistema datoteka radi snimanja CD-ROM medijuma alatom cdrecord.
+`more` - Komanda za pregledanje sadržaja tekstualnih datoteka (stranica po stranica).
 
-```mklost+found``` - Kreiranje lost+found direktorijuma na ext2 sistemima datoteka.
+`mount` - Administrativna komanda za aktiviranje sistema datoteka (montiranje na mount-point direktorijume). Svi korisnici pomoću ove komande mogu utvrditi koji su sistemi datoteka trenutno aktivirani.
 
-```mknod``` - Kreiranje specijalnih datoteka (nodova), odnosno datoteka koje mogu da
-šalju i primaju podatke (karakter i blok ureaji).
+`mv` - Pomjeranje datoteke, grupe datoteka ili direktorijuma sa jedne lokacije na drugu. Također se koristi za preimenovanje datoteka.
 
-```mkraid``` - Administrativna komanda za kreiranje novog RAID niza diskova
-definisanog konfiguracionom datotekom /etc/raidtab. Inicijalizacija
-uništava sve podatke na diskovima koji ine RAID niz.
-
-```mkswap``` - Administrativna komanda za kreiranje logike strukture swap datoteke ili
-particije.
-
-```modinfo``` - Štampa na standardnom izlazu informacije o odreenom modulu kernela.
-Informacije se itaju iz zaglavlja datoteke u kojoj se taj modul nalazi.
-
-```modprobe``` - Administrativna komanda za rad sa modulima kernela. Uz komandu
-depmod omoguava lakši rad sa modulima.
-
-```more``` - Komanda za pregledanje sadržaja tekstualnih datoteka.
-
-```mount``` - Administrativna komanda za aktiviranje sistema datoteka (montiranje na
-mount-point direktorijume). Svi korisnici pomou ove komande mogu
-utvrditi koji su sistemi datoteka trenutno aktivirani.
-
-```mountd``` - NFS/NIS administrativna komanda. Server koji upravlja zahtjevima za
-montiranje NFS sistema datoteka.
-
-```mt``` - Administrativna komanda za upravljanje magnetnim trakama.
-
-```mv``` - Pomeranje datoteke, grupe datoteka ili direktorijuma sa jedne lokacije na
-drugu. Promjena imena datoteka.
 
 #### N
 
-```named``` - Server imena (DNS).
+`named` - Server imena (DNS). Poznat i kao BIND.
 
-```nameif``` - Administrativna komanda za dodelu imena interfejsa sa zadatom MAC
-adresom.
+`netstat` - TCP/IP dijagnostički alat koji daje izvještaje o mrežnom interfejsu, tabelama rutiranja, mrežnim konekcijama i statistici korištenja TCP/IP skupa protokola. **(zastarjelo)** Na modernim sistemima koristite `ss`.
 
-```netstat``` - TCP/IP dijagnostiki alat koji daje izveštaje o mrežnom interfejsu,
-tabelama rutiranja, mrežnim konekcijama i statistici korišenja TCP/IP
-skupa protokola.
+`nft` - Komanda za konfigurisanje nftables firewalla. Moderna zamjena za `iptables`.
 
-```newusers``` - Administrativna komanda za kreiranje korisnikih naloga na osnovu
-sadržaja datoteke koja se navodi kao parametar (u datoteci se navode
-korisnika imena i lozinke). Prilikom kreiranja korisnikih naloga, kreiraju
-se i grupe i home direktorijumi, ukoliko ve ne postoje.
+`nice` - Izvršavanje komande sa izmijenjenim prioritetom ("be nice to other users"). Podrazumijevano snižava prioritet.
 
-```nfsd``` - NFS klijent.
+`nohup` - Pokreće program čije se izvršenje nastavlja nakon odjavljivanja korisnika sa sistema.
 
-```nfsstat``` - NFS dijagnostiki alat koji štampa statistiki izveštaj o korišenju NFS-a.
+`nslookup` - Komanda za ispitivanje DNS servera. Na modernim sistemima preporučuje se `dig` ili `host`.
 
-```nice``` - Izvršavanje komande sa nižim prioritetom ("be nice to other users").
-
-```nohup``` - Pokrece program (komanda se zadaje kao argument) cije se izvršenje
-nastavlja nakon odjavljivanja korisnika sa sistema.
-
-```nslookup``` - Komanda za ispitivanje DNS servera.
-
-```nsupdate``` - Administrativna komanda za podnošenje zahteva za dinamicko ažuriranje
-servera imena.
 
 #### P
 
-```passwd``` - Promjena lozinke korisnika.
+`passwd` - Promjena lozinke korisnika.
 
-```ping``` - TCP/IP dijagnosticki alat za slanje ICMP ECHO paketa. Ovim alatom se
-može utvrditi da li je udaljeni racunar dostupan.
+`ping` - TCP/IP dijagnostički alat za slanje ICMP ECHO paketa. Ovim alatom se može utvrditi da li je udaljeni računar dostupan.
 
-pppd PPP (Point-to-Point Protocol) server.
+`pppd` - PPP (Point-to-Point Protocol) daemon za uspostavljanje mrežnih konekcija putem serijskih linija.
 
-```pr``` - Priprema tekstualnih datoteka za štampanje (podjela datoteke na stranice,
-numerisanje stranica i navodjenje datuma i imena datoteke u zaglavlju).
+`pr` - Priprema tekstualnih datoteka za štampanje (podjela datoteke na stranice, numerisanje stranica i navođenje datuma i imena datoteke u zaglavlju).
 
-```ps``` - Štampa izveštaj o procesima na standardnom izlazu.
+`ps` - Štampa izvještaj o procesima na standardnom izlazu.
 
-```pwck``` - Provjera integriteta passwd datoteke.
+`pwck` - Provjera integriteta passwd datoteke.
 
-```pwconv``` - Administrativni alat za kreiranje datoteke /etc/shadow. Originalne lozinke
-u datoteci /etc/passwd zamenjuju se znakom x.
+`pwd` - Štampa na standardnom izlazu putanju tekućeg direktorijuma.
 
-```pwunconv``` - Administrativni alat za uklanjanje datoteke /etc/shadow.
-
-```pwd``` Štampa na standardnom izlazu putanju tekuceg direktorijuma.
 
 #### Q
 
-```quota``` - Prikazuje zauzee diska od strane odredjenog korisnika ili grupe i
-ogranicenja u sistemu datoteka.
+`quota` - Prikazuje zauzeće diska od strane određenog korisnika ili grupe i ograničenja u sistemu datoteka.
 
-```repquota``` - Prikazuje informacije o zauzecu diska i kvotama za navedeni sistem
-datoteka, trenutnom broju datoteka i zauzecu diska za svakog korisnika
-kome su dodeljene kvote.
+`quotacheck` - Na osnovu analize potrošnje prostora na odgovarajućem sistemu datoteka kreira odgovarajuće datoteke quota.user i quota.group.
 
-```quotacheck``` - Na osnovu analize potrošnje prostora na odgovarajuem sistemu datoteka
-kreira odgovarajue datoteke quota.user i quota.group.
+`quotaon` - Aktiviranje kvote.
 
-```quotaon``` - Aktiviranje kvote.
+`quotaoff` - Deaktiviranje kvote.
 
-```quotaoff``` - Deaktiviranje kvote.
+`repquota` - Prikazuje informacije o zauzeću diska i kvotama za navedeni sistem datoteka.
+
 
 #### R
 
-```rcp``` - Kopiranje datoteka izmedju udaljenih racunara.
+`readlink` - Prikazuje sadržaj simboličkog linka, odnosno putanju i ime objekta na koji link pokazuje. Sa opcijom `-f` razrješava sve simboličke linkove u putanji.
 
-```readlink``` - Prikazuje sadržaj simbolikog linka, odnosno putanju i ime objekta na koji
-link pokazuje.
+`reboot` - Administrativna komanda za zaustavljanje i ponovno podizanje sistema. Ukoliko sistem nije u nivou izvršenja 0 ili 6, reboot poziva komandu `shutdown -r`.
 
-```reboot``` - Administrativna komanda za zaustavljanje i ponovno podizanje sistema
-koja odmah ubija sve procese. Ukoliko sistem nije u nivou izvršenja 0 ili
-6, reboot poziva komandu shutdown -r.
+`rename` - Promjena imena većeg broja datoteka (jedan niz karaktera u imenima se mijenja drugim).
 
-```rename``` - Promjena imena veceg broja datoteka (jedan niz karaktera u imenima se
-mijenja drugim).
+`renice` - Promjena prioriteta pokrenutog procesa.
 
-```renice``` - Promjena prioriteta procesa.
+`resize2fs` - Administrativna komanda za promjenu veličine ext2/ext3/ext4 sistema datoteka. Može povećati sistem datoteka online (bez demontiranja) ili ga smanjiti nakon demontiranja.
 
-```resize2fs``` - Administrativna komanda za promenu veliine sistema datoteka. Komanda
-zahtjeva da se najpre programom fdisk obriše particija u kojoj se nalazi
-sistem datoteka, a zatim kreira nova (vea) pocev od istog cilindra.
+`rev` - Štampa datoteku na standardnom izlazu, pri čemu svaku liniju datoteke štampa unazad.
 
-```rev``` - Štampa datoteku na standardnom izlazu, pri cemu svaku liniju datoteke
-štampa unazad.
+`rm` - Brisanje datoteke, grupe datoteka i dijelova direktorijumskog stabla.
 
-```rm``` - Brisanje datoteke, grupe datoteka i delova direktorijumskog stabla.
+`rmdir` - Brisanje praznih direktorijuma.
 
-```rmdir``` - Brisanje praznih direkorijuma.
+`rmmod` - Uklanjanje modula iz tekućeg jezgra.
 
-```rmmod``` - Uklanjanje modula iz tekuceg jezgra.
+`route` - TCP/IP komanda za izmjenu sadržaja tabele rutiranja. **(zastarjelo)** Na modernim sistemima koristite `ip route`.
 
-```route``` - TCP/IP command za izmjenu sadržaja tabele rutiranja (tabele rutiranja
-održava routed).
+`rpm` - Red Hat Package Manager - rad sa RPM paketima.
 
-```routed``` - Mrežni ruter, podržava Routing Information Protocol.
+`rsync` - Brza i fleksibilna komanda za sinhronizaciju datoteka i direktorijuma lokalno ili između udaljenih sistema. Prenosi samo razlike između izvora i odredišta.
 
-```rpm``` - Red Hat Package Manager.
+`runlevel` - Prikazuje nivo izvršavanja.
 
-```runlevel``` - Prikazuje nivo izvršavanja.
-
-```run-parts``` - Pokrece skriptove u direktorijumu po abecednom redu.
 
 #### S
 
-```sed``` - Stream editor modifikacija sadržaja datoteka bez interakcije korisnika.
+`scp` - Sigurno kopiranje datoteka između udaljenih računara putem SSH protokola.
 
-```setfdprm``` - Konfigurisanje parametara flopi diskova.
+`sed` - Stream editor - modifikacija sadržaja datoteka bez interakcije korisnika.
 
-```sftp``` Siguran transfer datoteka izmedju udaljenih racunara putem ssh.
+`sftp` - Siguran transfer datoteka između udaljenih računara putem SSH protokola. Zamjena za `ftp`.
 
-```showmount``` - NFS/NIS koja prikazuje informacije o NFS serveru.
+`shred` - Prepisuje slučajni sadržaj preko datoteke, nakon čega briše datoteku. Time se obezbjeđuje da se datoteka ne može povratiti.
 
-```shred``` - Prepisuje slucajni sadržaj preko datoteke, nakon cega briše datoteku. Time
-se obezbjedjuje da se datoteka ne može povratiti.
+`shutdown` - Administrativna komanda za zaustavljanje sistema na kontrolisan način.
 
-```shutdown``` - Administrativna komanda za zaustavljanje sistema.
+`sort` - Uređivanje sadržaja datoteka.
 
-```sort``` - Uredjivanje sadržaja datoteka.
+`split` - Dijeljenje datoteka na segmente jednake veličine.
 
-```split``` - Dijeljenje datoteka na segmente jednake velicine.
+`ss` - Moderna komanda za prikaz informacija o mrežnim soketima. Zamjena za `netstat`.
 
-```ssh``` - Secure Shell - sigurno prijavljivanje na udaljeni sistem (podaci na liniji se
-šifruju).
+`ssh` - Secure Shell - sigurno prijavljivanje na udaljeni sistem (podaci na liniji se šifruju).
 
-```sshd``` - Secure Shell server.
+`sshd` - Secure Shell server (daemon).
 
-```strings``` - Prikazuje vidljive karaktere u izvršnoj ili binarnoj datoteci.
+`strings` - Prikazuje vidljive (printable) karaktere u izvršnoj ili binarnoj datoteci.
 
-```stty``` - Podešavanje karakteristika terminala.
+`stty` - Podešavanje karakteristika terminala.
 
-```su``` - Privremeno prijavljivanje na sistem sa drugim korisnickim nalogom.
+`su` - Privremeno prijavljivanje na sistem sa drugim korisničkim nalogom.
 
-```sudo``` - Izvršavanje komandi sa root privilegijama.
+`sudo` - Izvršavanje komandi sa root privilegijama (ili privilegijama drugog korisnika).
 
-```sum``` - Racuna i prikazuje cek-sumu i velicinu datoteka. Komanda je korisna za
-verifikaciju transfera datoteka.
+`swapon` - Administrativna komanda za uključivanje swap prostora.
 
-```swapoff``` - Administrativna komanda za iskljucivanje swap prostora.
+`swapoff` - Administrativna komanda za isključivanje swap prostora.
 
-```swapon``` - Administrativna komanda za ukljucivanje swap prostora.
+`sync` - Administrativna komanda koja upisuje sadržaj keša na disk i prazni keš.
 
-```sync``` - Administrativna komanda koja upisuje sadržaj keša na disk i prazni keš.
+`systemctl` - Komanda za upravljanje systemd servisima i sistemom. Koristi se za pokretanje, zaustavljanje, restartovanje servisa, te pregled statusa.
 
-```sysklogd``` - Daemon koji poruke operativnog sistema upisuje u odgovarajue log
-datoteke.
 
 #### T
 
-```tac``` - Štampa sadržaj datoteke na standardnom izlazu pocev od posljednje linije
-ka prvoj.
+`tac` - Štampa sadržaj datoteke na standardnom izlazu počev od posljednje linije ka prvoj (obrnuti `cat`).
 
-```tail``` - Prikazuje kraj datoteke (nekoliko poslednjih linija).
+`tail` - Prikazuje kraj datoteke (podrazumijevano posljednjih 10 linija). Sa opcijom `-f` kontinuirano prati nove linije.
 
-```tar``` -  Tape Archiver - arhiviranje i dearhiviranje datoteka.
+`tar` - Tape Archiver - arhiviranje i dearhiviranje datoteka.
 
-```tcpd``` -  TCP/IP wrapper.
+`tcpdump` - Alat za snimanje i analizu mrežnog saobraćaja na mrežnom interfejsu.
 
-```tcsh``` - Poboljšana verzija C shell komandnog interpretera.
+`tee` - Podatke sa standardnog ulaza upisuje u datoteku i šalje ih na standardni izlaz.
 
-```tee``` - Podatke sa standardnog ulaza upisuje u datoteku i šalje ih na standardni izlaz.
+`telnet` - Prijavljivanje na udaljeni sistem. **(zastarjelo)** Komunikaciona linija se ne šifruje. Koristite `ssh`.
 
-```telnet``` - Prijavljivanje na udaljeni sistem. Za razliku od ssh, komunikaciona linija
-se ne šifruje, tako da nije sigurna.
+`time` - Izvršava komandu i određuje vrijeme potrebno za izvršenje te komande.
 
-```telnetd``` - Telnet server.
+`top` - Obezbjeđuje informacije o procesima u realnom vremenu, uključujući potrošnju CPU i memorije.
 
-```time``` - Izvršava komandu i odreuje vreme potrebno za izvršenje te komande.
+`touch` - Postavlja vrijeme zadnjeg pristupa i vrijeme posljednje modifikacije na tekuće vrijeme. Ukoliko datoteka ne postoji, kreiraće praznu datoteku.
 
-```tload``` - Prikazuje grafik opterecenja sistema.
+`traceroute` - Identifikacija rute (niz rutera) do odredišnog računara.
 
-```top``` - Obezbjedjuje informacije o procesima koji su kriticni po pitanju potrošnje
-procesorskog vremena (top processes).
+`tty` - Prikazuje ime uređaja koji se koristi kao standardni ulaz.
 
-```touch``` - Postavlja vrijeme zadnjeg pristupa i vrijeme posljednje modifikacija na tekuce vrijeme. Ukoliko datoteka ne postoji, kreirat ce praznu datoteku.
+`tune2fs` - Administrativna komanda za podešavanje parametara ext2/ext3/ext4 sistema datoteka.
 
-```traceroute``` - Identifikacija rute do odredišnog run-era
-
-```tty``` - Prikazuje ime uredjaja koji se koristi kao standardni ulaz.
-
-```tune2fs``` - Administrativna komanda za podešavanje parametara ext2 sistema
-datoteka.
-
-```tunelp``` - Administrativna komanda za podešavanje parametara štampaca.
 
 #### U
 
-```umount``` - Administrativna komanda za deaktiviranje sistema datoteka.
+`umount` - Administrativna komanda za deaktiviranje (demontiranje) sistema datoteka.
 
-```uname``` - Prikazuje ime racunara, arhitekturu hardvera i ime operativnog sistema.
+`uname` - Prikazuje ime računara, arhitekturu hardvera, verziju kernela i ime operativnog sistema.
 
-```uncompress``` - Dekompresija .Z datoteka.
+`uniq` - Uklanja sve duplikate uzastopnih identičnih linija iz tekstualne datoteke.
 
-```uniq``` - Uklanja sve duplikate linija iz tekstualne datoteke (izbacuje sve
-konsekventne identine linije, osim prve u nizu).
+`uptime` - Prikazuje vrijeme proteklo od posljednjeg podizanja sistema, broj trenutno prijavljenih korisnika i prosječno opterećenje sistema.
 
-```uptime``` - Prikazuje vreme proteklo od posljednjeg podizanja sistema, broj trenutno
-prijavljenih korisnika i prosjecno opterecenje sistema.
+`useradd` - Administrativna komanda za kreiranje korisničkih naloga.
 
-```useradd``` - Administrativna komanda za kreiranje korisnikih naloga.
+`userdel` - Administrativna komanda za brisanje korisničkih naloga.
 
-```userdel``` - Administrativna komanda za brisanje korisnikih naloga.
+`usermod` - Modifikacija parametara korisničkog naloga.
 
-```usermod``` - Modifikacija parametara korisnikog naloga.
 
 #### V
 
-```vdir``` Ekvivalentna komandi ls -lb.
+`vdir` - Ekvivalentna komandi `ls -lb`.
 
-```vi``` - Vi tekst editor, prisutan na svim UNIX sistemima.
+`vi` - Vi tekst editor, prisutan na svim UNIX sistemima.
 
-```vim``` - Vi Improved, poboljšana verzija vi editora.
+`vim` - Vi Improved, poboljšana verzija vi editora.
 
-```vmstat``` - Prikazuje statisticki izveštaj o memoriji, swap prostoru, iskorišenosti
-procesora i procesima.
+`vmstat` - Prikazuje statistički izvještaj o memoriji, swap prostoru, iskorištenosti procesora i procesima.
+
 
 #### W
 
-```w``` - Prikazuje koji su korisnici prijavljeni na sistem i "šta trenutno rade".
+`w` - Prikazuje koji su korisnici prijavljeni na sistem i šta trenutno rade.
 
-```wall``` - Slanje poruke svim korisnicima ("Broadcast Message from...").
+`wall` - Slanje poruke svim korisnicima ("Broadcast Message from...").
 
-```watch``` - Izvršava zadatu komandu repetativno (podrazumevano na svake dvije
-sekunde) tako da korisnik može da prati izlaz komande.
+`watch` - Izvršava zadatu komandu repetitivno (podrazumijevano svake 2 sekunde) tako da korisnik može da prati izlaz komande.
 
-```wc``` - Brojanje karaktera, rijeci i linija u datoteci.
+`wc` - Brojanje karaktera, riječi i linija u datoteci.
 
-```whatis``` - Na standardnom izlazu prikazuje opis navedene komande.
+`wget` - Alat za neinteraktivno preuzimanje datoteka sa weba. Podržava HTTP, HTTPS i FTP protokole.
 
-```whereis``` - Prikazuje lokaciju izvršnih datoteka, izvornog koda i pratece
-dokumentacije programa.
+`whatis` - Na standardnom izlazu prikazuje kratak opis navedene komande.
 
-```which``` - Prikazuje lokaciju izvršne datoteke.
+`whereis` - Prikazuje lokaciju izvršnih datoteka, izvornog koda i prateće dokumentacije programa.
 
-```who``` - Prikazuje koji su korisnici prijavljeni na sistem.
+`which` - Prikazuje lokaciju izvršne datoteke u PATH-u.
 
-```whoami``` - Prikazuje korisnicko ime korisnika koji je komandu zadao.
+`who` - Prikazuje koji su korisnici prijavljeni na sistem.
 
-```write``` - Slanje poruka odredjenom korisniku.
+`whoami` - Prikazuje korisničko ime korisnika koji je komandu zadao.
+
 
 #### X
 
-```xinetd``` TCP/IP wrapper (extended Internet services daemon). Na nekim sistemima
-se koristi umjesto inetd wrappera.
+`xargs` - Čita stavke sa standardnog ulaza i izvršava komandu sa tim stavkama kao argumentima. Koristan u kombinaciji sa `find` i drugim komandama.
 
-#### Y
+`xinetd` - TCP/IP wrapper (extended Internet services daemon). Na nekim sistemima se koristi umjesto `inetd` wrappera. **(zastarjelo)** Zamijenjeno sa systemd socket aktivacijom.
 
-```ypbind``` - NFS/NIS komanda. Proces kojim se klijentu dodeljuje NIS server.
-
-```ypcat``` - NFS/NIS komanda za prikazivanje informacija u NIS bazi.
-
-```ypchfn``` - NFS/NIS komanda za promjenu informacija u datoteci /etc/passwd.
-
-```ypinit``` - NFS/NIS komanda za kreiranje NIS baze na NIS serveru.
-
-```yppasswd``` - NFS/NIS komanda za promenu lozinke za prijavljivanje na NIS domen.
-
-```yppasswdd``` - Rješava zahtjeve za promjenu lozinke korisnika sa udaljenih racunara.
-
-```yppoll``` - Zahtev slave servera za ažuriranje baze sa master serverom.
-
-```yppush``` - Prosljedjuje tabele sa master servera na slave servere.
-
-```ypserv``` - NIS server.
-
-```yptest``` - NFS/NIS komanda za provjeru konfiguracije NIS servisa.
-
-```ypwhich``` - NFS/NIS komanda koja prikazuje ime NIS servera koji opslužuje lokalni
-racunar.
-
-```ypxfr``` - Program koji vrši transfer tabela sa jednog servera na drugi.
-
-```ypxfrd``` - Proces na master serveru koji upravlja prenošenjem ažuriranih podataka
-na slave server.
-
-```ypupdated``` - Proces na slave serveru koji upravlja prenošenjem ažuriranih podataka sa
-master servera.
-
-```ypset``` - Zahtev da sistem bude server procesu ypbin na klijent racunaru.
 
 #### Z
 
-```zcat``` - Komanda cat za .Z i .gz datoteke.
+`zcat` - Komanda `cat` za .Z i .gz datoteke (prikazuje sadržaj bez dekompresije na disk).
 
-```zmore``` - Komanda more za .Z i .gz datoteke.
+`zmore` - Komanda `more` za .Z i .gz datoteke.
 
-```znew``` - Dekomprimuje .Z kompresovanu datoteku, a zatim je kompresuje u .gz
-format.
+`zstd` - Moderna komanda za kompresiju i dekompresiju koristeći Zstandard algoritam. Nudi bolji omjer brzine i kompresije od gzip-a.
