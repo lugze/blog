@@ -40,5 +40,35 @@ Donesena je odluka da se popise sva baza softvera, distribucija, i literature, t
 
 Udruzenje Linux Korisnika Zenice
 
+## Slike sa sastanka
+
+![Sastanak 01](/blog/assets/images/sastanci/lugze_sastanak_01_11.jpg)
+
+![Sastanak 02](/blog/assets/images/sastanci/lugze_sastanak_01_12.jpg)
+
+![Sastanak 03](/blog/assets/images/sastanci/lugze_sastanak_01_14.jpg)
+
+![Sastanak 04](/blog/assets/images/sastanci/lugze_sastanak_01_15.jpg)
+
+![Sastanak 05](/blog/assets/images/sastanci/lugze_sastanak_01_16.jpg)
+
+![Sastanak 06](/blog/assets/images/sastanci/lugze_sastanak_01_17.jpg)
+
+![Sastanak 07](/blog/assets/images/sastanci/lugze_sastanak_01_19.jpg)
+
+![Sastanak 08](/blog/assets/images/sastanci/lugze_sastanak_01_20.jpg)
+
+![Sastanak 09](/blog/assets/images/sastanci/lugze_sastanak_01_21.jpg)
+
+![Sastanak 10](/blog/assets/images/sastanci/lugze_sastanak_01_22.jpg)
+
+![Sastanak 11](/blog/assets/images/sastanci/lugze_sastanak_01_23.jpg)
+
+![Sastanak 12](/blog/assets/images/sastanci/lugze_sastanak_01_24.jpg)
+
+![Sastanak 13](/blog/assets/images/sastanci/lugze_sastanak_01_25.jpg)
+
+![Sastanak 14](/blog/assets/images/sastanci/lugze_sastanak_01_26.jpg)
+
 ---
 *Izvor: [lugze/archive](https://github.com/lugze/archive/tree/master/sastanci)*
