@@ -10,6 +10,7 @@ gem "bigdecimal"
 gem "mutex_m"
 gem "observer"
 gem 'jekyll-asciinema'
+gem 'html-proofer', '~> 5.0', group: :test
 
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
