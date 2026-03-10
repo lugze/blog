@@ -177,31 +177,31 @@ A onda — **profesionalna TV reklama** za Linux seminar. AbsintheSyringe je opi
 
 *Plakat trećeg Zenica Linux Seminara — velika bijela trojka na crvenoj pozadini sa siluetama Tux pingvina. „3. Zenica Linux Seminar — Subota 02.12.2006. — Bosansko Narodno Pozorište Zenica — ULAZ JE BESPLATAN!" Program: Značaj OS platformi u savremenom poslovanju (Nijaz Bajgorić, prof.dr.), Život „full time" Linux desktop korisnika, XGL/Compiz — revolucija grafičkih okruženja (Mehmed Šačirović), Debian, apt-get into it, Moderni pristupi u borbi protiv SPAM-a, X11 Window system (Sanel Žukan), Upotreba slobodnog softvera u obrazovanju, Tipovi virtualizacija (Kemal Šanjta), Embedded Linux (Mirza Naharević), Logičko programiranje u open source okruženju, Open source software u strategiji informacionog društva u BiH (Samir Lemeš, mr.), Linux u telekomunikacijama (Emir Kasumović i Senaid Hodžanović, UKI), Put ka otvorenoj firmi u BiH (Ernad Husremović). Sponzori: Općina Zenica, BICOM SYSTEMS Ltd., SIGMACOM SOFTWARE Zenica, GOG COMPUTERS, WEST SIDE APARTMANI, BNP Zenica, ULKBIH, UBUNTU LINUX. Od tri člana i konzervi do sponzora i 15 predavanja — LugZe je narastao.*
 
-### Fotografije sa 3. Zenica Linux Seminara
+Slike sa seminara sačuvala ekipa Sigma-com Zenica — jednog od sponzora. Došli u kompletu.
 
-![Četiri učesnika u holu Bosanskog narodnog pozorišta](/blog/assets/images/linux_seminar_2006/cetiri_ucesnika_u_holu_pozorista.jpg)
+![Sigma-com ekipa u holu pozorišta](/blog/assets/images/linux_seminar_2006/cetiri_ucesnika_u_holu_pozorista.jpg)
 
-*Ekipa ispred pozorišta — četvorica u zimskim jaknama, iza njih Zenica kroz staklo. Došli su pričati o Linuxu, a vani decembar radi svoje.*
+*Prije nego što počne — Sigma-com ekipa u holu pozorišta. S lijeva na desno: bjasko, vsasa, hernad, i četvrti koji je „privjesak". Zenica im gleda kroz staklo iza leđa, a oni čekaju da uđu.*
 
-![Predavač na bini — „Opensource u svijetu"](/blog/assets/images/linux_seminar_2006/predavanje_opensource_u_svijetu.jpg)
+![Ernad Husremović — „Opensource u svijetu"](/blog/assets/images/linux_seminar_2006/predavanje_opensource_u_svijetu.jpg)
 
-*Čovjek u sakou objašnjava open source cijelom pozorištu. Pored njega crveni baner sa Tuxom, laptop na stolu, žuti mikrofon. Isto pozorište gdje se inače glumi Hamlet — a danas se priča o slobodnom softveru. I nekako ima smisla.*
+*Ušli su — i njihov šef je odmah na bini. Ernad Husremović (hernad), gazda Sigma-coma, otvara sa slajdom „Opensource u svijetu". Crveni baner sa Tuxom pored njega, laptop na stolu. Pozorište gdje se inače glumi Hamlet, a danas se priča o slobodnom softveru.*
 
-![Predavač na bini — „Opensource u BiH"](/blog/assets/images/linux_seminar_2006/predavanje_opensource_u_bih.jpg)
+![Ernad Husremović — „Opensource u BiH"](/blog/assets/images/linux_seminar_2006/predavanje_opensource_u_bih.jpg)
 
-*Sljedeći slajd: „Opensource u BiH". Sad dolazi ono zanimljivo — kako sve ovo izgleda kod nas? Publika se naginje naprijed u plavim foteljama.*
+*Pa prelazi na ono što ga zaista zanima — „Opensource u BiH". Dvije teme je donio: „Život full time Linux desktop korisnika" i „Put ka otvorenoj firmi u BiH". Nije teoretisao — čovjek živi ono o čemu priča.*
 
-![Publika u sali Bosanskog narodnog pozorišta](/blog/assets/images/linux_seminar_2006/publika_u_sali_pozorista.jpg)
+![Publika u sali pozorišta](/blog/assets/images/linux_seminar_2006/publika_u_sali_pozorista.jpg)
 
-*Parter pozorišta — narod sjedi u plavim foteljama, jakne prebačene preko naslona, neko je donio grickalice. Drvene obloge, zidne lampe, balkon gore. Linux predavanje sa pozorišnim štihom.*
+*Dok hernad priča, momci iz Sigma-coma okretali kameru i prema publici. Narod u plavim foteljama, jakne prebačene preko naslona, neko donio grickalice. Drvene obloge, zidne lampe, balkon gore — pozorišni štih za Linux predavanje.*
 
 ![Publika — široki pogled na salu](/blog/assets/images/linux_seminar_2006/publika_pogled_nazad_siroki.jpg)
 
-*Pogled unazad po sali — ima naroda i dole i na balkonu. Jedan tip fotografiše predavača, ostali slušaju. Obična subota u decembru, a ovi sjede u pozorištu i slušaju o kernelu.*
+*Još širi kadar — ima ih i dole i na balkonu. Jedan fotografiše predavača, ostali slušaju. Obična subota u decembru, a ovi sjede u pozorištu i slušaju o kernelu.*
 
-![Dva člana u pauzi između predavanja](/blog/assets/images/linux_seminar_2006/dva_clana_u_pauzi.jpg)
+![Sigma-com momci u pauzi](/blog/assets/images/linux_seminar_2006/dva_clana_u_pauzi.jpg)
 
-*Pauza između predavanja — dvojica napolju, cigareta, razgovor. Ono najbitnije na svakom seminaru dešava se u pauzama.*
+*I onda pauza. Dvojica iz Sigma-coma napolju — cigareta, razgovor, hladan zrak. Ono najbitnije na svakom seminaru ionako se dešava u pauzama.*
 
 ---
 
