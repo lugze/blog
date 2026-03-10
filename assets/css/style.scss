@@ -696,7 +696,8 @@ pre {
   }
 }
 
-.highlight {
+.highlight,
+.highlighter-rouge .highlight {
   background: $bg-secondary;
   border-radius: $radius-md;
   margin-bottom: 1.5rem;
