@@ -37,6 +37,10 @@ permalink: /o-nama/
 
 ### 📸 LugZe kroz godine
 
+**LugZe 2003. godine:**
+
+![LugZe 2003. godine]({{ site.url }}/blog/assets/images/meetups/lugze_2003.jpeg)
+
 **LugZe meetup 2003. godine:**
 
 ![LugZe meetup 2003. godine]({{ site.url }}/blog/assets/images/meetups/lugze_sastanak_2003_godina.jpg)
