@@ -6,7 +6,7 @@ permalink: /o-nama/
 
 ## 🐧 LugZe — Linux User Group of Zenica
 
-LugZe je zajednica zeničkih Linuxaša. Osnovana u martu 2002. godine, kad su **Nedim Hadžimahmutović** i **Kemal Sanjta** odlučili da je Zenici potrebna svoja Linux ekipa. Od tada pa do danas — dijelimo znanje, pijemo kafu i širimo open-source priču.
+LugZe je zajednica zeničkih Linuxaša. Osnovana u martu 2002. godine, kad su **Nedim Hadžimahmutović (grungy)** i **Kemal Sanjta (gomez)** odlučili da je Zenici potrebna svoja Linux ekipa. Od tada pa do danas — dijelimo znanje, pijemo kafu i širimo open-source priču.
 
 Kako je amar-ze jednom napisao na forumu: *"Zenica ti je najaktivniji grad Linuxaša, pored Sarajeva."* I to je istina — sve to je radilo 4-5 ljudi.
 
@@ -14,14 +14,14 @@ Kako je amar-ze jednom napisao na forumu: *"Zenica ti je najaktivniji grad Linux
 
 ### 📜 Kako je sve počelo
 
-**2002.** — Nedim i Kemal osnivaju LugZe. Iste godine, gomez nagovori profesora informatike u svojoj gimnaziji da instalira Linux na 15 računara. Izbor pada na Mandrake 9.0 zbog podrške za bosanski jezik. Gomez planira držati prve časove dok profesor ne savlada osnove, a kod kuće koristi Slackware. Jedan od prvih koraka ka širenju Linuxa u školama u BiH.
+**2002.** — Grungy i gomez osnivaju LugZe. Iste godine, gomez nagovori profesora informatike u svojoj gimnaziji da instalira Linux na 15 računara. Izbor pada na Mandrake 9.0 zbog podrške za bosanski jezik. Gomez planira držati prve časove dok profesor ne savlada osnove, a kod kuće koristi Slackware. Jedan od prvih koraka ka širenju Linuxa u školama u BiH.
 
 **2003.** — Dobijamo domenu `lugze.org` i server na Mašinskom fakultetu zahvaljujući profesoru **Samiru Lemešu**. Aktivno sarađujemo sa ULK (Unija Linux Korisnika). Redovna druženja u zeničkim kafićima postaju tradicija.
 
 **2004.** — Godina u kojoj se desilo sve.
 - **am** (Ahmet Mulalić) prevodi **Mozillu 1.7.2 na bosanski jezik** — oko 9.000 stringova. Dva dana nakon završetka, prevod je na zvaničnoj mozilla.org stranici. Na forumu se razvila ozbiljna diskusija o održavanju prevoda — Bono i mesa su pozivali na dugoročno razmišljanje, a i vanjski saradnici su predlagali kolaborativne alate. Pokazalo se da zajednica zna razmišljati i dalje od početnog entuzijazma.
 - Pokrenut projekat **provjere pravopisa za bosanski jezik** na `provjera-pravopisa.lugze.org`.
-- **28. novembra** — u **Bosanskom narodnom pozorištu** u Zenici održan **prvi Linux seminar u Bosni i Hercegovini**. Oko 100 učesnika uprkos lošem vremenu i kasnoj promociji. Prezentacije po 40 minuta — od historije Unixa do Mozilla prevoda. Predavali Adis Nezirović, Samir Lemeš, Kemal Sanjta, Ahmet Mulalić i gosti poput Vedrana Ljubovića.
+- **28. novembra** — u **Bosanskom narodnom pozorištu** u Zenici održan **prvi Linux seminar u Bosni i Hercegovini**. Oko 100 učesnika uprkos lošem vremenu i kasnoj promociji. Prezentacije po 40 minuta — od historije Unixa do Mozilla prevoda. Predavali gomez, Samir Lemeš, Ahmet Mulalić i gosti poput Vedrana Ljubovića i Adisa Nezirovića.
 
 **2005.** — Drugi Zenica Linux Seminar. Pripremljen 20-straničan izvještaj za lokalne vlasti.
 
@@ -35,7 +35,7 @@ Kako je amar-ze jednom napisao na forumu: *"Zenica ti je najaktivniji grad Linux
 
 **2010.** — Sastanak u Caffe Ekran-u (u kinu). SoulSeeker nakon druženja piše: *"Moram priznati da su momci prva liga. Doslovce sam impresioniran njihovim pojavama, stavom, informatičkim gardom, znanjem... svime."* Nedim.bfo primjećuje: *"Ovo je sastanak AA, pa niko pive nije naručio!"* Gomez: *"Nastojimo živjeti zdravo."* Iste godine — **re-aktivacija LUGZDK-a**, planovi za zvaničnu registraciju udruženja. Na forumu se traži da se konačno arhiviraju Zenica Linux Seminari koji su do tada postojali *"samo u sjećanjima učesnika"*.
 
-**2017.** — Nakon više od 10 godina minimalne aktivnosti, reaktivirana web stranica i blog. Sajt zamišljen kao blog gdje će članovi postati kratke postove po vlastitoj želji. Na ZeForge meetupu se spontano okupila originalna LugZe postava — 14 godina nakon prvih aktivnosti. Kako je nedim napisao: *"Ova prilika zaslužuje zaseban post."*
+**2017.** — Nakon više od 10 godina minimalne aktivnosti, reaktivirana web stranica i blog. Sajt zamišljen kao blog gdje će članovi postati kratke postove po vlastitoj želji. Na ZeForge meetupu se spontano okupila originalna LugZe postava — 14 godina nakon prvih aktivnosti. Kako je grungy napisao: *"Ova prilika zaslužuje zaseban post."*
 
 **2022.** ☕ — **2. novembra** kreirana je WhatsApp grupa **„Linux kafa"** koja je ponovo spojila stare i nove članove. Grupa živi — razgovara se, dijeli znanje i dogovaraju se redovna druženja uz kafu. U pravom LugZe duhu — od prvog dana je kafica bila jednako važna kao i kernel.
 
@@ -59,14 +59,12 @@ Kako je amar-ze jednom napisao na forumu: *"Zenica ti je najaktivniji grad Linux
 
 ### 👥 Ljudi koji su gradili LugZe
 
-- **Nedim Hadžimahmutović** — suosnivač, tehnički autor, čovjek koji je reaktivirao stranicu 2017.
-- **Kemal Sanjta** — suosnivač, predavač na prvom Linux seminaru u BiH
-- **Gomez** — organizator seminara, čovjek koji je Linux gurao u škole, kafane i TV reklame. Konvertovao pola Zenice na Ubuntu. Sevapa radi.
+- **Nedim Hadžimahmutović (grungy)** — suosnivač, tehnički autor, čovjek koji je reaktivirao stranicu 2017.
+- **Kemal Sanjta (gomez)** — suosnivač, organizator seminara, čovjek koji je Linux gurao u škole, kafane i TV reklame. Konvertovao pola Zenice na Ubuntu. Sevapa radi.
 - **Samir Lemeš** — profesor na Mašinskom, obezbijedio server i prostorije kad je to bilo najpotrebnije
 - **Mesa** — organizator, pisac izvještaja, old school postava
 - **Ahmet Mulalić (am)** — preveo Mozillu na bosanski — 9.000 stringova, sam
 - **Amar-ze** — čovjek koji je uvijek pitao *"šta ima?"* i pokretao stvari kad bi se zajednica uspavala
-- **Adis Nezirović** — predavač o historiji Unixa i razvoju GNU/Linux aplikacija
 - **Neziric (Haris)** — predvodio re-aktivaciju LUGZDK-a 2010., organizovao takmičenje za logo
 - **Admir Sivro** — autor tutorijala o shell programiranju i Linuxu
 
