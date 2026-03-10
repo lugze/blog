@@ -21,8 +21,6 @@ show_excerpts: true
 # Control navigation order
 header_pages:
   - kategorije.md
-  - dokumentacija.md
-  - zapisnici.md
   - msl.md
   - linux-komande.md
   - faq.md

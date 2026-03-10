@@ -4,6 +4,8 @@ title: Kategorije
 permalink: /kategorije/
 ---
 
+Vidi također: [📄 Dokumentacija]({{ "/dokumentacija/" | relative_url }}) · [📋 Zapisnici]({{ "/zapisnici/" | relative_url }})
+
 <div class="category-section">
   <h3>🐧 Linux</h3>
   <ul>
