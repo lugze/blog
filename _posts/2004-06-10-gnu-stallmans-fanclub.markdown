@@ -14,7 +14,7 @@ Takodje je opisao otkrivanje metal benda sa Linux-tematskim pjesmama dok je pret
 
 Ova tema je bila smjestena u Zenica kategoriju foruma i predstavlja zabavniju stranu LugZe zajednice - pored tehnickog rada, clanovi su njegovali i kulturu slobodnog softvera kroz muziku i humor.
 
-## Kontekst
+## Uvod
 
 Ova tema pokazuje kulturnu stranu LugZe zajednice. "The Free Software Song" Richarda Stallmana bila je poznata u krugovima otvorenog koda, komponovana na melodiju bugarske narodne pjesme. Heavy metal verzija koju je grungy podijelio bila je dio sire internet kulture reinterpretiranja te pjesme u razlicitim zanrovima. Clanovi LugZe-a nisu bili samo tehnicki kontributori - prihvatali su filozofiju i kulturu pokreta slobodnog softvera, sto se vidjelo i kroz raniju korespondenciju sa samim RMS-om i diskusiju o imenovanju GLUGZE.
 

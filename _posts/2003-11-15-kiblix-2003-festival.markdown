@@ -12,7 +12,7 @@ Grungy je opisao festival kao privlacan i izrazio nadu da ce pristupacnost putov
 
 Cinjenica da je gomez bio pozvan kao predstavnik BiH govori o prepoznatljivosti LugZe/zenicke Linux zajednice i na medjunarodnoj sceni.
 
-## Kontekst
+## Uvod
 
 Kiblix je bio godisnji Linux i open source festival koji se odrzavao u Mariboru, Slovenija. To sto je gomez bio pozvan kao predstavnik Bosne i Hercegovine da govori o BIND-u (DNS server softveru) pokazuje da je LugZe zajednica stekla prepoznatljivost i izvan granica drzave. Ovo je bilo samo oko godinu i po nakon osnivanja LugZe-a u martu 2002, sto svjedoci o brzom rastu reputacije zajednice.
 

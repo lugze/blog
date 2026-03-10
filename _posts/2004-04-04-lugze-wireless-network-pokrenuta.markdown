@@ -14,7 +14,7 @@ Grungy je pozvao IT profesionalce koji dijele slicnu filozofiju da ucestvuju u r
 
 Gomez je pohvalio rad, ali upozorio na potencijalne pravne konflikte sa drugim wireless udruzenjima. Na pitanje o mrezi pod nazivom "zew3" koju je primjetio korisnik Tarik, gomez je pojasnio da su to pristupne tacke Faika Cicka na Meokusnicama.
 
-## Kontekst
+## Uvod
 
 Wireless mreza je gradjena tokom nekoliko mjeseci, pocevsi krajem 2003. godine, koristeci antene napravljene od limenki. Mreza je nudila pet servera ukljucujuci internet konekciju, Linux ISO mirror i kernel arhive. Ovo je bilo izuzetno za Zenicu 2004. godine, gdje je broadband bio rijedak i vecina korisnika koristila dial-up konekcije. Mreza je operirala brzinom od 512Kbps sa univerziteta. Postojale su i druge wireless mreze u Zenici (poput zew3 koju je vodio Faik Cicak na Meokusnicama), ali LugZe mreza je specificno gradjena za Linux zajednicu.
 

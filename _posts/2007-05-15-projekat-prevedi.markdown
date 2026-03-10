@@ -14,7 +14,7 @@ Projekat je bio dostupan na `neziric.com.ba/prevedi/` i predstavljao je alat za 
 
 Haris Neziric (neziric na forumu) ce kasnije odigrati kljucnu ulogu u re-aktiviranju LUGZDK udruzenja 2010. godine.
 
-## Kontekst
+## Uvod
 
 Projekat "Prevedi" bio je web aplikacija koja je pomagala u prevodjenju. Najava je objavljena i na latinici i na cirilici, sto je odrazavalo visejezicnu prirodu regiona u kojem se koriste oba pisma. Ovo je bio nastavak tradicije lokalizacije zapocete sa spell checkerom i projektima prevodjenja Mozille i OpenOfficea.
 

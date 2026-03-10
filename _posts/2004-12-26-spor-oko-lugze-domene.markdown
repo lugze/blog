@@ -16,7 +16,7 @@ Bono je savjetovao da se izbjegavaju internet sporovi i da se razgovor odvija uz
 
 Ovaj dogadjaj ilustruje organizacione izazove sa kojima su se suocavale lokalne Linux zajednice u BiH - pitanja vlasnistva nad infrastrukturom, imenima i projektima.
 
-## Kontekst
+## Uvod
 
 Ovaj spor oko domene desio se samo mjesec dana nakon uspjesnog prvog Zenica Linux Seminara (novembar 2004). Domena lugze.org bila je registrovana od strane originalnih osnivaca LugZe-a (Nedim Hadzimahmutovic i Kemal Sanjta) 2002. godine i na njoj su bili hostovani razni projekti ukljucujuci spell checker, dokumentaciju, wireless mrezne servise i Jabber server.
 

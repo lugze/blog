@@ -12,7 +12,7 @@ Gomez je na [forum.linux.org.ba](https://forum.linux.org.ba/t/kucni-ljubimci/352
 
 Sastanku su prisustvovali clanovi LugZe zajednice, a na forumu je uslijedila zabavna razmjena poruka o "kucnim ljubimcima" - misevima, macama i pingvinima.
 
-## Kontekst
+## Uvod
 
 Ovaj humoristican post od gomeza je uhvatio duh LugZe druzenja - mijesanje ozbiljnog Linux rada sa drustvenom zabavom. "Kucni ljubimac" o kojem je rijec bio je Logitech RX1000 mis, kojeg je gomez opisao kao "cistokrvnog Logitecha." Dzeni je odgovorila fotografijom svoje prave macke, tvrdeci da je opasnija od njihovih "zicanih miseva." Tema se pretvorila u prijateljsko zadirkivanje o pingvinima na policama, kompjuterskim priborom kao ljubimcima i AbsintheSyringe-ovim hot dog avanturama u Tuzli. Ovakve drustvene teme bile su jednako vazne kao i tehnicke za odrzavanje zajednice na okupu.
 

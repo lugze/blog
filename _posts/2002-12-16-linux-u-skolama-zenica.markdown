@@ -16,7 +16,7 @@ Gomez je planirao drzati prve casove dok profesor ne savlada osnove, a na svom l
 
 Ovo je bio jedan od prvih koraka ka sirenju Linuxa u obrazovnim institucijama u Zenici i BiH.
 
-## Siri kontekst
+## Uvod
 
 Ova inicijativa nije nastala u vakuumu. Na forumu je u decembru 2002. korisnik crazy_m pokrenuo diskusiju o uvodjenju Linuxa u skolske nastavne planove, predlazuci "3-5 lekcija" posvecenih Linuxu u skolama. Diskusija je otkrila i prakticne prepreke - korisnik Babysitter je ukazao na to da oglasi za posao zahtijevaju poznavanje MS Office-a, sto je otezavalo argumentaciju za Linux u obrazovanju.
 

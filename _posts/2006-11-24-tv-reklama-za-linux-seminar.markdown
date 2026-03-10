@@ -14,7 +14,7 @@ Ovo je bio znacajan korak za LugZe - cinjenica da je Linux seminar imao profesio
 
 Kasnije su predlozeni i alternativni nacini promocije, poput distribucije postera u Sarajevu.
 
-## Kontekst
+## Uvod
 
 TV reklama je producirana za treci Zenica Linux Seminar. Imati profesionalnu TV reklamu bilo je izuzetno za volonterski organizovan Linux dogadjaj 2006. godine, ne samo u Bosni nego i u cijelom regionu. Download od 10 MB bio je znacajan za to vrijeme - mnogi korisnici su jos uvijek imali dial-up konekcije. Cinjenica da je gomez trazio od korisnika sa kontaktima na TV stanicama da pomognu sa distribucijom pokazuje grassroots prirodu promocije. Seminari su od prvog dogadjaja sa oko 100 ucesnika u BNP-u (novembar 2004) izrasli u dobro organizovanu seriju sa profesionalnim marketingom.
 
