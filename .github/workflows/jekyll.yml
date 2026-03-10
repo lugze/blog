@@ -41,19 +41,27 @@ jobs:
       - name: Verify build output
         run: |
           echo "::group::Build summary"
-          echo "Total files: $(find _site -type f | wc -l)"
-          echo "HTML pages:  $(find _site -name '*.html' | wc -l)"
-          echo "CSS files:   $(find _site -name '*.css' | wc -l)"
+          total_files=$(find _site -type f | wc -l)
+          html_pages=$(find _site -name '*.html' | wc -l)
+          css_files=$(find _site -name '*.css' | wc -l)
+          echo "Total files: $total_files"
+          echo "HTML pages:  $html_pages"
+          echo "CSS files:   $css_files"
           echo "::endgroup::"
-          # Verify key pages were generated
+
+          # Verify key pages exist (baseurl puts some content under _site/blog/)
           missing=0
-          for page in index.html kategorije/index.html o-nama/index.html faq/index.html mala-skola-linuxa/index.html linux-komande/index.html; do
+          for page in index.html kategorije/index.html o-nama/index.html faq/index.html mala-skola-linuxa/index.html linux-komande/index.html feed.xml; do
             if [ ! -f "_site/$page" ]; then
               echo "::error::Missing expected page: _site/$page"
               missing=1
             fi
           done
-          if [ "$missing" -eq 1 ]; then
+          if [ "$missing" -eq 1 ]; then exit 1; fi
+
+          # Verify CSS was generated
+          if [ ! -f "_site/assets/css/style.css" ]; then
+            echo "::error::Custom stylesheet not generated"
             exit 1
           fi
 
@@ -61,7 +69,6 @@ jobs:
         run: |
           bundle exec htmlproofer _site \
             --ignore-urls "/^http:\/\/localhost/,/^http:\/\/archive\.lugze\.org/" \
-            --ignore-status-codes "999,403,429" \
             --no-enforce-https \
             --ignore-missing-alt \
             --allow-missing-href \
