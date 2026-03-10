@@ -26,7 +26,6 @@ header_pages:
   - msl.md
   - linux-komande.md
   - faq.md
-  - arhiva.md
   - about.md
 
 plugins:
