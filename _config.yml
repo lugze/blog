@@ -16,7 +16,7 @@ permalink: /:categories/:year/:title.html
 
 markdown: kramdown
 theme: minima
-gems:
+plugins:
   - jekyll-feed
 exclude:
   - Gemfile

@@ -5,6 +5,10 @@ gem "minima", "~> 2.0"
 gem 'openssl', '>=2.0.3'
 gem "webrick"
 gem "kramdown-parser-gfm"
+gem "base64"
+gem "bigdecimal"
+gem "mutex_m"
+gem "observer"
 gem 'jekyll-asciinema'
 
 group :jekyll_plugins do
