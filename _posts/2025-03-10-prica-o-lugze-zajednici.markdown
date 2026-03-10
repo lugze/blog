@@ -137,6 +137,10 @@ Oko 100 učesnika uprkos lošem vremenu i kasnoj promociji. Prezentacije po 40 m
 
 Predavali gomez, Samir Lemeš, Ahmet Mulalić, te gosti poput Vedrana Ljubovića i Adisa Nezirovića.
 
+![Uramljeni plakat Zenica Linux Seminara 2004.](/blog/assets/images/linux_zenica_seminar_2004.jpeg)
+
+*Zvanični plakat prvog Zenica Linux Seminara — uramljen u drvo, crvena pozadina sa bijelim tekstom. „Zenica Linux seminar — 28. Novembar 2004. godine — Bosansko narodno pozorište sa početkom u 11:00 sati — http://seminar.lugzdk.ba — Ulaz je besplatan!" Program: Linux i perspektiva Linux-a u Bosni i Hercegovini (Vedran Ljubović), Unix historija (Adis Nezirović), Struktura Linux direktorija (Kemal Šanjta), X Window System (Sanel Žukan), Grafička okruženja pod Linux operativnim sistemom (Kemal Šanjta), OpenOffice.org (Ahmet Mulalić), Akademske i istraživačke mreže (mr. Samir Lemeš), Mozilla na bosanskom jeziku (Ahmet Mulalić), BHLD/BH Linux desktop (Adis Nezirović i Vedran Ljubović), Sigurnost Linux sistema (Adnan Sadžak), Novell/SuSE Linux (Azur Ajanović). Jedanaest predavanja, besplatan ulaz, i plakat koji je zaslužio da bude uramljen.*
+
 ![Linux radionica na Mašinskom fakultetu, 06.11.2004.](/blog/assets/images/Linux_radionica_na_Masinstvu_06_11_2004.jpeg)
 
 *Radionica na Mašinskom fakultetu u Zenici — predavač pokazuje na projektoru dok polaznici prate za CRT monitorima. Klasična računarska učionica 2004. godine: veliki bijeli kućišta, CRT ekrani i gomila entuzijazma. Ovako je izgledalo širenje Linuxa u Zenici — praktično, hands-on, u prostorijama fakulteta.*
@@ -146,6 +150,10 @@ Predavali gomez, Samir Lemeš, Ahmet Mulalić, te gosti poput Vedrana Ljubovića
 ## 2005–2006. — Seminari, reklame i ambicije
 
 **2005.** — Drugi Zenica Linux Seminar. ShereKhan hvali organizaciju. Do decembra pripremljen 20-straničan izvještaj za lokalne vlasti. Fotografije dostupne na howto.linux.org.ba.
+
+![Uramljeni plakat Zenica Linux Seminara 2005.](/blog/assets/images/linux_zenica_seminar_2005_1.jpeg)
+
+*Plakat drugog Zenica Linux Seminara — Tux pingvin sa Che Guevara beretkom na crvenoj pozadini. „Zenica Linux Seminar — Subota, 15.10.2005 - 12:00 — Bosansko narodno pozorište — Ulaz je besplatan!" Program: Ko i zašto preferira Linux/Windows? (Haris Memić, dipl.inž.), Šta je Free software? (Amila Akagić), Linux dan za danom (Mehmed Šačirović), Razvoj aplikacija za GNU/Linux platformu (Adis Nezirović), Linux i multimedia (Ahmet Mulalić), Equinox Desktop Environment/EDE (Vedran Ljubović, dipl.inž.), Linux i sigurnost računarskih sistema (mr. Samir Lemeš), PC BSD — BSD nekoliko koraka bliže (Kemal Šanjta). Revolucionarni Tux — jer Linux i jeste mala revolucija.*
 
 **2006.** — Amar-ze pita na forumu: *„Šta ima kod nas Zeničani? Dešava li se išta, hoćemo li šta raditi?"*
 
@@ -158,6 +166,10 @@ Gomez odgovara sa ambicioznim planovima:
 Mesa javlja da je domena kupljena i server online. Prva radionica zakazana za 3. juni na Mašinskom fakultetu.
 
 A onda — **profesionalna TV reklama** za Linux seminar. AbsintheSyringe je opisao reklamu kao *„Totalno totalno kul. Profesionalno 100%."* Download od 10 MB — značajan za vrijeme dial-up konekcija. Gomez traži od korisnika sa kontaktima na TV stanicama da pomognu sa distribucijom. Grassroots promocija u punom zamahu.
+
+![Uramljeni plakat 3. Zenica Linux Seminara 2006.](/blog/assets/images/linux_zenica_seminar_2006_1.jpeg)
+
+*Plakat trećeg Zenica Linux Seminara — velika bijela trojka na crvenoj pozadini sa siluetama Tux pingvina. „3. Zenica Linux Seminar — Subota 02.12.2006. — Bosansko Narodno Pozorište Zenica — ULAZ JE BESPLATAN!" Program: Značaj OS platformi u savremenom poslovanju (Nijaz Bajgorić, prof.dr.), Život „full time" Linux desktop korisnika, XGL/Compiz — revolucija grafičkih okruženja (Mehmed Šačirović), Debian, apt-get into it, Moderni pristupi u borbi protiv SPAM-a, X11 Window system (Sanel Žukan), Upotreba slobodnog softvera u obrazovanju, Tipovi virtualizacija (Kemal Šanjta), Embedded Linux (Mirza Naharević), Logičko programiranje u open source okruženju, Open source software u strategiji informacionog društva u BiH (Samir Lemeš, mr.), Linux u telekomunikacijama (Emir Kasumović i Senaid Hodžanović, UKI), Put ka otvorenoj firmi u BiH (Ernad Husremović). Sponzori: Općina Zenica, BICOM SYSTEMS Ltd., SIGMACOM SOFTWARE Zenica, GOG COMPUTERS, WEST SIDE APARTMANI, BNP Zenica, ULKBIH, UBUNTU LINUX. Od tri člana i konzervi do sponzora i 15 predavanja — LugZe je narastao.*
 
 ---
 
